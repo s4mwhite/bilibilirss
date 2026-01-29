@@ -5,9 +5,9 @@ from feedgen.feed import FeedGenerator
 
 # ================= 配置区 =================
 # 虽然获取投稿是公开数据，但带上凭证可以避免被 B 站风控拦截
-SESSDATA = "31064e36%2C1785235238%2C19914%2A12CjDEIZ_qysajcYJL26OhANVCeFQiA0_4i40BQ_b1nfmDZY25aFBi-4EJV9vCGIARguMSVlZCdjFrZjE0QkJVNUhEaXBKQUhMQ1Z0bm42d2M2MXJfcXhldXVaWURpdXhid1M1OUpzQXVTYkFOXzRDMDh2eUw1aWc0b0ZnYk5jbjlXUlZwMkVHVGFnIIEC"
-BILI_JCT = "07e67e9592defc77cda70b1cc78ec2fd"
-BUVID3 = "3B8459B0-96B7-FE02-75B6-0A2509C2461C15423infoc"
+SESSDATA = os.getenv("SESSDATA")
+BILI_JCT = os.getenv("BILI_JCT")
+BUVID3 = os.getenv("BUVID3")
 
 # 你想要订阅的 UP 主 UID (支持多个，这里先写一个示例)
 TARGET_UP_UID = 3546376524794441  # 替换为你想要订阅的UP主UID
