@@ -38,16 +38,15 @@ async def get_up_videos_rss():
         # 修复点：不再导入 UserOrder，直接尝试获取所有投稿
         # 大部分版本默认就是按 pubdate 排序，如果不传 order 也能运行
         # ========================================================
-        res = await u.get_videos(ps=20) 
+        res = await u.get_videos(ps=30) 
         
         v_list = res.get('list', {}).get('vlist', [])
 
         if not v_list:
             print("未能获取到投稿列表，请确认 UID 是否正确。")
             return
-
-        # 针对返回数据进行时间戳二次排序，确保 RSS 头部永远是最新的
-        v_list.sort(key=lambda x: x.get('created', 0), reverse=True)
+        v_list.reverse()
+        
 
         for v in v_list:
             title = v.get('title')
