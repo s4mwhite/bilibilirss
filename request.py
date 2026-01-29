@@ -1,79 +1,65 @@
-import time
 import asyncio
+import time
+import os  
 from bilibili_api import user, Credential, select_client
 from feedgen.feed import FeedGenerator
-import os
 
-# 强制指定使用 httpx
 select_client("httpx")
+
 # ================= 配置区 =================
-# 虽然获取投稿是公开数据，但带上凭证可以避免被 B 站风控拦截
 SESSDATA = os.getenv("SESSDATA")
 BILI_JCT = os.getenv("BILI_JCT")
 BUVID3 = os.getenv("BUVID3")
-
-# 你想要订阅的 UP 主 UID (支持多个，这里先写一个示例)
-TARGET_UP_UID = 3546376524794441  # 替换为你想要订阅的UP主UID
-
-
+TARGET_UP_UID = 3546376524794441
 # =========================================
 
 async def get_up_videos_rss():
-    # 1. 初始化凭证
     credential = Credential(sessdata=SESSDATA, bili_jct=BILI_JCT, buvid3=BUVID3)
-
-    # 2. 实例化目标 UP 主
     u = user.User(uid=TARGET_UP_UID, credential=credential)
 
-    # 获取 UP 主基本信息（为了拿到名字做标题）
-    info = await u.get_relation_info()
-    up_name = info.get('user_info', {}).get('uname', f'UP主_{TARGET_UP_UID}')
-
-    # 3. 创建 RSS 生成器
-    fg = FeedGenerator()
-    fg.id(f'https://space.bilibili.com/{TARGET_UP_UID}')
-    fg.title(f'{up_name} 的 Bilibili 投稿')
-    fg.link(href=f'https://space.bilibili.com/{TARGET_UP_UID}', rel='alternate')
-    fg.description(f'订阅 {up_name} 的最新视频投稿')
-    fg.language('zh-CN')
-
-    print(f"正在获取 {up_name} 的投稿列表...")
-
     try:
-        # 获取该 UP 主的投稿视频列表 (默认第一页)
-        res = await u.get_videos()
+        info = await u.get_user_info()
+        up_name = info.get('name', f'UP主_{TARGET_UP_UID}')
+        
+        fg = FeedGenerator()
+        fg.id(f'https://space.bilibili.com/{TARGET_UP_UID}')
+        fg.title(f'{up_name} 的最新投稿')
+        fg.link(href=f'https://space.bilibili.com/{TARGET_UP_UID}', rel='alternate')
+        fg.description(f'B站 UP 主 {up_name} 的视频投稿 RSS')
+        fg.language('zh-CN')
+
+        res = await u.get_videos(ps=30) 
         v_list = res.get('list', {}).get('vlist', [])
 
         if not v_list:
-            print("未能获取到投稿列表，请检查 UID 是否正确或账号是否有视频。")
             return
 
-        for v in v_list:
-            title = v.get('title')
-            bvid = v.get('bvid')
-            pic = v.get('pic')
-            description = v.get('description', '')
-            created_time = v.get('created', int(time.time()))
+        # 强制按发布时间从新到旧排序
+        v_list.sort(key=lambda x: x.get('created', 0), reverse=True)
 
+        for v in v_list:
+            bvid = v.get('bvid')
+            created_time = v.get('created', int(time.time()))
             link = f"https://www.bilibili.com/video/{bvid}"
 
             fe = fg.add_entry()
-            fe.id(link)
-            fe.title(title)
+            # 关键：通过增加时间戳参数，强制阅读器刷新已读状态
+            fe.id(f"{link}#{created_time}") 
+            fe.title(v.get('title'))
             fe.link(href=link)
-            # 封面图 + 简介
-            fe.description(f'<img src="{pic}" /><br/>{description}')
-            # 转换时间
-            fe.published(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(created_time)) + ' +0800')
+            fe.description(f'<img src="{v.get("pic")}" /><br/>{v.get("description", "")}')
+            
+            formatted_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(created_time)) + ' +0800'
+            fe.published(formatted_time)
+            fe.updated(formatted_time)
 
-        # 4. 保存文件 (以 UID 命名，方便区分)
         filename = f'bili_up_{TARGET_UP_UID}.xml'
-        fg.rss_file(filename, pretty=True)
-        print(f"✅ 成功！RSS 已生成: {filename}")
+        # 不使用 pretty=True 可以减少被浏览器插件误解析的概率
+        fg.rss_file(filename) 
+        print(f"✅ 成功更新至: {filename}")
 
     except Exception as e:
-        print(f"❌ 运行出错: {e}")
-
+        print(f"❌ 出错: {e}")
 
 if __name__ == '__main__':
     asyncio.run(get_up_videos_rss())
