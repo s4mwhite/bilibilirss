@@ -1,8 +1,11 @@
-import asyncio
 import time
-from bilibili_api import user, Credential
+import asyncio
+from bilibili_api import user, Credential, select_client
 from feedgen.feed import FeedGenerator
 import os
+
+# 强制指定使用 httpx
+select_client("httpx")
 # ================= 配置区 =================
 # 虽然获取投稿是公开数据，但带上凭证可以避免被 B 站风控拦截
 SESSDATA = os.getenv("SESSDATA")
