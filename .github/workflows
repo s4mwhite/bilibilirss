@@ -1,0 +1,43 @@
+name: Update Bilibili RSS
+
+on:
+  schedule:
+    # 每 4 小时运行一次 (UTC 时间)
+    - cron: '0 */4 * * *'
+  workflow_dispatch: # 支持手动触发测试
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run script
+        env:
+          SESSDATA: ${{ secrets.SESSDATA }}
+          BILI_JCT: ${{ secrets.BILI_JCT }}
+          BUVID3: ${{ secrets.BUVID3 }}
+        run: |
+          python request.py
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # 发布当前目录下的文件
+          publish_branch: gh-pages  # 发布到这个分支
+          allow_empty_commit: true
