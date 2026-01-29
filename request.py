@@ -7,9 +7,9 @@ from feedgen.feed import FeedGenerator
 select_client("httpx")
 
 # ================= 配置区 =================
-SESSDATA = "你的SESSDATA"
-BILI_JCT = "你的BILI_JCT"
-BUVID3 = "你的BUVID3"
+SESSDATA = os.getenv("SESSDATA")
+BILI_JCT = os.getenv("BILI_JCT")
+BUVID3 = os.getenv("BUVID3")
 TARGET_UP_UID = 3546376524794441
 # =========================================
 
