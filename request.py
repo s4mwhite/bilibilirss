@@ -2,7 +2,7 @@ import asyncio
 import time
 from bilibili_api import user, Credential
 from feedgen.feed import FeedGenerator
-
+import os
 # ================= 配置区 =================
 # 虽然获取投稿是公开数据，但带上凭证可以避免被 B 站风控拦截
 SESSDATA = os.getenv("SESSDATA")
