@@ -1,5 +1,6 @@
 import asyncio
 import time
+import os  # <-- 必须加上这个，否则 os.getenv 会报错
 from bilibili_api import user, Credential, select_client
 from feedgen.feed import FeedGenerator
 
@@ -7,6 +8,7 @@ from feedgen.feed import FeedGenerator
 select_client("httpx")
 
 # ================= 配置区 =================
+# 从 GitHub Secrets 中读取，保护隐私
 SESSDATA = os.getenv("SESSDATA")
 BILI_JCT = os.getenv("BILI_JCT")
 BUVID3 = os.getenv("BUVID3")
@@ -34,19 +36,20 @@ async def get_up_videos_rss():
 
         print(f"正在获取 {up_name} 的投稿列表...")
 
-        # ========================================================
-        # 修复点：不再导入 UserOrder，直接尝试获取所有投稿
-        # 大部分版本默认就是按 pubdate 排序，如果不传 order 也能运行
-        # ========================================================
+        # 获取投稿
         res = await u.get_videos(ps=30) 
-        
         v_list = res.get('list', {}).get('vlist', [])
 
         if not v_list:
             print("未能获取到投稿列表，请确认 UID 是否正确。")
             return
-        v_list.reverse()
-        
+
+        # ========================================================
+        # 【核心修正】按发布时间(created)从新到旧排序
+        # 这样无论 B 站接口怎么变，XML 第一条永远是最新的
+        # ========================================================
+        v_list.sort(key=lambda x: x.get('created', 0), reverse=True)
+        # ========================================================
 
         for v in v_list:
             title = v.get('title')
