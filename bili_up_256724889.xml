@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 30 Jan 2026 02:53:22 +0000</lastBuildDate>
-    <item>
-      <title>相机是怎么把瞬间变成照片的</title>
-      <link>https://www.bilibili.com/video/BV1GWrjBTEeA</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/0c70b284252d4638d1567231d7b8c1d83112a45e.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 你有没有想过，按下相机快门的一瞬间，到底发生了什么？为什么能把一个场景永恒地定格在一张纸或一个文件里？其实原理超级有趣！最早的相机就像一个打了小孔的盒子（针孔相机），光线穿过小孔，就能把外面的世界倒着投影进来。现代的单反相机复杂多了，但核心逻辑相通：光线先通过镜头和光圈（像个星际争霸里的“爆能门”）来控制进光量和背景虚化；然后碰到反光镜和快门（就像一个精密的小窗帘），决定光线照射传感器的时间长短；最后，神奇的传感器上数百万个像素点，像微型太阳能板一样，把不同颜色的光线转换成电信号，再变成你手机里看到的数码&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:37</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1GWrjBTEeA</guid>
-      <pubDate>Wed, 14 Jan 2026 03:30:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 30 Jan 2026 05:12:12 +0000</lastBuildDate>
     <item>
       <title>皮克斯让玩具“活”过来的秘密</title>
       <link>https://www.bilibili.com/video/BV1S2rLBhEmJ</link>
@@ -224,6 +217,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/737c5e5acb2f8e026308d6fdc80f561b737f9265.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 你以为爱因斯坦生来就是科学巨星？大错特错。他曾是那个说话晚、让父母担忧的孩子；是那个讨厌填鸭式教育、中学就退学的叛逆学生；更是那个大学毕业后，因“态度问题”被教授厌弃、求职信石沉大海、连中学教职都应聘失败的落魄青年。走投无路之下，他只能靠朋友关系，在瑞士专利局当一名三等职员。然而，就是在这份“平庸”的工作中，他利用业余时间，在1905年一口气发表了五篇颠覆物理学的论文，包括光电效应和狭义相对论，开创了“奇迹年”。本期视频带你回顾爱因斯坦充满挫折与逆袭的早期生涯，看一个“失败者”如何一步步走向神坛。&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 19:59</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1fy67B2Eg5</guid>
       <pubDate>Thu, 29 Jan 2026 13:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>肯·里奇：我如何从2.7万赚到10亿</title>
+      <link>https://www.bilibili.com/video/BV1hj6PBbEtz</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/97a0627527b078944a12dd3b875ca551f4863da2.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 他是私人飞机帝国Flexjet的幕后推手，身家超过10亿美元。但他最得意的，或许不是商业上的成功，而是如何与子女透明地管理这笔巨额财富。在这期坦诚的采访中，肯·里奇（Ken Ricci）分享了他如何用2.75万美元贷款买下第一家公司，如何为克林顿竞选提供包机服务，又如何在与股神巴菲特投资的NetJets竞争中几经沉浮，最终筑起自己的商业帝国。更精彩的是他的消费观和家庭观：他每年捐300万美元，度假却要花80万美元；他召开季度家庭会议，向子女完全公开家庭净资产和遗产计划，认为“谈钱比谈性更重要”。这或许是你&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 13:57</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1hj6PBbEtz</guid>
+      <pubDate>Fri, 30 Jan 2026 03:30:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

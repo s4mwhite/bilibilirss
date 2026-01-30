@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 30 Jan 2026 02:52:40 +0000</lastBuildDate>
-    <item>
-      <title>天津美食吃法教程之津酱肉篇</title>
-      <link>https://www.bilibili.com/video/BV1C9BPBjE4M</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/6dcdf8e1a9d7ca9cc364a61e95ea164fac6b98e0.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:32</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1C9BPBjE4M</guid>
-      <pubDate>Wed, 24 Dec 2025 03:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 30 Jan 2026 05:11:29 +0000</lastBuildDate>
     <item>
       <title>逆光一家充满爱的面包店</title>
       <link>https://www.bilibili.com/video/BV1UjB2BrEdq</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/652ebb671d70bc5eacb7f17d248cdf0a06356e8b.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:37</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1tKzdBPEFR</guid>
       <pubDate>Thu, 29 Jan 2026 03:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>吃点新鲜东西</title>
+      <link>https://www.bilibili.com/video/BV1rt6eBYEJi</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/9cecfecc6d983ad9ea4e42d8e9f8f2665f9956bc.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:50</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1rt6eBYEJi</guid>
+      <pubDate>Fri, 30 Jan 2026 03:06:15 +0000</pubDate>
     </item>
   </channel>
 </rss>
