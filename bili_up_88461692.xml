@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>3Blue1Brown 的 Bilibili 投稿</title>
+    <link>https://space.bilibili.com/88461692</link>
+    <description>B站 UP 主 3Blue1Brown 的最新视频投稿</description>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 30 Jan 2026 01:53:50 +0000</lastBuildDate>
+    <item>
+      <title>【官方双语】但是什么是中心极限定理？</title>
+      <link>https://www.bilibili.com/video/BV1gh4y1W7ag</link>
+      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/bb9f7310ca18368dddacf9ca2cf846697e15d170.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 概率论中最重要定理的可视化介绍
+更多信息请看下方评论
+
+翻译：jurohd
+校对：䶭，ZSC，ksyx，鹤翔万里
+时轴：鹤翔万里，䶭
+后期：鹤翔万里
+
+But what is the Central Limit Theorem?
+https://youtu.be/zeJD6dqJ5lo&lt;br/&gt;时长: 31:15</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1gh4y1W7ag</guid>
+      <pubDate>Thu, 13 Apr 2023 11:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】为什么正态分布里会有一个π？（不止是积分技巧）</title>
+      <link>https://www.bilibili.com/video/BV1wu411W7uU</link>
+      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/05094d2c0bbd01015075ae27d8843ca3f2b0d287.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 圆在哪里？它和e^(-x^2)又有什么联系？
+更多信息请看下方评论
+
+翻译：畏狐之狐 Ksm Diro ksyx 鹤翔万里 
+校对：䶭 ksyx ZSC 
+时轴：鹤翔万里，䶭 
+后期：鹤翔万里
+
+Why π is in the normal distribution (beyond integral tricks)
+https://youtu.be/cy8r7WSuT1I&lt;br/&gt;时长: 25:35</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1wu411W7uU</guid>
+      <pubDate>Wed, 31 May 2023 15:36:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】哈~被骗啦（数学版翻唱《哈利路亚》）</title>
+      <link>https://www.bilibili.com/video/BV1hg4y1A7pf</link>
+      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/7a72bb12139ca5d9387870deb7a42ea016cd6c2d.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 6.28（这原本是6.28 tau日的纪念视频）快乐~我给你们准备了一点不同寻常的东西。 更多信息请看下方评论 
+翻译&amp;时轴： ZSC
+
+How They Fool Ya - Mathematical parody of Hallelujah
+https://youtu.be/NOCsdhzo6Jg&lt;br/&gt;时长: 04:00</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1hg4y1A7pf</guid>
+      <pubDate>Fri, 30 Jun 2023 13:06:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】卷积的两种可视化|概率论中的X+Y既美妙又复杂</title>
+      <link>https://www.bilibili.com/video/BV1Yk4y1K7Az</link>
+      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/6499eeeaa6b72d1c1074278597830e3cad22c584.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 随机变量之和，与中心极限定理的联系。关于“卷积”，我们将从离散情形到连续情形，看两种可视化的方式。
+
+更多信息请看下方评论
+翻译：saniac  Diro
+校对：ZSC 
+时轴：ZSC
+后期：愚者
+
+X+Y, in probability, is a beautiful mess - Visualizing continuous convolutions
+https://youtu.be/IaSGqQa5O-M&lt;br/&gt;时长: 27:25</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Yk4y1K7Az</guid>
+      <pubDate>Fri, 07 Jul 2023 15:00:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】分圆的规律突然离了谱，这是它背后的原因（莫则圆问题）</title>
+      <link>https://www.bilibili.com/video/BV1ym4y1j7cr</link>
+      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/0410d5de7a1f9e4a816ee4c041d23e4c6f966c3d.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 1，2，4，8，16。。。一个规律突然被打破了，这是它背后的原因。
+
+翻译：贰鼠
+校对：ZSC  䶭
+时间轴：贰鼠
+后期：ZSC 愚者
+
+Explaining the absurd circle division pattern - Moser's circle problem
+https://youtu.be/YtkIWDE36qU&lt;br/&gt;时长: 16:51</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1ym4y1j7cr</guid>
+      <pubDate>Tue, 18 Jul 2023 13:42:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】到底为什么“中心极限”是正态分布啊</title>
+      <link>https://www.bilibili.com/video/BV1EP411p7bV</link>
+      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/f232241a56e34a9b003dd447c1acb839b40e9930.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 计算两个正态分布变量之和的可视化技巧
+
+更多信息见下方评论
+翻译: NetaP495L  瑞达勒  ZSC
+校对: 博美子  䶭
+时轴: 贰鼠
+
+Why is the "central limit" a normal distribution?
+https://youtu.be/d_qvLDhkg00&lt;br/&gt;时长: 13:16</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1EP411p7bV</guid>
+      <pubDate>Thu, 17 Aug 2023 11:48:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】这个演示考验你对光的理解 | 彩虹灯柱 | 光学谜题 Part1</title>
+      <link>https://www.bilibili.com/video/BV1Fm4y1T7Vp</link>
+      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/3e8bda0dfb2fffa896e3f75a19f5e861e91f2cb2.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 一筒糖水，两偏光片，许多颜色，三个问题。
+更多信息见下方评论
+
+翻译: 贰鼠  ZSC
+校对: 博美子  贰鼠
+时轴: ZSC  贰鼠
+
+This demo tests your understanding of light | Barber pole, part 1
+https://youtu.be/QCX62YJCmGk?si=gBkTf2PGzYOYI4_f&lt;br/&gt;时长: 09:57</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Fm4y1T7Vp</guid>
+      <pubDate>Sat, 09 Sep 2023 12:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】光的起源，散射，以及偏振 | 彩虹灯柱 | 光学谜题 Part 2</title>
+      <link>https://www.bilibili.com/video/BV1n34y137ps</link>
+      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/9631db2a06711ee3a4513a3f0fa8d8338a10a147.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 上一期视频讨论了彩虹灯柱效应：【官方双语】这个演示考验你对光的理解 | 彩虹灯柱 Part 1 
+https://www.bilibili.com/video/BV1Fm4y1T7Vp/
+
+翻译：數心 畏狐之狐 Tom idesty
+校对：ZSC
+时间轴：䶭 數心
+后期：愚者 乱乱
+
+The origin of light, scattering, and polarization Barber pole, part 2
+https://youtu.be/aXRTczANuIs
+
+如果你想要帮助一下未来的&lt;br/&gt;时长: 21:33</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1n34y137ps</guid>
+      <pubDate>Wed, 04 Oct 2023 15:30:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】夏季数学博览会#3 我选出了25个你可能喜欢的视频</title>
+      <link>https://www.bilibili.com/video/BV1Lu4y1c7gw</link>
+      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/6bf47494e4f6e8116e288f6431fb1da9ab9dba79.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 本期视频是对SoME2中获得优胜奖和荣誉奖的视频的一个概览  
+https://youtu.be/6a1fLEToyvU  
+25 Math explainers you may enjoy | SoME3 results  
+  
+全部作品的播放清单:  
+https://youtube.com/playlist?list=PLnQX-jgAF5pQS2GUFCsatSyZkSH7e8UM8  
+我真得感谢Jane Street，不仅为SOME3提供资金支持，还提供了很多热心而有能力的评委  
+组织和后&lt;br/&gt;时长: 22:12</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Lu4y1c7gw</guid>
+      <pubDate>Thu, 30 Nov 2023 13:50:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】光为什么会“变慢”，又为什么跟彩虹的颜色有关呢？ | 光学谜题 Part 3</title>
+      <link>https://www.bilibili.com/video/BV1F94y1g756</link>
+      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/ed4ec903e1fd3025d53d38bd06c7a895ff0720fd.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 折射率的来源，为什么与色彩有关。想要解释棱镜，必须先搞懂弹簧。
+翻译: Saniac, Ling, ZSC  校对: ksyx  时间轴: 博美子
+笔记本: https://3b1b.co/store
+感谢观众的支持: https://3b1b.co/support
+一键三联与分享，也是最大的支持！
+
+Looking Glass Universe 关于折射率的视频: I don't know why light slows down in water. (part 2)
+
+本期视频的主要内容是根据费曼物理&lt;br/&gt;时长: 29:24</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1F94y1g756</guid>
+      <pubDate>Sun, 31 Dec 2023 14:58:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】折射率4问4答 | 光学谜题4</title>
+      <link>https://www.bilibili.com/video/BV1Hx4y1z7Ae</link>
+      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/98e31dcc72b9e1a0a21dd4f9f0c59cb2c797ada9.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 光为什么会折射？光难道能比“光速”还快？什么是双折射?蔗糖为什么会有旋光性？
+How light can appear faster than c, why it bends, and other questions | Optics puzzles 4
+https://youtu.be/Cz4Q4QOuoo8
+翻译: 蛋卷 校对: 爱浪的小皮虾 ZSC 时间轴: 愚者 博美子
+
+笔记本: https://3b1b.co/store 
+感谢观众的支持: https://3b1b.co/support 
+一&lt;br/&gt;时长: 13:25</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Hx4y1z7Ae</guid>
+      <pubDate>Tue, 30 Apr 2024 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】GPT是什么？直观解释Transformer | 深度学习第5章</title>
+      <link>https://www.bilibili.com/video/BV13z421U7cs</link>
+      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/f2b59e2ba81081f22640102d542b01a8bb0c41f0.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 解析GPT-3等大语言模型背后的机制和原理。GPT是什么？深度学习的范式是什么？如何在词和向量之间切换？想继续深入了解注意力机制，有哪些需要扫盲的基础知识？德国 - 日本 + 寿司 = ？
+https://www.youtube.com/watch?v=wjZofJX0v4M
+
+翻译: 贰鼠 校对: 蛋卷   ksyx  ZSC 时间轴: 贰鼠 
+
+笔记本: https://3b1b.co/store 
+感谢观众的支持: https://3b1b.co/support 
+一键三联与分享，也是最大的支持！
+&lt;br/&gt;时长: 27:14</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV13z421U7cs</guid>
+      <pubDate>Tue, 30 Apr 2024 11:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】直观解释注意力机制，Transformer的核心 | 【深度学习第6章】</title>
+      <link>https://www.bilibili.com/video/BV1TZ421j7Ke</link>
+      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/407cdaf692b36679f8820713f574c62ca293279b.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: “塔”是什么？“Harry”是谁？怎么想象“一个毛茸茸的蓝色生物漫步于葱郁的森林”？怎样用12288个数字表示出一个细微复杂具体的含义？
+
+大语言模型中的注意力机制并没有那么神秘。本视频重点介绍什么是多头/自/交叉注意力。
+
+0:00 - 前情提要：词嵌入
+1:39 - 注意力是什么? Mole是什么？Tower又是什么?
+4:29 - 注意力模式：“一个毛茸茸的蓝色生物漫步于葱郁的森林”，名词与形容词，查询与键
+11:08 - 掩码：看前不看后
+12:42 - 上下文窗口大小
+13:10 - 值矩阵：“&lt;br/&gt;时长: 26:10</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1TZ421j7Ke</guid>
+      <pubDate>Sat, 04 May 2024 02:09:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】追逐梦想，并不是人生的全部 | 哈维穆德学院2024年毕业致辞</title>
+      <link>https://www.bilibili.com/video/BV1nZ421W7HS</link>
+      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/da7653771d53c4d9e032e8c2b2051c756f95c1ba.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: Grant Sanderson 有幸受邀成为哈维穆德学院今年毕业典礼的演讲嘉宾。经学院同意，转发到本频道。
+
+0:00 - Harriet Nembhard 校长介绍嘉宾
+0:45 - 追逐梦想，老生常谈
+2:28 - 人生目标的转变：从成长到贡献
+5:57 - 行动本身先于动力
+7:02 - 时代的机遇
+10:47 - 你将塑造后来者的梦想
+12:05 - 拥抱未来的变化
+------------------
+翻译：@GAGATalk   校对：蛋卷  时间轴：博美子
+感谢观众的支持: https://&lt;br/&gt;时长: 15:30</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1nZ421W7HS</guid>
+      <pubDate>Tue, 28 May 2024 02:39:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】直观解释大语言模型如何储存事实 | 【深度学习第7章】</title>
+      <link>https://www.bilibili.com/video/BV1aTxMehEjK</link>
+      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/d00d437b17dffc389a698db4df3c9267fd61ed62.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 本期我们剖析transformer中的多层感知器，解释他们如何来储存事实
+
+ 翻译: id est  贰鼠 校对: 贰鼠   ZSC 时间轴: id est
+https://www.youtube.com/watch?v=9-Jl0dxWQs8&lt;br/&gt;时长: 22:43</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1aTxMehEjK</guid>
+      <pubDate>Sun, 29 Sep 2024 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>台球只不过是数学吗？</title>
+      <link>https://www.bilibili.com/video/BV1hPUzYWEV7</link>
+      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/c788a5cca3b98c1c782ec512daebdedef5445751.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 翻译&amp;时轴：Yili
+额外翻译、审核、时轴、后期处理：Origami Alice
+
+本视频“Is pool actually just mathematics?” （https://www.youtube.com/watch?v=fqq8enTDzMY）
+于2024年6月21日上传至油管
+-----------------------------------------------------
+在 Maths Gear 上有 《Love Triangle》带签名原版书：https://mathsgear.&lt;br/&gt;时长: 26:40</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1hPUzYWEV7</guid>
+      <pubDate>Sun, 17 Nov 2024 06:15:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】全息图是如何实现的 | 光学谜题5</title>
+      <link>https://www.bilibili.com/video/BV1dvBXYVEDg</link>
+      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/4fe6a67420485652752851d9dc1f94ddb3a8be42.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 从2d胶片构建的3d场景，更进一步我们谈到了衍射相关的课程
+https://youtu.be/EmKQsSDlaa4
+
+翻译：贰鼠  idesty  ZSC   校核&amp;时轴：贰鼠
+
+本篇课程没有广告赞助，取而代之的是由你们的帮助：https://3b1b.co/support
+
+一键三联与分享，也是最大的支持！
+
+偷偷改一点：结尾GRANT把|R^2|看待为“实数”，所以这里只会存在O的缩放。但这个条件只有振幅R为常数的情况下是有意义的，要么至少它在点的附近只能有缓慢的变化。这样我后面说的对R不做假设并不&lt;br/&gt;时长: 46:24</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1dvBXYVEDg</guid>
+      <pubDate>Wed, 27 Nov 2024 12:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】升维的艺术</title>
+      <link>https://www.bilibili.com/video/BV1s5fZYdELc</link>
+      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/a57c562d1eb9a5b79ea69262ec406e7f462749cf.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 本期视频我们从一些几何谜题出发，为大家展示升维所带来的解决问题的不同角度，以及我们被局限在三维世界里的些许遗憾
+https://youtu.be/piJkuavhV50
+
+翻译: 畏狐之狐  idesty  贰鼠 校对: 蛋卷 时间轴: 贰鼠&lt;br/&gt;时长: 29:42</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1s5fZYdELc</guid>
+      <pubDate>Sun, 26 Jan 2025 01:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】这个未解之谜为我打开了拓扑的大门</title>
+      <link>https://www.bilibili.com/video/BV1u5NAefE9W</link>
+      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/d31a037a1e62194d64041f52b047f5117958fad3.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 本期视频讨论了利用莫比乌斯带和克莱因瓶来解决正方形/长方形内接问题的方法
+https://youtu.be/IQqtsm-bBRU?si=xiH82yhX3wT5p74Y
+
+翻译: Asuka Minato 畏狐之狐  idesty  校对 &amp; 时间轴: 贰鼠&lt;br/&gt;时长: 27:26</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1u5NAefE9W</guid>
+      <pubDate>Tue, 04 Feb 2025 12:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】大语言模型的简要解释</title>
+      <link>https://www.bilibili.com/video/BV1xmA2eMEFF</link>
+      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/974702616ef3fa1568dd47519bc674e139661740.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 本期视频是对LLM初学者的的一些粗略介绍：https://youtu.be/LPZh9BOjkQs
+翻译&amp;时间轴: Rookie 校对:贰鼠
+
+你可以从这里更深入的研究：https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+一个关于技术细节的谈话：https://youtu.be/KJtZARuO3JY?si=QnHC-HI94SHIWa9I
+为计算机历史博物馆的展览制作的：https://computerhist&lt;br/&gt;时长: 07:58</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1xmA2eMEFF</guid>
+      <pubDate>Sun, 23 Feb 2025 10:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】碰撞的滑动方块，远不止能计算圆周率π</title>
+      <link>https://www.bilibili.com/video/BV1GsQSYhEgA</link>
+      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/f275fa14c687973e9e2937fb054270d975918eff.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 两个碰撞的方块能计算出圆周率。本期视频将用新的视角更深入讨论这背后的物理。
+https://youtu.be/6dTyOl1fmDo?si=fOYZR6YUxqFveOPk
+
+翻译 &amp; 校对 &amp; 时间轴: 贰鼠
+
+Matt Parker 联动视频：BV1P6QSYnERz&lt;br/&gt;时长: 27:43</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1GsQSYhEgA</guid>
+      <pubDate>Sun, 16 Mar 2025 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>用滑动方块的碰撞次数来计算圆周率</title>
+      <link>https://www.bilibili.com/video/BV1P6QSYnERz</link>
+      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/e1f58f867fd8ea561f939e3f2710fe47759c0108.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 翻译&amp;时轴：贰鼠
+额外翻译、审核、时轴、后期处理：Origami Alice
+
+本视频“We calculated pi with colliding blocks” （https://www.youtube.com/watch?v=vlUTlbZT4ig）
+于2025年3月13日上传至油管
+-----------------------------------------------------
+2025年π日快乐！
+
+Grant 的新视频在这里：BV1GsQSYhEgA
+
+哦，对了，这是Steve的频&lt;br/&gt;时长: 23:37</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1P6QSYnERz</guid>
+      <pubDate>Sun, 16 Mar 2025 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】夏季数学博览会#4</title>
+      <link>https://www.bilibili.com/video/BV1QW7uzzEVH</link>
+      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/61610d826f43b1f1f3b2b71b9d61a065935a7a3a.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 夏季数学博览会#4开始了，这一次我们希望更多的教师参与到评审的过程中，希望能有更多对课堂上的学生有帮助的内容 
+如果你也想参与进来的话，可以来这里：https://some.3b1b.co
+
+https://youtu.be/3foYyPDp0Ho
+
+感谢观众的支持: https://3b1b.co/support 
+一键三联与分享，也是最大的支持！&lt;br/&gt;时长: 05:41</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1QW7uzzEVH</guid>
+      <pubDate>Sun, 01 Jun 2025 01:03:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】量子计算是什么|格罗弗算法1？</title>
+      <link>https://www.bilibili.com/video/BV1Lf7uz1EEN</link>
+      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/dde135ad5b534d5d2e0431f1e7a70f9368f9fd10.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 这一期我们来尝试解释一下什么是量子计算，状态矢量，以及格罗弗算法是怎样运转的？
+
+https://youtu.be/RQWpF2Gb-gU
+
+翻译&amp;时间轴：凡人忆拾
+校对：Magi
+
+感谢观众的支持: https://3b1b.co/support 
+一键三联与分享，也是最大的支持！&lt;br/&gt;时长: 36:54</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Lf7uz1EEN</guid>
+      <pubDate>Sun, 01 Jun 2025 04:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】我对格罗弗算法的解释有哪些不足|格罗弗算法2？</title>
+      <link>https://www.bilibili.com/video/BV1bb7uzKE6r</link>
+      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/3d9a7dc6ad1a77bc9b36a1e95bb10c1a06351ad6.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 之前我发布了一期视频解释什么是量子计算：BV1Lf7uz1EEN
+这一期我们来对之前解释的疏漏和混淆进行一下补充
+
+https://youtu.be/Dlsa9EBKDGI
+
+翻译&amp;时间轴：凡人忆拾
+校对：Magi
+
+感谢观众的支持: https://3b1b.co/support 
+一键三联与分享，也是最大的支持！&lt;br/&gt;时长: 16:23</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1bb7uzKE6r</guid>
+      <pubDate>Sun, 01 Jun 2025 04:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】陶哲轩访谈（一）：宇宙尺度阶梯</title>
+      <link>https://www.bilibili.com/video/BV1Je81zQEet</link>
+      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/6ae8466a594a5ba183dbf817558ecc77947a8cb4.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 本视频为3Blue1Brown对谈菲尔兹奖得主陶哲轩，以可视化的形式揭示宇宙中的各级尺度是如何通过观察和数学得到的  
+
+https://youtu.be/YdOXS_9_P4U
+
+翻译：Asuka Minato  凡人忆拾  pastroe
+校对：凡人忆拾  烦恼诗集
+时间轴：贰鼠
+
+感谢观众的支持: https://3b1b.co/support
+一键三联与分享，也是最大的支持！&lt;br/&gt;时长: 28:33</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Je81zQEet</guid>
+      <pubDate>Fri, 01 Aug 2025 02:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】陶哲轩访谈（二）：史上最聪明的宇宙学测量</title>
+      <link>https://www.bilibili.com/video/BV1vybjzbEL9</link>
+      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/196b206dd71c0d77a18961f35354807a7473bbc0.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 本视频为3Blue1Brown对谈菲尔兹奖得主陶哲轩，漫谈太阳系以及太阳系以外的各级宇宙尺度是如何聪明的获得的
+ 
+https://youtu.be/hFMaT9oRbs4
+
+上一期视频：https://www.bilibili.com/video/BV1Je81zQEet/
+
+Terry好心地整理了一份FAQ，补充了一些我们在采访中讨论的细节和更正：https://terrytao.wordpress.com/2025/02/13/cosmic-distance-ladder-video-with-gr&lt;br/&gt;时长: 25:35</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1vybjzbEL9</guid>
+      <pubDate>Fri, 15 Aug 2025 03:45:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】拉普拉斯变换（一）：序言 - 用物理方法理解欧拉公式</title>
+      <link>https://www.bilibili.com/video/BV1W716BAEf5</link>
+      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/d2b1132a60c91e65b54131d9635c298232b77932.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 本期视频讲解了简谐振动子，并介绍了复指数在常微分方程中的基础性作用
+
+https://www.youtube.com/watch?v=-j8PzkZ70Lg
+
+翻译：凡人忆拾 校对：畏狐之狐  ZSC 时间轴：凡人忆拾
+感谢观众的支持: https://3b1b.co/support
+一键三联与分享，也是最大的支持！&lt;br/&gt;时长: 27:49</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1W716BAEf5</guid>
+      <pubDate>Tue, 04 Nov 2025 06:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】拉普拉斯变换（二）：到底什么是拉普拉斯变换？</title>
+      <link>https://www.bilibili.com/video/BV1AfqaB9Ex2</link>
+      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/7eecbbeeb2f649141052607d76b9b24a3204c679.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 本期视频用可视化的方式，来介绍什么是拉普拉斯变换  
+  
+https://youtu.be/j0wJBEZdwLs  
+  
+拉普拉斯变换（一）：序言 - 用物理方法理解欧拉公式  BV1W716BAEf5  
+翻译：凡人忆拾 校对：ZSC 时间轴&amp;后期：凡人忆拾  
+感谢观众的支持: https://3b1b.co/support 一键三联与分享，也是最大的支持！&lt;br/&gt;时长: 34:41</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1AfqaB9Ex2</guid>
+      <pubDate>Wed, 17 Dec 2025 02:05:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】拉普拉斯变换（三）：为什么拉普拉斯变换如此有用？</title>
+      <link>https://www.bilibili.com/video/BV125BMBbED2</link>
+      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/62c8edf24c9ebbaf620761960770dab3a0983fae.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 本期视频通过拉普拉斯变换来研究受迫谐振子，并分析其极点  
+  
+https://youtu.be/FE-hM1kRK4Y  
+  
+拉普拉斯变换（一）：序言 - 用物理方法理解欧拉公式 BV1W716BAEf5  
+拉普拉斯变换（二）：到底什么是拉普拉斯变换？BV1AfqaB9Ex2  
+  
+翻译：凡人忆拾 校对：ZSC 时间轴&amp;后期：凡人忆拾  
+感谢观众的支持: https://3b1b.co/support 一键三联与分享，也是最大的支持！&lt;br/&gt;时长: 23:05</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV125BMBbED2</guid>
+      <pubDate>Wed, 24 Dec 2025 02:30:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
