@@ -1,0 +1,47 @@
+name: Update Bilibili RSS
+
+on:
+  # 1. 定时触发：每 4 小时运行一次 (UTC 时间)
+  schedule:
+    - cron: '0 */4 * * *'
+  
+  # 2. 手动触发：方便你修改代码后立即测试
+  workflow_dispatch:
+
+  # 3. 推送触发：每次你修改 UID 列表推送代码时也会运行
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/set-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install bilibili-api-python feedgen httpx
+
+    - name: Run RSS generator
+      env:
+        SESSDATA: ${{ secrets.SESSDATA }}
+        BILI_JCT: ${{ secrets.BILI_JCT }}
+        BUVID3: ${{ secrets.BUVID3 }}
+      run: python request.py
+
+    - name: Commit and Push changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add *.xml *.opml
+        git commit -m "Auto update RSS and OPML: $(date)" || echo "No changes to commit"
+        git push
