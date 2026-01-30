@@ -40,16 +40,19 @@ jobs:
 
     - name: Commit and Push changes
       run: |
-            git config --global user.name "github-actions[bot]"
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            
-            # 检查是否有文件生成，如果没有则创建占位符或跳过
-            git add bili_up_*.xml subscriptions.opml || echo "No files to add"
-            
-            # 只有在有变化时才 commit
-            if git diff --staged --quiet; then
-              echo "No changes to commit"
-            else
-              git commit -m "Auto update RSS and OPML: $(date)"
-              git push
-            fi
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        
+        # 强制列出当前目录文件，方便我们在日志里排错
+        ls -la
+        
+        # 允许 add 失败而不崩溃
+        git add bili_up_*.xml subscriptions.opml || echo "No files found to add"
+        
+        # 检查是否有内容需要提交
+        if [ -n "$(git status --porcelain)" ]; then
+          git commit -m "Auto update RSS and OPML: $(date)"
+          git push
+        else
+          echo "No changes to commit"
+        fi
