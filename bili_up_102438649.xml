@@ -7,20 +7,20 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 30 Jan 2026 02:09:43 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Jan 2026 02:53:30 +0000</lastBuildDate>
     <item>
       <title>一小时MySQL教程</title>
       <link>https://www.bilibili.com/video/BV1AX4y147tA</link>
-      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/910beb6acf317bcf6066f820c262b29bca9a947e.png" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 课程中的笔记文档在公众号【GeekHour】回复mysql即可下载&#13;
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/910beb6acf317bcf6066f820c262b29bca9a947e.png" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 课程中的笔记文档在公众号【GeekHour】回复mysql即可下载&#13;
 QQ群：197289177（已满） 871289920&#13;
-我们会不断更新各类精品技术课程，欢迎关注收藏！&lt;br/&gt;时长: 56:40</description>
+我们会不断更新各类精品技术课程，欢迎关注收藏！&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 56:40</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1AX4y147tA</guid>
       <pubDate>Sun, 20 Aug 2023 03:20:52 +0000</pubDate>
     </item>
     <item>
       <title>【GeekHour】20分钟掌握MongoDB</title>
       <link>https://www.bilibili.com/video/BV16u4y1y7Fm</link>
-      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/2736447b6680719fff796f6a4ab28a08e508f649.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: MongoDB Cheat Sheet的下载地址：
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/2736447b6680719fff796f6a4ab28a08e508f649.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; MongoDB Cheat Sheet的下载地址：
 
 百度网盘：
 https://pan.baidu.com/s/15y91fOqfoIErWv2RFm8nIw?pwd=rvfn 提取码: rvfn
@@ -34,27 +34,27 @@ Bilibili: https://space.bilibili.com/102438649
 课程内容：
 00:00 课程简介
 00:53 MySQL简介
-02:30 安&lt;br/&gt;时长: 21:45</description>
+02:30 安&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 21:45</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV16u4y1y7Fm</guid>
       <pubDate>Wed, 06 Sep 2023 13:51:12 +0000</pubDate>
     </item>
     <item>
       <title>【GeekHour】8分钟配置一个超酷终端</title>
       <link>https://www.bilibili.com/video/BV1kw411z7SV</link>
-      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/1aa725a95754c35b19b0e57c8276aceb74f8a3c2.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 配置笔记：https://www.geekhour.net/2023/10/21/linux-terminal/
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/1aa725a95754c35b19b0e57c8276aceb74f8a3c2.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 配置笔记：https://www.geekhour.net/2023/10/21/linux-terminal/
 AWS注册地址：https://aws.amazon.com/cn/free/
 海外用户请看这里：https://mic.anruicloud.com/url/37
 oh-my-zsh安装命令：
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-pow&lt;br/&gt;时长: 07:27</description>
+pow&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:27</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1kw411z7SV</guid>
       <pubDate>Fri, 27 Oct 2023 07:56:16 +0000</pubDate>
     </item>
     <item>
       <title>【GeekHour】免费AI编程助手6分钟上手</title>
       <link>https://www.bilibili.com/video/BV1bg4y1o7vG</link>
-      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/94b8ecf9b2d7aa378f7ecb62a6cd916b29c385f7.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 想要有一个自己的编程助手吗？
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/94b8ecf9b2d7aa378f7ecb62a6cd916b29c385f7.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 想要有一个自己的编程助手吗？
 本视频将从零开始，
 手把手带你安装配置和使用通义灵码，
 在6分钟内让你了解需要知道的所有内容，
@@ -63,14 +63,14 @@ pow&lt;br/&gt;时长: 07:27</description>
 
 
 你可以在以下平台关注和找到我：
-公众号：GeekHour&lt;br/&gt;时长: 06:41</description>
+公众号：GeekHour&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:41</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1bg4y1o7vG</guid>
       <pubDate>Tue, 31 Oct 2023 07:48:05 +0000</pubDate>
     </item>
     <item>
       <title>Kubernetes一小时轻松入门</title>
       <link>https://www.bilibili.com/video/BV1Se411r7vY</link>
-      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/31fdbee497ccad8fc08650a2f92d8d0fb1946bb9.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: Kubernetes是用于自动部署、扩缩和管理容器化应用程序的开源系统。
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/31fdbee497ccad8fc08650a2f92d8d0fb1946bb9.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; Kubernetes是用于自动部署、扩缩和管理容器化应用程序的开源系统。
 本课程将用一小时的时间带你快速入门和上手使用Kubernetes。
 课程笔记：https://geekhour.net/2023/12/23/kubernetes/
 课程资料可以关注公众号GeekHour，回复k8s即可下载，
@@ -79,14 +79,14 @@ QQ群：197289177，871289920
 
 课程内容：
 00:00 课程简介
-0&lt;br/&gt;时长: 61:18</description>
+0&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 61:18</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1Se411r7vY</guid>
       <pubDate>Sun, 24 Dec 2023 02:00:00 +0000</pubDate>
     </item>
     <item>
       <title>五分钟彻底掌握Base64编码</title>
       <link>https://www.bilibili.com/video/BV1hk4y1S7PJ</link>
-      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/32bd0d87564143eb72cb0e01cec6636a44cc0833.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 五分钟让你彻底掌握Base64编码的原理和应用！
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/32bd0d87564143eb72cb0e01cec6636a44cc0833.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 五分钟让你彻底掌握Base64编码的原理和应用！
 
 你可以在以下平台关注和找到我：
 公众号：GeekHour
@@ -98,14 +98,14 @@ Git: BV1HM411377j
 Docker: BV14s4y1i7Vf
 Kubernetes: BV1Se411r7vY
 Redis: BV1Jj411D7oG
-MongoDB: BV16u4y&lt;br/&gt;时长: 04:27</description>
+MongoDB: BV16u4y&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 04:27</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1hk4y1S7PJ</guid>
       <pubDate>Mon, 15 Jan 2024 13:42:35 +0000</pubDate>
     </item>
     <item>
       <title>五分钟涨知识系列 - 大语言模型 ｜ kimi.ai</title>
       <link>https://www.bilibili.com/video/BV1Zr421W72A</link>
-      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/07c073d2187e852654f20ba6c34842f79af0fd60.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 五分钟光速大模型入门！
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/07c073d2187e852654f20ba6c34842f79af0fd60.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 五分钟光速大模型入门！
 
 KimiChat官网：https://kimi.ai
 
@@ -119,14 +119,14 @@ Git: BV1HM411377j
 Docker: BV14s4y1i7Vf
 Kubernetes: BV1Se411r7vY
 Redis: BV1Jj411D7oG
-M&lt;br/&gt;时长: 08:02</description>
+M&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:02</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1Zr421W72A</guid>
       <pubDate>Thu, 22 Feb 2024 10:00:00 +0000</pubDate>
     </item>
     <item>
       <title>【GeekHour】30分钟Linux入门教程</title>
       <link>https://www.bilibili.com/video/BV1cq421w72c</link>
-      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/b3731956294f320e5e7eaa1135af5b7922571075.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 30分钟Linux光速入门课程！
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/b3731956294f320e5e7eaa1135af5b7922571075.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 30分钟Linux光速入门课程！
 课程资料可以关注公众号GeekHour，回复Linux即可下载，
 里面还有其他Docker、MySQL、Redis、Git、MongoDB等等其他课程的精美Cheat Sheet和资料。
 QQ群：197289177，871289920
@@ -134,21 +134,21 @@ QQ群：197289177，871289920
 课程内容：
 00:00 Linux简介及环境安装
 08:21 vi编辑器的使用
-21:29 常用命令&lt;br/&gt;时长: 36:26</description>
+21:29 常用命令&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 36:26</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1cq421w72c</guid>
       <pubDate>Fri, 05 Apr 2024 03:00:00 +0000</pubDate>
     </item>
     <item>
       <title>30分钟Shell光速入门教程</title>
       <link>https://www.bilibili.com/video/BV17m411U7cC</link>
-      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/c7192b303df325ee36a63b856ff90d7e83ac7e6d.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 30分钟Shell光速入门教程&lt;br/&gt;时长: 24:14</description>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/c7192b303df325ee36a63b856ff90d7e83ac7e6d.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 30分钟Shell光速入门教程&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 24:14</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV17m411U7cC</guid>
       <pubDate>Sat, 20 Apr 2024 06:43:08 +0000</pubDate>
     </item>
     <item>
       <title>30分钟正则表达式教程</title>
       <link>https://www.bilibili.com/video/BV1fm411C7fq</link>
-      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/a414368fe9f27729cf8d3de62b5ac671c3517599.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 30分钟正则表达式教程！
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/a414368fe9f27729cf8d3de62b5ac671c3517599.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 30分钟正则表达式教程！
 视频中的正则表达式在线工具网站：https://regexr.com
 课程资料可以关注公众号GeekHour，回复re或者regex即可下载，
 里面还有其他Docker、MySQL、Redis、Git、MongoDB等等其他课程的精美Cheat Sheet和资料。
@@ -160,58 +160,58 @@ QQ群：197289177，871289920
 07:46 位置和边界匹配
 11:40 量词
 13:57 分组和引用
-20:54 前瞻和后顾&lt;br/&gt;时长: 25:37</description>
+20:54 前瞻和后顾&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 25:37</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1fm411C7fq</guid>
       <pubDate>Sun, 05 May 2024 08:38:25 +0000</pubDate>
     </item>
     <item>
       <title>一小时C语言教程</title>
       <link>https://www.bilibili.com/video/BV1Q142147VL</link>
-      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/8b16848f131704d5edff7f0a1935d1192c1dbff4.png" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 一小时C语言教程。&#13;
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/8b16848f131704d5edff7f0a1935d1192c1dbff4.png" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 一小时C语言教程。&#13;
 VSCode下载地址：https://code.visualstudio.com/download&#13;
 MinGW下载地址：https://sourceforge.net/projects/mingw-w64/&#13;
 也可以关注公众号GeekHour，回复C即可下载，&#13;
 里面还有其他Docker、MySQL、Redis、Git、MongoDB、Linux、Shell等等其他课程资料。&#13;
-QQ群：197289177，871289920&lt;br/&gt;时长: 76:25</description>
+QQ群：197289177，871289920&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 76:25</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1Q142147VL</guid>
       <pubDate>Fri, 26 Jul 2024 10:00:20 +0000</pubDate>
     </item>
     <item>
       <title>20分钟Makefile光速入门教程</title>
       <link>https://www.bilibili.com/video/BV1tyWWeeEpp</link>
-      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/e122707af1e89ee706b6c462805dea99f38cbb19.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 20分钟 Make &amp; Makefile &amp; CMake 光速入门教程
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/e122707af1e89ee706b6c462805dea99f38cbb19.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 20分钟 Make &amp; Makefile &amp; CMake 光速入门教程
 
 课程资料：
 VSCode下载地址：https://code.visualstudio.com/download
 MinGW下载地址：https://sourceforge.net/projects/mingw-w64/
 GNU Make官网：https://www.gnu.org/software/make/
 GNU Make下载地址：https://ftp.gnu.org/gnu/make/
-CMake下载地址：https://c&lt;br/&gt;时长: 18:59</description>
+CMake下载地址：https://c&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 18:59</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1tyWWeeEpp</guid>
       <pubDate>Wed, 21 Aug 2024 03:00:00 +0000</pubDate>
     </item>
     <item>
       <title>一小时Maven教程</title>
       <link>https://www.bilibili.com/video/BV1uApMeWErY</link>
-      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/94448279aeb9f758c021b07ad22393294f716300.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 一小时Maven教程！课程笔记在同名公众号中
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/94448279aeb9f758c021b07ad22393294f716300.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 一小时Maven教程！课程笔记在同名公众号中
 Maven官网：https://maven.apache.org/
 Maven下载地址：https://maven.apache.org/download.cgi
-Nexus下载地址：https://help.sonatype.com/en/download.html&lt;br/&gt;时长: 66:31</description>
+Nexus下载地址：https://help.sonatype.com/en/download.html&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 66:31</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1uApMeWErY</guid>
       <pubDate>Thu, 05 Sep 2024 11:10:00 +0000</pubDate>
     </item>
     <item>
       <title>建个网站？五分钟的事！</title>
       <link>https://www.bilibili.com/video/BV1MjsSekEef</link>
-      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/7765f06785675f21e4d4121492c8545ad56f1849.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 最近很多朋友问有没有比较好的服务器运维管理工具，于是就有了这个视频。
-1Panel真的不错，推荐给大家。&lt;br/&gt;时长: 05:32</description>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/7765f06785675f21e4d4121492c8545ad56f1849.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 最近很多朋友问有没有比较好的服务器运维管理工具，于是就有了这个视频。
+1Panel真的不错，推荐给大家。&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:32</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1MjsSekEef</guid>
       <pubDate>Mon, 23 Sep 2024 10:00:00 +0000</pubDate>
     </item>
     <item>
       <title>十分钟部署本地大模型！</title>
       <link>https://www.bilibili.com/video/BV1JTSqYqErn</link>
-      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/40017866bfb813ec3c101ab8ac1503f83a3ad999.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 视频中使用到的所有模型、资源、笔记文档都可以从下面的链接中下载：
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/40017866bfb813ec3c101ab8ac1503f83a3ad999.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 视频中使用到的所有模型、资源、笔记文档都可以从下面的链接中下载：
 【夸克网盘】https://pan.quark.cn/s/744a0eef9452 提取码：pf8e
 【百度网盘】https://pan.baidu.com/s/1ZAT8h9dfS_yACsL0uFWYxw?pwd=15aw 提取码: 15aw 
 
@@ -220,37 +220,37 @@ Docker的使用请看这里：BV14s4y1i7Vf
 用到的工具：
 Ollama：https://ollama.com/
 MaxKB：https://maxkb.cn/
-OpenWebUI：&lt;br/&gt;时长: 11:31</description>
+OpenWebUI：&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 11:31</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1JTSqYqErn</guid>
       <pubDate>Thu, 31 Oct 2024 10:00:00 +0000</pubDate>
     </item>
     <item>
       <title>AI绘画十分钟光速入门！</title>
       <link>https://www.bilibili.com/video/BV1tsULYQESn</link>
-      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/12a27e60a4e1f924f715baa487de1bdf30755bed.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 粉丝福利：GeekHour专属注册邀请链接：
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/12a27e60a4e1f924f715baa487de1bdf30755bed.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 粉丝福利：GeekHour专属注册邀请链接：
 https://cephalon.cloud/#/share/register-landing?invite_id=Vj5OCp
 或者用GeekHour的邀请码Vj5OCp，薅到专属注册奖励，直接免费送5000端脑值！
 一定要通过上面的邀请链接来注册，才会赠送哦！
 
 感谢端脑云对本期视频的大力支持！
 端脑云分布式AIGC算力网络，顶配4090显卡1小时1元，全网最高性价比，
-StableDiffusionWebUI、ComfyUI、Fooocus，海量AIGC&lt;br/&gt;时长: 10:19</description>
+StableDiffusionWebUI、ComfyUI、Fooocus，海量AIGC&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 10:19</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1tsULYQESn</guid>
       <pubDate>Fri, 15 Nov 2024 09:00:00 +0000</pubDate>
     </item>
     <item>
       <title>马斯克的AI大模型五分钟上手！每月25美元免费额度！</title>
       <link>https://www.bilibili.com/video/BV1qsUxYaEpc</link>
-      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/12c64ec6971155bdf13bef261d033c23afacd17a.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 马斯克的xAI最近推出的grok-beta大模型，每月25美元免费额度。
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/12c64ec6971155bdf13bef261d033c23afacd17a.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 马斯克的xAI最近推出的grok-beta大模型，每月25美元免费额度。
 
-命令行代码：https://github.com/geekhall/grok-cli&lt;br/&gt;时长: 04:53</description>
+命令行代码：https://github.com/geekhall/grok-cli&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 04:53</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1qsUxYaEpc</guid>
       <pubDate>Tue, 19 Nov 2024 11:15:00 +0000</pubDate>
     </item>
     <item>
       <title>15分钟！从零开始搭建堡垒机！</title>
       <link>https://www.bilibili.com/video/BV1jDrBYmEjo</link>
-      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/9afd484d015e0019e6a6532667d0d9ffc179357e.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 15分钟从零开始搭建一个开源、免费、功能强大的JumpServer堡垒机！
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/9afd484d015e0019e6a6532667d0d9ffc179357e.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 15分钟从零开始搭建一个开源、免费、功能强大的JumpServer堡垒机！
 
 课程中的资料及工具下载地址：
 JumpServer官网：jumpserver.org
@@ -259,14 +259,14 @@ JumpServer官网：jumpserver.org
 其他相关课程：
 【Docker】：BV14s4y1i7Vf
 【Redis】：BV1Jj411D7oG
-【Linux】：BV1cq421w72c&lt;br/&gt;时长: 15:28</description>
+【Linux】：BV1cq421w72c&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 15:28</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1jDrBYmEjo</guid>
       <pubDate>Thu, 09 Jan 2025 10:00:00 +0000</pubDate>
     </item>
     <item>
       <title>5分钟！从零开始做个数据大屏</title>
       <link>https://www.bilibili.com/video/BV12gNheNE4o</link>
-      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/b6822df07b1de28243caf48cd1b9acec16b185c5.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 5分钟从零开始做一个实时更新的数据大屏！
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/b6822df07b1de28243caf48cd1b9acec16b185c5.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 5分钟从零开始做一个实时更新的数据大屏！
 
 课程中的资料及工具下载地址：
 
@@ -276,96 +276,96 @@ DataEase官网：dataease.io
 资料及数据下载地址：
 
 【夸克网盘】
-https://pan.quark.cn/s/5cb65147dced 提取码：wKG2&lt;br/&gt;时长: 05:07</description>
+https://pan.quark.cn/s/5cb65147dced 提取码：wKG2&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:07</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV12gNheNE4o</guid>
       <pubDate>Fri, 07 Feb 2025 10:30:00 +0000</pubDate>
     </item>
     <item>
       <title>Vim进阶技巧，你知道几个？</title>
       <link>https://www.bilibili.com/video/BV1sPAAeUE55</link>
-      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/c0dd982fee98f7207893b62a946bc4f2b1dd31de.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: Vim进阶技巧，文字版教程和vimrc配置文件在这里：
-https://pan.quark.cn/s/c8d0e5b9685f 提取码：HhvM&lt;br/&gt;时长: 21:45</description>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/c0dd982fee98f7207893b62a946bc4f2b1dd31de.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; Vim进阶技巧，文字版教程和vimrc配置文件在这里：
+https://pan.quark.cn/s/c8d0e5b9685f 提取码：HhvM&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 21:45</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1sPAAeUE55</guid>
       <pubDate>Sat, 15 Feb 2025 07:39:00 +0000</pubDate>
     </item>
     <item>
       <title>三分钟了解什么是CANN</title>
       <link>https://www.bilibili.com/video/BV1zET7zUEKX</link>
-      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/9bc47acfd105b6b501c6e62b18fd71d2c2c271ec.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 三分钟了解什么是CANN！
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/9bc47acfd105b6b501c6e62b18fd71d2c2c271ec.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 三分钟了解什么是CANN！
 
 传送门 ↓：
 CANN社区：https://www.hiascend.com/software/cann
 Gitee社区：https://gitee.com/cann
-鲲鹏昇腾开发者大会2025： https://www.hiascend.com/ascend-2025KADC&lt;br/&gt;时长: 03:25</description>
+鲲鹏昇腾开发者大会2025： https://www.hiascend.com/ascend-2025KADC&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 03:25</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1zET7zUEKX</guid>
       <pubDate>Wed, 04 Jun 2025 09:58:22 +0000</pubDate>
     </item>
     <item>
       <title>大模型到底是啥？8分钟速通！</title>
       <link>https://www.bilibili.com/video/BV171MLzjEfN</link>
-      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/49fdedd87b793ac764ff66f40555f296edf7dc67.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 大模型到底是啥？8分钟速通！&lt;br/&gt;时长: 08:26</description>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/49fdedd87b793ac764ff66f40555f296edf7dc67.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 大模型到底是啥？8分钟速通！&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:26</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV171MLzjEfN</guid>
       <pubDate>Wed, 11 Jun 2025 04:00:00 +0000</pubDate>
     </item>
     <item>
       <title>API对接大模型？ 十分钟搞定！</title>
       <link>https://www.bilibili.com/video/BV1cRNxzgEVY</link>
-      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/e144f4d18569a74ddea3fa447aae15068996780d.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 端脑云：https://cephalon.cloud/share/register-landing?invite_id=Vj5OCp
-Cherry Studio官网：https://www.cherry-ai.com/&lt;br/&gt;时长: 07:39</description>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/e144f4d18569a74ddea3fa447aae15068996780d.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 端脑云：https://cephalon.cloud/share/register-landing?invite_id=Vj5OCp
+Cherry Studio官网：https://www.cherry-ai.com/&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:39</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1cRNxzgEVY</guid>
       <pubDate>Thu, 19 Jun 2025 10:00:00 +0000</pubDate>
     </item>
     <item>
       <title>十分钟Cursor教程！关于Cursor你可能不知道的事</title>
       <link>https://www.bilibili.com/video/BV1hsKzzcEkz</link>
-      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/21d1a131dc434a0cd9784aea465741501a524933.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 十分钟Cursor教程，视频中的资料可以关注同名gzh后下载！&lt;br/&gt;时长: 09:12</description>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/21d1a131dc434a0cd9784aea465741501a524933.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 十分钟Cursor教程，视频中的资料可以关注同名gzh后下载！&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 09:12</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1hsKzzcEkz</guid>
       <pubDate>Sat, 28 Jun 2025 10:12:00 +0000</pubDate>
     </item>
     <item>
       <title>30分钟Kafka光速入门，2025年新版Kafka4.0.0教程！</title>
       <link>https://www.bilibili.com/video/BV1dpuXzSEZN</link>
-      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/b0bff7a7619442b7448d8bfc675b9006e500747f.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 2025年新版Kafka4.0.0教程，30分钟光速掌握！
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/b0bff7a7619442b7448d8bfc675b9006e500747f.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 2025年新版Kafka4.0.0教程，30分钟光速掌握！
 视频中的笔记和资源请关注后回复kafka获取！
 用到的一些工具地址：
 Offset Explorer : https://kafkatool.com/
 kafkajs官网: kafka.js.org
-kafkajs GitHub : https://github.com/tulios/kafkajs&lt;br/&gt;时长: 29:59</description>
+kafkajs GitHub : https://github.com/tulios/kafkajs&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 29:59</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1dpuXzSEZN</guid>
       <pubDate>Sat, 19 Jul 2025 10:05:00 +0000</pubDate>
     </item>
     <item>
       <title>15分钟！从零开始搭建智能客服！支持大模型对话、RAG自定义知识库、MCP和流程编排。</title>
       <link>https://www.bilibili.com/video/BV1iZbSzZEv6</link>
-      <description>&lt;img src="http://i0.hdslb.com/bfs/archive/59ac16ab039cee1baf9cbefdbb70b39e94ec3e92.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: &lt;br/&gt;时长: 15:22</description>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/59ac16ab039cee1baf9cbefdbb70b39e94ec3e92.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 15:22</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1iZbSzZEv6</guid>
       <pubDate>Sat, 26 Jul 2025 10:00:00 +0000</pubDate>
     </item>
     <item>
       <title>我的MBP Setup，日常使用软件和设备。</title>
       <link>https://www.bilibili.com/video/BV1eHh8zBEqL</link>
-      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/6292fc917d74e363a60b48f646150f0918461d35.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 我的MBP Setup，日常都用哪些软件。&lt;br/&gt;时长: 05:32</description>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/6292fc917d74e363a60b48f646150f0918461d35.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 我的MBP Setup，日常都用哪些软件。&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:32</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1eHh8zBEqL</guid>
       <pubDate>Sat, 02 Aug 2025 10:58:49 +0000</pubDate>
     </item>
     <item>
       <title>8分钟Fish Shell搭建和配置，原生支持自动补全！</title>
       <link>https://www.bilibili.com/video/BV1LxtszSEpR</link>
-      <description>&lt;img src="http://i2.hdslb.com/bfs/archive/86634ef98def5ff18d7c9fd6c9c0285f4d1a5371.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 8分钟Fish Shell搭建和配置，原生支持自动补全！&lt;br/&gt;时长: 07:44</description>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/86634ef98def5ff18d7c9fd6c9c0285f4d1a5371.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 8分钟Fish Shell搭建和配置，原生支持自动补全！&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:44</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1LxtszSEpR</guid>
       <pubDate>Sat, 09 Aug 2025 10:31:00 +0000</pubDate>
     </item>
     <item>
       <title>一小时Jenkins教程</title>
       <link>https://www.bilibili.com/video/BV1Z2qYBSERP</link>
-      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/b35897bf89f63909038d2ce8ab2c4731e8d5a1b0.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 一小时Jenkins课程！&lt;br/&gt;时长: 61:56</description>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/b35897bf89f63909038d2ce8ab2c4731e8d5a1b0.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 一小时Jenkins课程！&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 61:56</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1Z2qYBSERP</guid>
       <pubDate>Fri, 19 Dec 2025 09:25:00 +0000</pubDate>
     </item>
     <item>
       <title>一句话克隆你的声音！</title>
       <link>https://www.bilibili.com/video/BV1oLBRB5ECk</link>
-      <description>&lt;img src="http://i1.hdslb.com/bfs/archive/6f06778230df4fcd2f6889e4715fb1b20c7ced0a.jpg" referrerpolicy="no-referrer" /&gt;&lt;br/&gt;简介: 一句话克隆你的声音！
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/6f06778230df4fcd2f6889e4715fb1b20c7ced0a.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 一句话克隆你的声音！
 IndexTTS2是由B站开源的一款语音生成模型，支持音色、情绪克隆，情绪参数调节，支持英文、日文、甚至方言，效果惊艳。
 
 【相关资源】：
@@ -373,7 +373,7 @@ GitHub仓库地址：https://github.com/index-tts/index-tts
 一键整合包：https://pan.quark.cn/s/bbfa61506950?pwd=wA5i
 
 【在线试用地址】：
-【端脑云】：https://cephalon.cloud/share/register-landing?invite_id=&lt;br/&gt;时长: 08:51</description>
+【端脑云】：https://cephalon.cloud/share/register-landing?invite_id=&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:51</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1oLBRB5ECk</guid>
       <pubDate>Fri, 26 Dec 2025 09:25:00 +0000</pubDate>
     </item>
