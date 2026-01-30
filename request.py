@@ -2,12 +2,11 @@ import asyncio
 import time
 import os
 import random
-import sys  # 增加 sys 用于强制刷新输出
+import sys
 from email.utils import formatdate
 from bilibili_api import user, Credential, select_client
 from feedgen.feed import FeedGenerator
 
-# 强制即时打印日志，防止 GitHub Actions 吞掉输出
 def log(msg):
     print(msg)
     sys.stdout.flush()
@@ -67,10 +66,9 @@ async def generate_rss_for_up(uid, credential):
         log(f"找到 UP 主: {up_name}")
         
         fg = FeedGenerator()
-        fg.load_extension('semantic') 
+        # 移除 load_extension('semantic')，改用标准 RSS 属性
         fg.id(f'https://space.bilibili.com/{uid}')
         fg.title(f'{up_name} 的 Bilibili 投稿')
-        fg.author({'name': up_name})
         fg.link(href=f'https://space.bilibili.com/{uid}', rel='alternate')
         fg.description(f'B站 UP 主 {up_name} 的最新视频投稿')
         fg.language('zh-CN')
@@ -89,17 +87,22 @@ async def generate_rss_for_up(uid, credential):
             bvid = v.get('bvid')
             created_time = v.get('created', int(time.time()))
             video_link = f"https://www.bilibili.com/video/{bvid}"
+            
             fe = fg.add_entry()
             fe.id(video_link)
-            fe.guid(video_link, isPermaLink=True)
             fe.title(v.get('title'))
             fe.link(href=video_link)
             
+            # 处理封面图
             img_url = v.get("pic", "")
             if img_url and img_url.startswith('//'):
                 img_url = 'https:' + img_url
             
-            content = f'<img src="{img_url}" referrerpolicy="no-referrer" /><br/>简介: {v.get("description", "无")}<br/>时长: {v.get("length", "未知")}'
+            # 丰富描述内容
+            content = f'<img src="{img_url}" referrerpolicy="no-referrer" /><br/>'
+            content += f'简介: {v.get("description", "无")}<br/>'
+            content += f'时长: {v.get("length", "未知")}'
+            
             fe.description(content)
             fe.pubDate(formatdate(created_time, localtime=True))
 
@@ -114,14 +117,26 @@ async def generate_rss_for_up(uid, credential):
 
 def generate_opml(up_info_list):
     log("正在生成 OPML 清单...")
-    # ... (此处省略 OPML 生成逻辑，保持之前的一致) ...
-    # 确保写入文件后打印成功信息
+    opml_header = f"""<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+    <head><title>Bilibili 订阅清单</title></head>
+    <body><outline text="Bilibili 投稿">"""
+    
+    opml_body = ""
+    for up in up_info_list:
+        if up and up.get("success"):
+            xml_url = f"https://{GITHUB_USERNAME}.github.io/{REPO_NAME}/bili_up_{up['uid']}.xml"
+            html_url = f"https://space.bilibili.com/{up['uid']}"
+            opml_body += f'\n            <outline type="rss" text="{up["title"]}" title="{up["title"]}" xmlUrl="{xml_url}" htmlUrl="{html_url}"/>'
+    
+    with open("subscriptions.opml", "w", encoding="utf-8") as f:
+        f.write(opml_header + opml_body + "\n        </outline></body></opml>")
     log("🚀 OPML 已完成。")
 
 async def main():
     log("--- 脚本启动 ---")
-    if not SESSDATA or not BILI_JCT:
-        log("❌ 错误: 环境变量 SESSDATA 或 BILI_JCT 未读取到！")
+    if not SESSDATA:
+        log("❌ 错误: 环境变量 SESSDATA 未读取到！")
         return
 
     credential = Credential(sessdata=SESSDATA, bili_jct=BILI_JCT, buvid3=BUVID3)
@@ -134,15 +149,11 @@ async def main():
         
         if index < len(TARGET_UP_UIDS) - 1:
             wait_time = random.uniform(2, 5)
-            log(f"休眠 {wait_time:.2f}s...")
+            log(f"☕ 休眠 {wait_time:.2f}s...")
             await asyncio.sleep(wait_time)
             
     generate_opml(up_info_list)
     log("--- 脚本运行结束 ---")
 
-# ！！！最重要的入口，请务必确认这部分在文件最末尾 ！！！
 if __name__ == '__main__':
-    try:
-        asyncio.run(main())
-    except Exception as e:
-        log(f"致命错误: {str(e)}")
+    asyncio.run(main())
