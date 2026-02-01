@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 01 Feb 2026 08:39:07 +0000</lastBuildDate>
-    <item>
-      <title>最 喜 欢 游 泳 的 一 集</title>
-      <link>https://www.bilibili.com/video/BV1tYmcBiEnC</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/0983f54a330bceecf5e24067c0a7d267aed2cd02.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:20</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1tYmcBiEnC</guid>
-      <pubDate>Sun, 07 Dec 2025 11:10:02 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 01 Feb 2026 13:01:26 +0000</lastBuildDate>
     <item>
       <title>吐 的 最 多 的 一 集</title>
       <link>https://www.bilibili.com/video/BV1ZJ2kBYE1F</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/f184d8ace7834cb8d01289b7ae67a8d8f4e61b0a.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 26:26</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1KE61BuEFy</guid>
       <pubDate>Sat, 31 Jan 2026 11:30:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>最 有 专 业 素 质 的 马</title>
+      <link>https://www.bilibili.com/video/BV1Pb64BSEet</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/856663bd742b3cb1d5687044cac26d4aedd122d3.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 13:38</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Pb64BSEet</guid>
+      <pubDate>Sun, 01 Feb 2026 10:36:01 +0000</pubDate>
     </item>
   </channel>
 </rss>
