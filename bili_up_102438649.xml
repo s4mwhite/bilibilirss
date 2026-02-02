@@ -7,16 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 02 Feb 2026 08:53:49 +0000</lastBuildDate>
-    <item>
-      <title>一小时MySQL教程</title>
-      <link>https://www.bilibili.com/video/BV1AX4y147tA</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/910beb6acf317bcf6066f820c262b29bca9a947e.png" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 课程中的笔记文档在公众号【GeekHour】回复mysql即可下载&#13;
-QQ群：197289177（已满） 871289920&#13;
-我们会不断更新各类精品技术课程，欢迎关注收藏！&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 56:40</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1AX4y147tA</guid>
-      <pubDate>Sun, 20 Aug 2023 03:20:52 +0000</pubDate>
-    </item>
+    <lastBuildDate>Mon, 02 Feb 2026 13:13:07 +0000</lastBuildDate>
     <item>
       <title>【GeekHour】20分钟掌握MongoDB</title>
       <link>https://www.bilibili.com/video/BV16u4y1y7Fm</link>
@@ -376,6 +367,17 @@ GitHub仓库地址：https://github.com/index-tts/index-tts
 【端脑云】：https://cephalon.cloud/share/register-landing?invite_id=&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:51</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1oLBRB5ECk</guid>
       <pubDate>Fri, 26 Dec 2025 09:25:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>OpenClaw部署教程：打造你的24小时专属AI助手！</title>
+      <link>https://www.bilibili.com/video/BV1SXFAzCE1s</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/3cf54b34b3684115a354799c4a7b17b18eedc8f5.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 最近爆火的OpenClaw部署教程。相关资源在这里⬇️：
+无影云电脑官网：https://wuying.aliyun.com/
+openclaw官网：https://openclaw.ai/
+百炼大模型：https://bailian.console.aliyun.com/
+钉钉开发者平台：https://open-dev.dingtalk.com/&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:24</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1SXFAzCE1s</guid>
+      <pubDate>Mon, 02 Feb 2026 09:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
