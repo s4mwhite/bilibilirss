@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 06 Feb 2026 13:13:07 +0000</lastBuildDate>
-    <item>
-      <title>电磁炉“隔空加热”，到底啥原理？</title>
-      <link>https://www.bilibili.com/video/BV1VWzLB8Ead</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/0fadd7e429b5142153f1913cc35df2741660f24d.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 电磁炉不用火，不发热，却能瞬间让锅底滚烫，这看起来像魔法。其实，它的核心是藏在面板下的一个铜线圈。当你按下开关，一个叫振荡器的部件会让线圈通上每秒变化10万次方向的高频电流，从而产生一个疯狂跳动的磁场。当你把铁锅放上去，这个变化的磁场就会在锅底内部“变”出电流（科学上叫“电磁感应”），这些电流在金属里乱窜、互相摩擦（形成“涡流”），从而瞬间产生大量热量。所以，是锅自己在发热，电磁炉面板基本是凉的！视频将用最直观的动画，带你理解这个“磁生电，电生热”的完整链条，并解释为什么玻璃、铝锅用不了，以及这项技术如何&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:31</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1VWzLB8Ead</guid>
-      <pubDate>Thu, 22 Jan 2026 03:30:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 06 Feb 2026 16:55:05 +0000</lastBuildDate>
     <item>
       <title>从零到亿：本田创始人的逆袭</title>
       <link>https://www.bilibili.com/video/BV1GRBZBLEBd</link>
@@ -226,6 +219,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/c424eb50c8eeaf58d06cc61412d1c3dfa8a7c70a.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 如果科技足够发达，“残疾”这个概念是否会消失？仿生学先驱休·赫尔，在登山事故失去双腿后，没有视自己为“残缺”，而是认为“技术是残缺的”。他以此为使命，在MIT媒体实验室创立了极端仿生学中心，致力于用科技修复和增强人类。在这个演讲中，你将看到仿生学的三大接口：如何像穿一双舒适的袜子一样将机械腿“连接”在身体上；如何让假肢像真实的肌肉一样运动并提供动力；以及最激动人心的——如何通过测量残肢的肌肉电信号，让假肢读懂你的“想法”，实现神经控制。更远的未来，通过神经再生技术，假肢甚至能让你重新获得“触觉”。这不仅仅&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 18:48</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1rKFezjEQf</guid>
       <pubDate>Fri, 06 Feb 2026 03:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>为什么地球上找不出第二个智利？</title>
+      <link>https://www.bilibili.com/video/BV12GFkz5E98</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/627bb1f3ecaff36c18a5084bdd04bf44e1a57758.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 你知道有一个国家，长度足以从挪威延伸到撒哈拉沙漠，宽度却只够开车两小时吗？这就是智利——一个地理规则的全部例外。这个视频将带你进行一场从北到南的极限穿越：探索世界“旱极”阿塔卡马沙漠，这里几百年不下雨，却是全球最大天文台的所在地；攀登地球上最高的活火山；拜访比埃及木乃伊还早两千年的钦查罗木乃伊。你会看到智利如何坐拥全球近三分之一的铜矿，如何诞生了现代土豆的祖先，以及达尔文如何在这里的山巅找到贝壳化石，从而顿悟了“地球是古老的”这一革命性思想。从最干燥的沙漠到最南端的城市，从远古文明到未来能源，智利不仅仅是&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 13:39</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV12GFkz5E98</guid>
+      <pubDate>Fri, 06 Feb 2026 14:02:33 +0000</pubDate>
     </item>
   </channel>
 </rss>
