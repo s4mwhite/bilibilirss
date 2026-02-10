@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 10 Feb 2026 02:51:19 +0000</lastBuildDate>
-    <item>
-      <title>天津美食吃法教程之小碗抹酱篇</title>
-      <link>https://www.bilibili.com/video/BV1pgicBwEd9</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/082f9313da6a3f4b6b1af076e4bcfc41c190b3c4.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 04:31</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1pgicBwEd9</guid>
-      <pubDate>Sat, 03 Jan 2026 03:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 10 Feb 2026 05:40:05 +0000</lastBuildDate>
     <item>
       <title>没有最好吃的包子，只有最适合自己的包子</title>
       <link>https://www.bilibili.com/video/BV1ZniWBXEez</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/9cb2aeff1bfcf4100fdb5784956c0cbf69bad972.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; #麦门 #麦当劳&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:21</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1LHFfzVEvt</guid>
       <pubDate>Sun, 08 Feb 2026 04:10:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>腊月二十五磨豆腐</title>
+      <link>https://www.bilibili.com/video/BV1DhFmzqE53</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/2377f2d8bb1f189de2a95517df218495f1575055.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; #豆腐 #腊月二十五 #提前学过年&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:00</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1DhFmzqE53</guid>
+      <pubDate>Tue, 10 Feb 2026 03:25:13 +0000</pubDate>
     </item>
   </channel>
 </rss>
