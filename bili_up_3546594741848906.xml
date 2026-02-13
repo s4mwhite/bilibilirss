@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 13 Feb 2026 02:44:59 +0000</lastBuildDate>
-    <item>
-      <title>没有最好吃的包子，只有最适合自己的包子</title>
-      <link>https://www.bilibili.com/video/BV1ZniWBXEez</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/0284ca2002b108b9341fb0844420d194790d04d4.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:37</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1ZniWBXEez</guid>
-      <pubDate>Mon, 05 Jan 2026 02:21:09 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 13 Feb 2026 05:24:05 +0000</lastBuildDate>
     <item>
       <title>今天的精神状态太颠了</title>
       <link>https://www.bilibili.com/video/BV1evitBfESL</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/2377f2d8bb1f189de2a95517df218495f1575055.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; #豆腐 #腊月二十五 #提前学过年&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:00</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1DhFmzqE53</guid>
       <pubDate>Tue, 10 Feb 2026 03:25:13 +0000</pubDate>
+    </item>
+    <item>
+      <title>等了半年的炭烤大鱿鱼终于吃到了</title>
+      <link>https://www.bilibili.com/video/BV1eYcqzJE2W</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/06458b769cef9f9f4dff11710a4d9b918a1b9dee.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; #炭烤大鱿鱼 #油边 #宫后&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 03:49</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1eYcqzJE2W</guid>
+      <pubDate>Fri, 13 Feb 2026 03:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
