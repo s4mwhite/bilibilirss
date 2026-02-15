@@ -7,28 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 15 Feb 2026 05:22:27 +0000</lastBuildDate>
-    <item>
-      <title>【GeekHour】20分钟掌握MongoDB</title>
-      <link>https://www.bilibili.com/video/BV16u4y1y7Fm</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/2736447b6680719fff796f6a4ab28a08e508f649.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; MongoDB Cheat Sheet的下载地址：
-
-百度网盘：
-https://pan.baidu.com/s/15y91fOqfoIErWv2RFm8nIw?pwd=rvfn 提取码: rvfn
-
-也可以关注公众号GeekHour，回复mongo即可下载。
-
-QQ群：197289177，871289920
-Bilibili: https://space.bilibili.com/102438649
-公众号：GeekHour
-
-课程内容：
-00:00 课程简介
-00:53 MySQL简介
-02:30 安&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 21:45</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV16u4y1y7Fm</guid>
-      <pubDate>Wed, 06 Sep 2023 13:51:12 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 15 Feb 2026 08:41:13 +0000</lastBuildDate>
     <item>
       <title>【GeekHour】8分钟配置一个超酷终端</title>
       <link>https://www.bilibili.com/video/BV1kw411z7SV</link>
@@ -378,6 +357,16 @@ openclaw官网：https://openclaw.ai/
 钉钉开发者平台：https://open-dev.dingtalk.com/&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:24</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1SXFAzCE1s</guid>
       <pubDate>Mon, 02 Feb 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>这可能是普通人第一次能造AI工具的时刻！</title>
+      <link>https://www.bilibili.com/video/BV1FGZWB1EDX</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/91579099a6921555938d95d34312cf20b235fb8d.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 真·AI牛马来了！MuleRun体验评测（中文名骡子快跑），普通人造AI工具的门槛彻底消失了。
+
+MuleRun官网地址：https://mulerun.com/
+老照片修复工具地址：https://7k9vgmv2.mule.page/&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:22</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1FGZWB1EDX</guid>
+      <pubDate>Sun, 15 Feb 2026 07:55:44 +0000</pubDate>
     </item>
   </channel>
 </rss>
