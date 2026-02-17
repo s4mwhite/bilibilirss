@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 17 Feb 2026 08:55:02 +0000</lastBuildDate>
-    <item>
-      <title>手动静音</title>
-      <link>https://www.bilibili.com/video/BV1vjQPYuEGd</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/42182976b05d67e6b60645d0b7db16a1800f9348.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:04</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1vjQPYuEGd</guid>
-      <pubDate>Fri, 14 Mar 2025 10:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 17 Feb 2026 13:16:43 +0000</lastBuildDate>
     <item>
       <title>兄弟有点痰吐在身上的</title>
       <link>https://www.bilibili.com/video/BV1tpX7YiEks</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/f42f234d9401f2de5add1b9464289fffd084a65d.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:37</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1kC6yBAEZL</guid>
       <pubDate>Sat, 31 Jan 2026 10:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>我的刀盾？</title>
+      <link>https://www.bilibili.com/video/BV1V5ZKBnEML</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/1460b4e31c1304c8aca547bd1e5f389a91378dfa.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:45</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1V5ZKBnEML</guid>
+      <pubDate>Tue, 17 Feb 2026 09:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
