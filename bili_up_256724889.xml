@@ -7,15 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 17 Feb 2026 02:37:40 +0000</lastBuildDate>
-    <item>
-      <title>产品设计的7层，你在第几层？</title>
-      <link>https://www.bilibili.com/video/BV1H56xBgEGN</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/72e5f517225c7ac94cc2b0f44adb994b1b65e304.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 为什么谷歌首页底部有一行看似多余的版权文字？为什么圆形复选框会让你觉得“只能选一个”？这背后是产品设计的第一个层次——视觉细节。而往上，还有整整六个层次。
-本视频将带你层层拆解：从Level 1的像素级细节（如iPhone键盘的隐形热区），到Level 2的交互行为（如下拉刷新如何创造百亿广告收入），再到Level 3的技术创新（Spotify如何用盗版的P2P技术实现流畅播放），直至Level 7的颠覆性愿景（iPhone如何重构手机）。你会看到，一个伟大产品如何从最小的视觉暗示，一步步构建起改变世界的&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 16:31</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1H56xBgEGN</guid>
-      <pubDate>Sun, 01 Feb 2026 05:03:52 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 17 Feb 2026 05:24:19 +0000</lastBuildDate>
     <item>
       <title>揭秘摩天大楼背后的“领导者天团”</title>
       <link>https://www.bilibili.com/video/BV1McFPzuEWR</link>
@@ -248,6 +240,15 @@ AI也没闲着。考奥数拿金牌，帮化学家合成新药，还差点自己
 更妙的是，科学家已经用计算机模拟出了这个过程，并开始用这些原理来解决人类的交通堵塞和救灾难题。看完你会发现，有时&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 14:40</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1CkZJBBE7x</guid>
       <pubDate>Mon, 16 Feb 2026 13:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>真空里的水，撞一下会怎样？</title>
+      <link>https://www.bilibili.com/video/BV16BZsB2Es4</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/89a53d43ad626f276014b19720e559cc71576f53.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 一个密封的玻璃管，里面只有水和真空。用力一摇，你会听到清脆的“啪”一声，甚至……还能看到一道微弱的光？
+这期视频带你玩一个维多利亚时代的科学玩具——“水锤”。你会发现，当没有空气阻力时，水的动量会让它像锤子一样狠狠砸向瓶底，不仅发出巨响，还会瞬间产生一个空化气泡。而这个气泡 collapse 的瞬间，温度高到能把微量气体变成等离子体，发出微弱的光芒！
+更神奇的是，你家的水管有时会“砰砰”响，也是这个原理；超声波加湿器能喷出细密的水雾，背后也靠空化效应帮忙。一个小瓶子，竟然藏着这么多物理奥秘。&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 12:46</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV16BZsB2Es4</guid>
+      <pubDate>Tue, 17 Feb 2026 03:30:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
