@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 21 Feb 2026 08:38:35 +0000</lastBuildDate>
-    <item>
-      <title>霜击！</title>
-      <link>https://www.bilibili.com/video/BV1XnoxYCEpp</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/8a3ec4a214984d028b974bdbe7fd00e444c28800.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:03</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1XnoxYCEpp</guid>
-      <pubDate>Tue, 25 Mar 2025 09:56:44 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 21 Feb 2026 13:00:23 +0000</lastBuildDate>
     <item>
       <title>现在，轮到我说话了</title>
       <link>https://www.bilibili.com/video/BV1J9ZVY4EG6</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/aad560c1d8ff6c0b0c01f12948c35aa147b9da78.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 03:14</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1pDfuBjEjq</guid>
       <pubDate>Fri, 20 Feb 2026 10:39:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>我具有一流的闯关技术</title>
+      <link>https://www.bilibili.com/video/BV1AKfEBME8z</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/faa982c1f71525683fa758acf670ad3c1b96835b.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:49</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1AKfEBME8z</guid>
+      <pubDate>Sat, 21 Feb 2026 10:33:41 +0000</pubDate>
     </item>
   </channel>
 </rss>
