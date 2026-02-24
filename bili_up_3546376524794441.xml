@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 24 Feb 2026 08:56:22 +0000</lastBuildDate>
-    <item>
-      <title>请 选 择 你 的 英 雄</title>
-      <link>https://www.bilibili.com/video/BV1fUBrB5E7C</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/4852ad82aa2fd28fa7e0292b4f45b89e7d3dc178.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 16:52</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1fUBrB5E7C</guid>
-      <pubDate>Sat, 27 Dec 2025 10:52:45 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 24 Feb 2026 13:18:34 +0000</lastBuildDate>
     <item>
       <title>我 们 一 起 开 火 车</title>
       <link>https://www.bilibili.com/video/BV1Qiv6BXEYi</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/3da0aece707ff3e9da94caa1e50c8d343d9bba62.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:59</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1PafcB4ET6</guid>
       <pubDate>Sun, 22 Feb 2026 11:00:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>脑 子 有 危 险 了</title>
+      <link>https://www.bilibili.com/video/BV1EsfmBmEk3</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/44947393b765f8f1736ea0a1ff9044aedb95d069.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:41</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1EsfmBmEk3</guid>
+      <pubDate>Tue, 24 Feb 2026 11:08:33 +0000</pubDate>
     </item>
   </channel>
 </rss>
