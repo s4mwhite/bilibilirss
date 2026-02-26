@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 26 Feb 2026 08:56:57 +0000</lastBuildDate>
-    <item>
-      <title>一个右鞭腿</title>
-      <link>https://www.bilibili.com/video/BV1bTfNYSEFr</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/3a81aa2e599203d17fd7e1a192a85c9ce30c5a83.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:19</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1bTfNYSEFr</guid>
-      <pubDate>Thu, 03 Apr 2025 09:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Thu, 26 Feb 2026 13:19:47 +0000</lastBuildDate>
     <item>
       <title>我送阿叔茶具</title>
       <link>https://www.bilibili.com/video/BV1WYdPYAEEk</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/1d47d5d08ac7955cd211acd9270a77e9cc05570d.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:37</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1UGfKByE8k</guid>
       <pubDate>Mon, 23 Feb 2026 02:47:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>炸兑友~</title>
+      <link>https://www.bilibili.com/video/BV1npA6z6ETH</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/44dc081a3b715821d99600890cd03c49e5abe4f8.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:12</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1npA6z6ETH</guid>
+      <pubDate>Thu, 26 Feb 2026 10:53:31 +0000</pubDate>
     </item>
   </channel>
 </rss>

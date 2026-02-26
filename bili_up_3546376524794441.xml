@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 26 Feb 2026 08:56:06 +0000</lastBuildDate>
-    <item>
-      <title>我 们 一 起 开 火 车</title>
-      <link>https://www.bilibili.com/video/BV1Qiv6BXEYi</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/7ef0f988b39caa63774a514050d0921c92dc3407.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 10:39</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Qiv6BXEYi</guid>
-      <pubDate>Sun, 28 Dec 2025 09:46:21 +0000</pubDate>
-    </item>
+    <lastBuildDate>Thu, 26 Feb 2026 13:18:53 +0000</lastBuildDate>
     <item>
       <title>半夜千万不要照镜子</title>
       <link>https://www.bilibili.com/video/BV1aUvxBEErd</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/44947393b765f8f1736ea0a1ff9044aedb95d069.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:41</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1EsfmBmEk3</guid>
       <pubDate>Tue, 24 Feb 2026 11:08:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>石 头 有 危 险 了</title>
+      <link>https://www.bilibili.com/video/BV1UTA6zDEEZ</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/79171006bdf63845f1fdf3a97ea00dc95a873def.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:19</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1UTA6zDEEZ</guid>
+      <pubDate>Thu, 26 Feb 2026 11:49:18 +0000</pubDate>
     </item>
   </channel>
 </rss>
