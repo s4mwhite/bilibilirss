@@ -7,20 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 26 Feb 2026 02:35:06 +0000</lastBuildDate>
-    <item>
-      <title>【GeekHour】8分钟配置一个超酷终端</title>
-      <link>https://www.bilibili.com/video/BV1kw411z7SV</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/1aa725a95754c35b19b0e57c8276aceb74f8a3c2.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 配置笔记：https://www.geekhour.net/2023/10/21/linux-terminal/
-AWS注册地址：https://aws.amazon.com/cn/free/
-海外用户请看这里：https://mic.anruicloud.com/url/37
-oh-my-zsh安装命令：
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-pow&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:27</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1kw411z7SV</guid>
-      <pubDate>Fri, 27 Oct 2023 07:56:16 +0000</pubDate>
-    </item>
+    <lastBuildDate>Thu, 26 Feb 2026 05:23:24 +0000</lastBuildDate>
     <item>
       <title>【GeekHour】免费AI编程助手6分钟上手</title>
       <link>https://www.bilibili.com/video/BV1bg4y1o7vG</link>
@@ -367,6 +354,14 @@ MuleRun官网地址：https://mulerun.com/
 老照片修复工具地址：https://7k9vgmv2.mule.page/&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:22</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1FGZWB1EDX</guid>
       <pubDate>Sun, 15 Feb 2026 07:55:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>开源CRM保姆级部署+实战教程，从零到一搞定客户管理</title>
+      <link>https://www.bilibili.com/video/BV1mPfeB9EWk</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/f8eaefea20b32c056021c508159566a306a6982f.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 20分钟从零开始搭建一个AI+BI+智能问数的CRM系统!
+视频中的数据导入文件：https://pan.quark.cn/s/8a65413c2be2 提取码：bSCk&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 22:04</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1mPfeB9EWk</guid>
+      <pubDate>Thu, 26 Feb 2026 04:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
