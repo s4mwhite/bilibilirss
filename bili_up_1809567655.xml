@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 27 Feb 2026 08:50:54 +0000</lastBuildDate>
-    <item>
-      <title>这是老规矩，就你胆大！</title>
-      <link>https://www.bilibili.com/video/BV1Wjwde4EeT</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/06e50164569f848ff922d8e3558c483a9bf4e859.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:10</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Wjwde4EeT</guid>
-      <pubDate>Mon, 17 Feb 2025 13:30:19 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 27 Feb 2026 13:11:03 +0000</lastBuildDate>
     <item>
       <title>帮我看看！我家墙咋这么花？</title>
       <link>https://www.bilibili.com/video/BV1ySPueNEWX</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/6374cf93de53b917218a5a8b5b7a6279d26363f7.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:44</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1hoZiBAEKj</guid>
       <pubDate>Thu, 19 Feb 2026 13:14:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>想做的丑？那学问可多了去了！</title>
+      <link>https://www.bilibili.com/video/BV11iADzrE7y</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/ada52df9a474d8fed3ad8eaf430e32b9a54da9f8.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:38</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV11iADzrE7y</guid>
+      <pubDate>Fri, 27 Feb 2026 13:00:20 +0000</pubDate>
     </item>
   </channel>
 </rss>
