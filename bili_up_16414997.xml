@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 11 Mar 2026 08:51:42 +0000</lastBuildDate>
-    <item>
-      <title>我真的很喜欢看B站的评论</title>
-      <link>https://www.bilibili.com/video/BV1aJSaBYEuZ</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/1554f64ee81ecc9cb5a2d80e371b4b2e42a699d2.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:53</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1aJSaBYEuZ</guid>
-      <pubDate>Wed, 03 Dec 2025 03:09:23 +0000</pubDate>
-    </item>
+    <lastBuildDate>Wed, 11 Mar 2026 13:13:23 +0000</lastBuildDate>
     <item>
       <title>没招了，给小七灌点知识</title>
       <link>https://www.bilibili.com/video/BV1Fb2xBpEE9</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/f399f6fe163e51fc659ede696bcd3121d70b0c2f.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 03:30</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1L6NFz9ELV</guid>
       <pubDate>Tue, 10 Mar 2026 08:24:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>养孩子的预期管理：亏得起+差不多行了</title>
+      <link>https://www.bilibili.com/video/BV1K9wFzPEdb</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/47e4f716400abdc62a3cbeec7ed139666a9f4536.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 03:16</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1K9wFzPEdb</guid>
+      <pubDate>Wed, 11 Mar 2026 13:03:03 +0000</pubDate>
     </item>
   </channel>
 </rss>
