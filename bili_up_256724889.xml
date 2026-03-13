@@ -7,18 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 13 Mar 2026 02:34:24 +0000</lastBuildDate>
-    <item>
-      <title>自律不是天赋，是“决定两次”</title>
-      <link>https://www.bilibili.com/video/BV1X9ZfBYEUo</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/f41217503bdbf2fa9a5f45d5d023e2123fe63427.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 我以前一直觉得，自律是天赋——有的人天生就能早起、健身、干活，而我天生就是躺平的那块料。
-直到我发现，那些我以为“自律爆表”的人，其实也不想起床、也不想动。他们只是做了个“第二次决定”：第一次是昨天定目标，第二次是今天不想动的时候，还是动了。
-自律，不是你想不想，而是你决定不决定。它不是超能力，是你每天对自己说话算数。
-哪怕一天只写一句话、只做一个俯卧撑，关键是——你做完了。
-慢慢你会发现，你不是那个“想自律”的人了，你成了那个“真的在做”的人。&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 03:03</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1X9ZfBYEUo</guid>
-      <pubDate>Mon, 23 Feb 2026 03:30:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 13 Mar 2026 05:16:09 +0000</lastBuildDate>
     <item>
       <title>古希腊人居然发明了计算机？</title>
       <link>https://www.bilibili.com/video/BV1KKfFBxE96</link>
@@ -320,6 +309,16 @@ X-59的目标是让音爆变成“音噗”。它38英尺长的机头把冲击�
 最著名的是牧夫座空洞，直径3亿光年。本该有几千个星系，但实际上你飞进去，周围只有绝对的黑暗，没有上下左右，没有任何参照物。只有几根细丝状的暗物&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:27</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1X5cozAEoS</guid>
       <pubDate>Wed, 11 Mar 2026 13:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>钢琴为什么12个键一组？</title>
+      <link>https://www.bilibili.com/video/BV1JKcSzxECJ</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/b0685a158f75dd779726ffefbd8068878946a4f6.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 钢琴上一组有12个键，为什么不是10个、14个、27个？这背后是物理、数学、历史和人类听觉的奇妙交织。
+一根弦振动时，除了最明显的主音，还会同时产生一系列泛音——2倍频（八度）、3倍频（纯五度）、5倍频（大三度）……这些泛音之间的比例都很简单：2:1、3:2、5:4。简单比例的音，我们听着舒服。
+古人想：用这些好听的泛音搭一个音阶吧。于是有了纯律。C大调听起来完美，但一转调，F#大调和弦就刺耳得没法听——纯律只对一个调友好。
+毕达哥拉斯换了个思路：用纯五度往上堆。C→G→D→A→E→B→F#……12步后回&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 14:11</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1JKcSzxECJ</guid>
+      <pubDate>Fri, 13 Mar 2026 04:59:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
