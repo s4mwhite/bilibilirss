@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 15 Mar 2026 02:52:13 +0000</lastBuildDate>
-    <item>
-      <title>年终聚餐，烧烤涮炒</title>
-      <link>https://www.bilibili.com/video/BV1cszqBuEVK</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/7e5c616e494b7141feaefa9966ab52a095eb072d.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:52</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1cszqBuEVK</guid>
-      <pubDate>Tue, 27 Jan 2026 03:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 15 Mar 2026 05:38:47 +0000</lastBuildDate>
     <item>
       <title>天津年夜饭春卷教程</title>
       <link>https://www.bilibili.com/video/BV1h46GB9Efk</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/c97a4c426962106c01c983fc194cc0ea50fad7ec.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:21</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1Qic2zMERH</guid>
       <pubDate>Fri, 13 Mar 2026 03:15:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>我也没想到能迎来四个烧饼</title>
+      <link>https://www.bilibili.com/video/BV1JewKz3ErV</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/5f9e476238004d88cfcfc216d2a3000aea545228.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:30</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1JewKz3ErV</guid>
+      <pubDate>Sun, 15 Mar 2026 03:05:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
