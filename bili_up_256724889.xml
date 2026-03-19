@@ -7,16 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 19 Mar 2026 02:43:54 +0000</lastBuildDate>
-    <item>
-      <title>【超硬核】疯狂的核磁共振机器是怎么运作的</title>
-      <link>https://www.bilibili.com/video/BV1mzP7zWEZT</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/24531925fac4e1d5a91954affe047b9ea5c94a58.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 钻进一个大管子里，就能把你身体里里外外看得清清楚楚——核磁共振（MRI）就是这么神奇。
-它的原理，比你想象的还要硬核：利用氢原子的“自旋”特性，在超强磁场中让它们排队，再用无线电波轻轻“推”一下，等它们恢复原状时发出的信号，就能转化成高清图像。关键是，这一切都靠量子物理打底。
-为了获得足够强的信号，MRI的磁场强度要达到1.5到3特斯拉，是地球磁场的30万倍，比冰箱贴强3万倍。这么强的磁场，得用超导材料才能实现——把铌钛合金线圈泡在零下269度的液氦里，电阻直接归零，电流永远循环。以前液氦会蒸发，每年要花&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 16:17</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1mzP7zWEZT</guid>
-      <pubDate>Mon, 02 Mar 2026 15:17:12 +0000</pubDate>
-    </item>
+    <lastBuildDate>Thu, 19 Mar 2026 05:25:47 +0000</lastBuildDate>
     <item>
       <title>你知道吗：4%的人天生没视觉想象</title>
       <link>https://www.bilibili.com/video/BV1UiP7zxEeT</link>
@@ -314,6 +305,17 @@ The Reserve是新加坡樟宜机场附近刚落成的地下金库，能存500吨
 1955年，对乙酰氨基酚以泰诺之名&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:46</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1ecwizLEzT</guid>
       <pubDate>Wed, 18 Mar 2026 14:56:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI时代，你还相信看到的新闻吗</title>
+      <link>https://www.bilibili.com/video/BV1hFwuzwEsk</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/afcb0b9831d36d2f4bdc2e2257288f2052251173.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; “你每周吃掉一张信用卡”——这个标题你肯定见过。但你真的吃进去5克塑料吗？不一定。
+这个新闻的来源是这样的：澳大利亚纽卡斯尔大学的研究做了一篇报告，里面说人每周摄入的微塑料在0.1克到5克之间。这是一个范围，不是结论。然后世界自然基金会委托咨询公司写了份摘要，只提了上限5克。CNN根据这份摘要写了新闻，“5克≈一张信用卡”。一次完整的科学传播，到这里已经变了三次。
+这叫“信息来源层级”：一级（研究原文）→二级（机构报告）→三级（媒体报道）。每过一层，信息就可能失真一次。
+那怎么分辨？用SIFT法：
+Sto&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 09:40</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1hFwuzwEsk</guid>
+      <pubDate>Thu, 19 Mar 2026 03:30:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
