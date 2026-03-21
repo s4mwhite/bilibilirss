@@ -7,18 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 21 Mar 2026 02:29:08 +0000</lastBuildDate>
-    <item>
-      <title>所有人都应该知道的基础经济学</title>
-      <link>https://www.bilibili.com/video/BV127PqzgE7P</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/f4b1baad24462ae4d90c5a2817dbe2d8225ed7e5.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 2008年，美国马里兰州想“劫富济贫”，向百万富翁加税。第一年收上来1.06亿，第二年——2000个百万富翁跑了，州里倒亏2.57亿。这就是经济学第一条：人们会对激励做出反应，不是对意图。
-托马斯·索维尔的《基础经济学》700页，核心就这几条：
-机会成本——花50万买宝马，代价是30年后这50万可能变成250万。你买的不是车，是那250万。
-价格是信号——没人指挥，伦敦每天有挪威的鱼、阿根廷的牛肉、巴西的咖啡。价格自己调配一切。
-价格管制永远失效——纽约房租管制，房东不修房，房子烂了干脆放弃，空房比流浪汉&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 19:12</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV127PqzgE7P</guid>
-      <pubDate>Wed, 04 Mar 2026 14:24:44 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 21 Mar 2026 05:09:34 +0000</lastBuildDate>
     <item>
       <title>没单杠怎么练背？这5招绝了！</title>
       <link>https://www.bilibili.com/video/BV1guPqz2Ewj</link>
@@ -324,6 +313,17 @@ Sto&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 09:40</description>
 第一天，难受。脑子像有虫子在爬。第二天，稍微能坐住了，但盯墙时头开始发胀。第三天，盯着盯着，墙上的光好像在呼吸，我整个人被吸进去，出来时脑子像清空了一样。然后——连续深度工作几个小时，把拖了几个月的难题啃&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 29:24</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1frwQzAEm2</guid>
       <pubDate>Fri, 20 Mar 2026 13:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>揭秘：AI数据中心，为啥往海里扔</title>
+      <link>https://www.bilibili.com/video/BV1XmAHz6Eiu</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/63acd4cac1187773907b05bedd33ed01aa67f6be.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 你用ChatGPT润色一封邮件，背后发生了什么？几百台服务器同时运转，它们热得不行，需要水来降温。
+一次简单提问，耗电大约能让一个3瓦的LED灯亮20分钟，耗水差不多一小勺。听着不多？OpenAI每天要处理25亿次查询。加起来的水，够墨西哥蒙特雷市所有人一天喝的水。电够你连续刷3000年Netflix。
+数据中心的冷却方式，直接影响这些数字。最常用的是蒸发冷却，省电但费水。在缺水的亚利桑那，谷歌改用风冷，省水但电费飙高。
+新方案是直接芯片冷却，用液体流过芯片带走热量，水不蒸发，能省八成冷却用电。
+更激进的&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 12:39</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1XmAHz6Eiu</guid>
+      <pubDate>Sat, 21 Mar 2026 03:30:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
