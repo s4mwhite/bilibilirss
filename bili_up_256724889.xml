@@ -7,19 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 21 Mar 2026 08:41:07 +0000</lastBuildDate>
-    <item>
-      <title>没单杠怎么练背？这5招绝了！</title>
-      <link>https://www.bilibili.com/video/BV1guPqz2Ewj</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/355e293ab678aa4d46a2cb0e8afd27bfcc363435.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 引体向上是练背的神动作，但前提是——你得有根杠。没单杠怎么办？别慌，搞清楚练背的底层逻辑，家里任何东西都能变成你的“健身房”。
-练背就三件事：①往自己方向拉（不是往外推）；②肩胛骨往中间夹（不是光靠手臂拉）；③核心绷紧（力量才不会散掉）。
-抓住这三点，家里这些地方都能练：
-门框划船——抓住门框两边，身体后倾，把胸往门的方向拉，肩胛骨夹紧。开会间隙都能来两组。
-床单划船——床单打结挂在门上，抓住两端往后拉，脚越往前难度越大。小心门别被打开。
-桌下划船——钻到桌子底下，抓住桌沿，身体绷直，把胸口往桌面拉。注意&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:25</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1guPqz2Ewj</guid>
-      <pubDate>Thu, 05 Mar 2026 03:30:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 21 Mar 2026 13:01:36 +0000</lastBuildDate>
     <item>
       <title>人们为什么不再戴帽子了</title>
       <link>https://www.bilibili.com/video/BV1zhPqzhEgd</link>
@@ -324,6 +312,18 @@ Sto&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 09:40</description>
 更激进的&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 12:39</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1XmAHz6Eiu</guid>
       <pubDate>Sat, 21 Mar 2026 03:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>这题90%的人第一步就走错了</title>
+      <link>https://www.bilibili.com/video/BV1whAHzpENT</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/b2251a536047fa951be7234ed3924ca8dc9b6da3.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 一个1/4圆，里面有两个半圆互相贴着，底边长6米，求红色部分的面积。看着有点绕，其实就三步。
+先看整体：红色面积 = 大1/4圆面积 − 下面白色半圆面积 − 上面白色半圆面积。
+1/4圆半径6，面积是(π×6²)/4 = 9π。
+下面半圆直径6，半径3，面积是(π×3²)/2 = 4.5π。
+上面半圆半径不知道，叫它r。怎么求？两个半圆在中间相切，切点处两个半径垂直于同一条切线，所以两条半径在一条直线上，连接两个圆心就是一条直线。再把这个直线向下垂直画到底部，就得到一个直角三角形。
+直角边一：下面半圆半&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:26</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1whAHzpENT</guid>
+      <pubDate>Sat, 21 Mar 2026 10:30:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
