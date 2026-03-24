@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 24 Mar 2026 09:01:24 +0000</lastBuildDate>
-    <item>
-      <title>狼人这英雄绝对有问题，邮电部诗人</title>
-      <link>https://www.bilibili.com/video/BV1Rn9uYZE6e</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/c49c65c3dfa974cf011748c44745a4854abad04b.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 09:53</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Rn9uYZE6e</guid>
-      <pubDate>Fri, 28 Feb 2025 11:50:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 24 Mar 2026 13:26:01 +0000</lastBuildDate>
     <item>
       <title>妹妹能取这iD ?</title>
       <link>https://www.bilibili.com/video/BV1L7RPYJEdL</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/ec8f8cf7c67b8388e95351fe706046d31c010253.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 这期换个风格试试，后面考虑将之前解说风格与这种风格结合 试试效果&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:41</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1yEwszPEmz</guid>
       <pubDate>Sat, 14 Mar 2026 03:17:24 +0000</pubDate>
+    </item>
+    <item>
+      <title>你的钩子</title>
+      <link>https://www.bilibili.com/video/BV1HTQzBkEVc</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/3c98bf7f5b681b26cf9686482e0b90ca7fcc6921.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:23</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1HTQzBkEVc</guid>
+      <pubDate>Tue, 24 Mar 2026 10:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
