@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 27 Mar 2026 08:59:51 +0000</lastBuildDate>
-    <item>
-      <title>再也不想看到蜘蛛了</title>
-      <link>https://www.bilibili.com/video/BV1emrYB9ErQ</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/b2e8b716c20492ca9399cbcbca7aa09884df0e9a.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:17</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1emrYB9ErQ</guid>
-      <pubDate>Mon, 12 Jan 2026 11:26:23 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 27 Mar 2026 13:18:00 +0000</lastBuildDate>
     <item>
       <title>跳 完 舞 之 后 我 们 就 会 死</title>
       <link>https://www.bilibili.com/video/BV1r5rpBiEhs</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/d23d528b540d83d5fe6d6c9904e123e2400bcfe8.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 12:12</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1ntQBBuEqG</guid>
       <pubDate>Tue, 24 Mar 2026 11:25:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>车 大 人 有 危 险 了</title>
+      <link>https://www.bilibili.com/video/BV1ZNXTB2E53</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/e8325ce3ff3d089b63a260e9af22493c8eb1636a.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:08</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1ZNXTB2E53</guid>
+      <pubDate>Fri, 27 Mar 2026 09:19:01 +0000</pubDate>
     </item>
   </channel>
 </rss>
