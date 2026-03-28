@@ -7,17 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 28 Mar 2026 02:40:41 +0000</lastBuildDate>
-    <item>
-      <title>钢琴为什么12个键一组？</title>
-      <link>https://www.bilibili.com/video/BV1JKcSzxECJ</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/b0685a158f75dd779726ffefbd8068878946a4f6.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 钢琴上一组有12个键，为什么不是10个、14个、27个？这背后是物理、数学、历史和人类听觉的奇妙交织。
-一根弦振动时，除了最明显的主音，还会同时产生一系列泛音——2倍频（八度）、3倍频（纯五度）、5倍频（大三度）……这些泛音之间的比例都很简单：2:1、3:2、5:4。简单比例的音，我们听着舒服。
-古人想：用这些好听的泛音搭一个音阶吧。于是有了纯律。C大调听起来完美，但一转调，F#大调和弦就刺耳得没法听——纯律只对一个调友好。
-毕达哥拉斯换了个思路：用纯五度往上堆。C→G→D→A→E→B→F#……12步后回&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 14:11</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1JKcSzxECJ</guid>
-      <pubDate>Fri, 13 Mar 2026 04:59:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 28 Mar 2026 05:23:55 +0000</lastBuildDate>
     <item>
       <title>红牛：不生产饮料，只生产广告</title>
       <link>https://www.bilibili.com/video/BV1piwJz7EV1</link>
@@ -320,6 +310,17 @@ Sto&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 09:40</description>
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/d30973a8b0f5a4cac3bf4fff1259ce9d329028cf.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 晚上翻来覆去睡不着，感觉身心疲惫？这可能是你的压力激素——皮质醇在“作怪”！它本该在夜晚降低，但如果一直居高不下，就会严重影响你的睡眠和健康。别担心，今天的视频为你带来三个经过科学验证的夜间习惯，帮你快速安静皮质醇，告别失眠和焦虑。这些方法简单易行，不需要任何特殊工具，从今晚开始就能实践。让我们一起学习如何通过调整睡前的小习惯，让身体真正放松下来，迎接一个深度、修复性的好睡眠吧！&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 04:46</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1vRXTBVEFr</guid>
       <pubDate>Fri, 27 Mar 2026 16:05:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>富人先存钱，穷人先花钱</title>
+      <link>https://www.bilibili.com/video/BV1mbXTBcEgs</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/13a0da89810c4a4e8c5400cdcfaa9fcff9904cbb.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 我花了十年学金融、做投行，到头来发现，最值钱的本事不是怎么分析股票，是怎么管好自己的钱。
+九个坏习惯，看看你中了几条。
+第一条：先花钱再存钱。工资到账，交房租、还花呗、买买买，剩多少存多少——剩不下。反过来，先把10%存起来，剩下的再花。脑子会自动调整，一个月下来你会发现，日子照样过，钱存下了。
+第二条：习惯借债。买衣服、买礼物、吃顿饭都刷信用卡。现在信用卡平均利率22%，没还清之前，那点积分和返现根本不值钱。我的原则：拿不出现金，就不买。
+第三条：没有备用金。存够3-6个月生活费，放在那儿不动。不是为了&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:59</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1mbXTBcEgs</guid>
+      <pubDate>Sat, 28 Mar 2026 03:09:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

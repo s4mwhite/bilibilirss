@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 28 Mar 2026 02:39:57 +0000</lastBuildDate>
-    <item>
-      <title>一个汉堡酱，引发的深思</title>
-      <link>https://www.bilibili.com/video/BV1LHFfzVEvt</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/9cb2aeff1bfcf4100fdb5784956c0cbf69bad972.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; #麦门 #麦当劳&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:21</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1LHFfzVEvt</guid>
-      <pubDate>Sun, 08 Feb 2026 04:10:56 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 28 Mar 2026 05:23:16 +0000</lastBuildDate>
     <item>
       <title>腊月二十五磨豆腐</title>
       <link>https://www.bilibili.com/video/BV1DhFmzqE53</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/528396bfeaf9d3f8eb2f2d67136f497f7be53281.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 10:01</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV18MQSBQEW4</guid>
       <pubDate>Thu, 26 Mar 2026 03:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>为夏天的烧烤做准备</title>
+      <link>https://www.bilibili.com/video/BV1yAXVBVEM8</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/0d3af2db51cb3b90273a908dedbd5cef88764b4a.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 09:57</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1yAXVBVEM8</guid>
+      <pubDate>Sat, 28 Mar 2026 04:50:48 +0000</pubDate>
     </item>
   </channel>
 </rss>
