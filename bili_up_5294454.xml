@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 02 Apr 2026 05:44:59 +0000</lastBuildDate>
-    <item>
-      <title>“最新研发的隐身衣”</title>
-      <link>https://www.bilibili.com/video/BV1Pi421C7C5</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/4af50d8d585fb6dd08aeb97a613d6e003791885a.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 又是三天做完的 我最近真是疯了&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:05</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Pi421C7C5</guid>
-      <pubDate>Sat, 11 May 2024 09:10:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Thu, 02 Apr 2026 13:27:31 +0000</lastBuildDate>
     <item>
       <title>不删</title>
       <link>https://www.bilibili.com/video/BV1x1421B7py</link>
@@ -289,6 +282,13 @@ Exit Strategy
 “擦边主播”&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:26</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1xuPYzcEdo</guid>
       <pubDate>Sat, 07 Mar 2026 08:50:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>凶手一句话，造就一桩悬案</title>
+      <link>https://www.bilibili.com/video/BV1CbXZBPECb</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/8ed7d80f04055a5c3b7efea6ad725104e5dba421.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 雀巢表示 已和凶手庭外和解，请大家不要网爆凶手&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:16</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1CbXZBPECb</guid>
+      <pubDate>Thu, 02 Apr 2026 10:08:36 +0000</pubDate>
     </item>
   </channel>
 </rss>
