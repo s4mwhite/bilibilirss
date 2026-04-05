@@ -7,18 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 04 Apr 2026 20:39:48 +0000</lastBuildDate>
-    <item>
-      <title>AI时代，你还相信看到的新闻吗</title>
-      <link>https://www.bilibili.com/video/BV1hFwuzwEsk</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/afcb0b9831d36d2f4bdc2e2257288f2052251173.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; “你每周吃掉一张信用卡”——这个标题你肯定见过。但你真的吃进去5克塑料吗？不一定。
-这个新闻的来源是这样的：澳大利亚纽卡斯尔大学的研究做了一篇报告，里面说人每周摄入的微塑料在0.1克到5克之间。这是一个范围，不是结论。然后世界自然基金会委托咨询公司写了份摘要，只提了上限5克。CNN根据这份摘要写了新闻，“5克≈一张信用卡”。一次完整的科学传播，到这里已经变了三次。
-这叫“信息来源层级”：一级（研究原文）→二级（机构报告）→三级（媒体报道）。每过一层，信息就可能失真一次。
-那怎么分辨？用SIFT法：
-Sto&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 09:40</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1hFwuzwEsk</guid>
-      <pubDate>Thu, 19 Mar 2026 03:30:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 05 Apr 2026 05:47:42 +0000</lastBuildDate>
     <item>
       <title>1美金和10万美金的望远镜，差在哪？</title>
       <link>https://www.bilibili.com/video/BV1xHwBzzERg</link>
@@ -295,6 +284,13 @@ Sto&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 09:40</description>
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/ea0835b9f78aa55ff3b825587754bff5b8861384.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 频道深入探讨彩色电视发明的技术挑战。从黑白电视到彩色电视的转变并非简单的添加颜色，而是涉及复杂的光学、电子学和信号处理技术。视频解释了为什么这个发明花了数十年才实现，以及工程师们如何克服重重困难。这是一个关于创新、坚持和科技突破的迷人故事。&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 13:40</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1LG9wBhEji</guid>
       <pubDate>Sat, 04 Apr 2026 13:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>3-2-1说话法则：让别人记住你说的每句话</title>
+      <link>https://www.bilibili.com/video/BV1AD9gBqEz3</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/b55cbdbbd1e56a3840cdf282cc484b328de077d3.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 你有没有发现，每次开口说话总是越说越多，反而让人听得越来越模糊？Vinh Giang 是享誉全球的演讲教练，这支超过 516 万播放的爆款视频揭示了一个简单却极其有效的 3-2-1 表达框架：3个要点、2个例子、1个核心结论。无论是日常对话、工作汇报还是正式演讲，只需掌握这一结构，你的表达立刻会变得清晰有力。学会它，让你的每一句话都掷地有声。&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:19</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1AD9gBqEz3</guid>
+      <pubDate>Sun, 05 Apr 2026 03:30:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
