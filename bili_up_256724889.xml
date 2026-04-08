@@ -7,19 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 07 Apr 2026 13:42:45 +0000</lastBuildDate>
-    <item>
-      <title>这题90%的人第一步就走错了</title>
-      <link>https://www.bilibili.com/video/BV1whAHzpENT</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/b2251a536047fa951be7234ed3924ca8dc9b6da3.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 一个1/4圆，里面有两个半圆互相贴着，底边长6米，求红色部分的面积。看着有点绕，其实就三步。
-先看整体：红色面积 = 大1/4圆面积 − 下面白色半圆面积 − 上面白色半圆面积。
-1/4圆半径6，面积是(π×6²)/4 = 9π。
-下面半圆直径6，半径3，面积是(π×3²)/2 = 4.5π。
-上面半圆半径不知道，叫它r。怎么求？两个半圆在中间相切，切点处两个半径垂直于同一条切线，所以两条半径在一条直线上，连接两个圆心就是一条直线。再把这个直线向下垂直画到底部，就得到一个直角三角形。
-直角边一：下面半圆半&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:26</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1whAHzpENT</guid>
-      <pubDate>Sat, 21 Mar 2026 10:30:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Wed, 08 Apr 2026 09:10:00 +0000</lastBuildDate>
     <item>
       <title>麦当劳汉堡里的番茄能种出来吗？</title>
       <link>https://www.bilibili.com/video/BV1wbAHz9E2X</link>
@@ -275,6 +263,16 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/af5cdb21cc52d0159a0d5cf58a3dcb4f225dd450.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 为什么许多真正的富人看起来并不起眼？在本期视频中，Humphrey Yang将颠覆你对“成功形象”的认知，深入探讨“看起来穷”背后隐藏的巨大财务智慧。这并非是关于节俭或吝啬，而是一种主动选择的、强大的财富策略。你将了解到，刻意保持低调如何帮助你避免“生活方式膨胀”的陷阱，将宝贵的资金和精力专注于能产生长期价值的资产积累上，而非消耗在无意义的炫耀性消费中。视频将分享实用的思维转变和具体行动步骤，帮助你打破社会比较的压力，建立更健康、更自由的财务生活。如果你想摆脱“人前显贵，人后受罪”的循环，这个视频将为你指&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 10:13</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1yUDcBKEcy</guid>
       <pubDate>Tue, 07 Apr 2026 03:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>进化为何总往螃蟹方向跑？</title>
+      <link>https://www.bilibili.com/video/BV1EWDqBFEQX</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/092104955fc9c9f4d4015e61dc00b7c3ac52cd84.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 你看到的这些，全都不是螃蟹。但它们都变成了螃蟹的样子。这个现象叫“蟹化”——动物界的终极变身术。
+螃蟹的身体结构堪称完美：扁平宽大的身体，重心低、稳如磐石，能轻松钻进岩石缝；硬壳像坦克装甲，把全身护得严严实实；短而有力的腿能横着走，躲避天敌的同时还能正面迎战。这套设计太成功了，以至于无数甲壳类动物都抢着“抄作业”。
+帝王蟹，听着是蟹，其实是巨型寄居蟹变的。它的祖先还背着海螺壳，后来自己长出了硬壳，不再需要“租房”，身体慢慢变扁、变宽，最后变成了螃蟹的样子。还有瓷蟹、毛石蟹，全是“假螃蟹”。
+为什么螃蟹这么&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 12:18</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1EWDqBFEQX</guid>
+      <pubDate>Tue, 07 Apr 2026 13:46:47 +0000</pubDate>
     </item>
   </channel>
 </rss>
