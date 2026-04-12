@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 12 Apr 2026 08:56:26 +0000</lastBuildDate>
-    <item>
-      <title>最 不 急 的 一 集</title>
-      <link>https://www.bilibili.com/video/BV1RJzLBAEWm</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/11f6f0299797f876d881ef2dba9c7616624769f2.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:17</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1RJzLBAEWm</guid>
-      <pubDate>Wed, 21 Jan 2026 11:05:29 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 12 Apr 2026 16:46:58 +0000</lastBuildDate>
     <item>
       <title>最 鸡 的 一 集</title>
       <link>https://www.bilibili.com/video/BV1xX6EBcEwE</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/8c18d213810228fba3f9d822a05462ee24147df4.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:13</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV18nD4BHEye</guid>
       <pubDate>Thu, 09 Apr 2026 10:48:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>叶 子 有 危 险 了</title>
+      <link>https://www.bilibili.com/video/BV1u8D9BFE9t</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/4cde0e6d2ac06091fc9775ac525615fcb6177c0f.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 14:27</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1u8D9BFE9t</guid>
+      <pubDate>Sun, 12 Apr 2026 11:25:13 +0000</pubDate>
     </item>
   </channel>
 </rss>
