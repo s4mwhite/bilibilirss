@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 23 Apr 2026 06:09:16 +0000</lastBuildDate>
-    <item>
-      <title>是什么蒙蔽了我的双眼</title>
-      <link>https://www.bilibili.com/video/BV1LpFSzDEQU</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/aadd90cd7aa450532964f8f6f8b86f9f7fe3796a.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 10:32</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1LpFSzDEQU</guid>
-      <pubDate>Tue, 10 Feb 2026 08:45:03 +0000</pubDate>
-    </item>
+    <lastBuildDate>Thu, 23 Apr 2026 20:57:34 +0000</lastBuildDate>
     <item>
       <title>最 安 静 的 动 物 园</title>
       <link>https://www.bilibili.com/video/BV1YZc4zHEJv</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/f7ffb84e47762517add09b942fc1520e206cfcec.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 13:18</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1d7drB7EKZ</guid>
       <pubDate>Mon, 20 Apr 2026 12:31:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>上 面 还 是 下 面</title>
+      <link>https://www.bilibili.com/video/BV15eoYBbEWK</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/6f127042673eeb96562f56da84b27296c7109d43.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:09</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV15eoYBbEWK</guid>
+      <pubDate>Thu, 23 Apr 2026 10:00:51 +0000</pubDate>
     </item>
   </channel>
 </rss>
