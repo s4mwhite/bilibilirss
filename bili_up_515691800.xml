@@ -7,16 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 23 Apr 2026 20:57:39 +0000</lastBuildDate>
-    <item>
-      <title>第一次比赛，名次重要还是流量重要？我的答案是……</title>
-      <link>https://www.bilibili.com/video/BV1LbX6BgEvK</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/558ffa0cecf6e86e5fe6d22d01beb3e559602c3b.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 先追流量 → 规则一变，广告归零
-再追名次 → 拿了职业卡，课价还是卷不动
-最后发现，两个都不如“赚钱能力”实在&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 03:20</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1LbX6BgEvK</guid>
-      <pubDate>Tue, 31 Mar 2026 04:37:13 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 24 Apr 2026 06:11:53 +0000</lastBuildDate>
     <item>
       <title>那又怎样～</title>
       <link>https://www.bilibili.com/video/BV1r297BpEGj</link>
@@ -404,6 +395,13 @@
 🍡 好好&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 04:01</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1Z1oaBcEA8</guid>
       <pubDate>Thu, 23 Apr 2026 03:12:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>第一眼：没见过女的是不是；第二眼：这样的我还真没见过</title>
+      <link>https://www.bilibili.com/video/BV178oGB6ELs</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/74fb0fb5a1f83f9f61defd51a916b2c184f333e5.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:07</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV178oGB6ELs</guid>
+      <pubDate>Fri, 24 Apr 2026 04:33:14 +0000</pubDate>
     </item>
   </channel>
 </rss>
