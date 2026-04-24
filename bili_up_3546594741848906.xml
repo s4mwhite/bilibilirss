@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 23 Apr 2026 20:57:51 +0000</lastBuildDate>
-    <item>
-      <title>一个博主不拍视频时吃什么</title>
-      <link>https://www.bilibili.com/video/BV1cvQ9BSEtC</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/e32b396df96dcb6317bb519cac886c22a80163d2.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:48</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1cvQ9BSEtC</guid>
-      <pubDate>Mon, 23 Mar 2026 02:24:11 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 24 Apr 2026 20:55:43 +0000</lastBuildDate>
     <item>
       <title>只要努力，就会吃到更好吃的方飞卧</title>
       <link>https://www.bilibili.com/video/BV1ZoXwBiEnp</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/cba0cc080c535a976daca8782ac2efc2ca6825e3.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:26</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1XwoxBKEyD</guid>
       <pubDate>Thu, 23 Apr 2026 03:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>一切都是为了这烧饼</title>
+      <link>https://www.bilibili.com/video/BV1GSoTBHEXf</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/f25c3b1682f20e4e0ea92592d16db0ce650b3b03.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:03</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1GSoTBHEXf</guid>
+      <pubDate>Fri, 24 Apr 2026 03:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
