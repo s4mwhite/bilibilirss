@@ -7,23 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 23 Apr 2026 09:50:50 +0000</lastBuildDate>
-    <item>
-      <title>【官方双语】但是什么是中心极限定理？</title>
-      <link>https://www.bilibili.com/video/BV1gh4y1W7ag</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/bb9f7310ca18368dddacf9ca2cf846697e15d170.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 概率论中最重要定理的可视化介绍
-更多信息请看下方评论
-
-翻译：jurohd
-校对：䶭，ZSC，ksyx，鹤翔万里
-时轴：鹤翔万里，䶭
-后期：鹤翔万里
-
-But what is the Central Limit Theorem?
-https://youtu.be/zeJD6dqJ5lo&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 31:15</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1gh4y1W7ag</guid>
-      <pubDate>Thu, 13 Apr 2023 11:30:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 24 Apr 2026 03:26:15 +0000</lastBuildDate>
     <item>
       <title>【官方双语】为什么正态分布里会有一个π？（不止是积分技巧）</title>
       <link>https://www.bilibili.com/video/BV1wu411W7uU</link>
@@ -435,6 +419,18 @@ https://youtu.be/FE-hM1kRK4Y
 感谢观众的支持: https://3b1b.co/support 一键三联与分享，也是最大的支持！&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 23:05</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV125BMBbED2</guid>
       <pubDate>Wed, 24 Dec 2025 02:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】毛球定理</title>
+      <link>https://www.bilibili.com/video/BV1WtoTBiEdg</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/c5781e086772332c6ca59e25158c00e726b7f7ee.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 本期视频我们尝试利用反证法来巧妙的证明毛球定理。
+  
+https://youtu.be/BHdbsHFs2P0
+  
+翻译：凡人忆拾 Ling 畏狐之狐 校对：ZSC 时间轴&amp;后期：凡人忆拾 畏狐之狐 愚者    
+感谢观众的支持: https://3b1b.co/support 一键三联与分享，也是最大的支持！&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 29:40</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1WtoTBiEdg</guid>
+      <pubDate>Fri, 24 Apr 2026 00:30:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
