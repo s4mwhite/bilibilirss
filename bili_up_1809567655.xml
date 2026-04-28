@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 28 Apr 2026 10:21:14 +0000</lastBuildDate>
-    <item>
-      <title>只限制宽度？这是你说的啊！</title>
-      <link>https://www.bilibili.com/video/BV1tjRUYZEdB</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/85fe40d09b0fbb0b0181008bdc60678c6eca5ac2.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:19</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1tjRUYZEdB</guid>
-      <pubDate>Mon, 07 Apr 2025 14:02:56 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 28 Apr 2026 14:25:24 +0000</lastBuildDate>
     <item>
       <title>你若不记得梦的内容，就再梦一次！</title>
       <link>https://www.bilibili.com/video/BV1Bio7YhEUt</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/c8e018a056d31b8e4b3cc3735f3759b70a6ea6b6.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:45</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1HZdVBjESw</guid>
       <pubDate>Fri, 17 Apr 2026 12:03:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>我们愿意停留的地方，才叫“街”</title>
+      <link>https://www.bilibili.com/video/BV1Qg9rBNE6s</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/d585c78c7f526d7a16eb6355d223ac9fcb8a0953.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:54</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Qg9rBNE6s</guid>
+      <pubDate>Tue, 28 Apr 2026 12:30:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
