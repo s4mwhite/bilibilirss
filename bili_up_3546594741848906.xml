@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 28 Apr 2026 03:40:05 +0000</lastBuildDate>
-    <item>
-      <title>为夏天的烧烤做准备</title>
-      <link>https://www.bilibili.com/video/BV1yAXVBVEM8</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/0d3af2db51cb3b90273a908dedbd5cef88764b4a.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 09:57</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1yAXVBVEM8</guid>
-      <pubDate>Sat, 28 Mar 2026 04:50:48 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 28 Apr 2026 06:33:19 +0000</lastBuildDate>
     <item>
       <title>天津一直在创新</title>
       <link>https://www.bilibili.com/video/BV1agXUBsEro</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/b6c23b40eb7a12e8c8a1d28281425720167f8798.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:33</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1TRoqB8Eh6</guid>
       <pubDate>Mon, 27 Apr 2026 03:10:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>天津炸酱面是微甜口的</title>
+      <link>https://www.bilibili.com/video/BV1Nv9BBHEf5</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/3708f1ee93c3b81e6c2e941a2ea33cfd278babb0.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 04:47</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Nv9BBHEf5</guid>
+      <pubDate>Tue, 28 Apr 2026 04:00:27 +0000</pubDate>
     </item>
   </channel>
 </rss>
