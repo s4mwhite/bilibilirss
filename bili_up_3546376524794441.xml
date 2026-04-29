@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 28 Apr 2026 21:11:07 +0000</lastBuildDate>
-    <item>
-      <title>最 安 全 的 小 火 车</title>
-      <link>https://www.bilibili.com/video/BV1pqZ7BPEF3</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/8bb5d1b7185f74b1fdd74359245126e1893d22df.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:13</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1pqZ7BPEF3</guid>
-      <pubDate>Sat, 14 Feb 2026 11:19:25 +0000</pubDate>
-    </item>
+    <lastBuildDate>Wed, 29 Apr 2026 14:10:37 +0000</lastBuildDate>
     <item>
       <title>最不能露出的一集</title>
       <link>https://www.bilibili.com/video/BV1LSZKB4E1H</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/3466259321e81bbbb027543c3220e6ce73d5330e.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:02</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1xboCBrE5B</guid>
       <pubDate>Mon, 27 Apr 2026 13:51:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>小 虫 有 危 险 了</title>
+      <link>https://www.bilibili.com/video/BV1F89DB5EjD</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/8adb8b7c5d7a79463cc483a1ce8cdbaaa7e05bf0.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 10:18</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1F89DB5EjD</guid>
+      <pubDate>Wed, 29 Apr 2026 10:50:52 +0000</pubDate>
     </item>
   </channel>
 </rss>
