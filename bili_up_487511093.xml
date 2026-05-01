@@ -7,18 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 30 Apr 2026 14:09:08 +0000</lastBuildDate>
-    <item>
-      <title>完全超越直觉的经典数学问题「生日悖论」</title>
-      <link>https://www.bilibili.com/video/BV1oMXTByEky</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/838a5c1e0c95a714fd0759c494982db77fddc45e.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; Vsauce2
-从人群中完全随机地选出23个人，有两人生日相同的概率会是多少？答案超乎想象，是50%
-
-一年有365天那么多，只有23个人的情况下，概率怎么可能这么大？这完全不符合直觉。没错，这是一个数学上相当经典的问题——生日悖论。
-这段有趣的小科普，会带你从头到尾梳理一遍，这个50%的概率是怎么来的。直观地为你展示指数级增长，是怎么骗过普通人的“生活直觉”的。&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:59</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1oMXTByEky</guid>
-      <pubDate>Sat, 28 Mar 2026 02:30:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 01 May 2026 06:41:06 +0000</lastBuildDate>
     <item>
       <title>为啥跟有的人讲道理那么难？原来这叫“放屁不对称”</title>
       <link>https://www.bilibili.com/video/BV1u4XTBYEPL</link>
@@ -244,6 +233,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/958d56e7b9a188ea0183c65dc68f809071603a9d.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; Xtremeexotics&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:15</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1MG9tB4ELW</guid>
       <pubDate>Wed, 29 Apr 2026 19:22:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>和小猫Uno交朋友！甜到我心尖上了🥹</title>
+      <link>https://www.bilibili.com/video/BV1vu9eBXEey</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/63ba3a7eca9d6b09642523bd9804ae8e20d3ac5e.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; one_eared_uno&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:02</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1vu9eBXEey</guid>
+      <pubDate>Thu, 30 Apr 2026 14:57:45 +0000</pubDate>
     </item>
   </channel>
 </rss>
