@@ -7,23 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 03 May 2026 20:54:09 +0000</lastBuildDate>
-    <item>
-      <title>【官方双语】为什么正态分布里会有一个π？（不止是积分技巧）</title>
-      <link>https://www.bilibili.com/video/BV1wu411W7uU</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/05094d2c0bbd01015075ae27d8843ca3f2b0d287.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 圆在哪里？它和e^(-x^2)又有什么联系？
-更多信息请看下方评论
-
-翻译：畏狐之狐 Ksm Diro ksyx 鹤翔万里 
-校对：䶭 ksyx ZSC 
-时轴：鹤翔万里，䶭 
-后期：鹤翔万里
-
-Why π is in the normal distribution (beyond integral tricks)
-https://youtu.be/cy8r7WSuT1I&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 25:35</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1wu411W7uU</guid>
-      <pubDate>Wed, 31 May 2023 15:36:35 +0000</pubDate>
-    </item>
+    <lastBuildDate>Mon, 04 May 2026 06:45:58 +0000</lastBuildDate>
     <item>
       <title>【官方双语】哈~被骗啦（数学版翻唱《哈利路亚》）</title>
       <link>https://www.bilibili.com/video/BV1hg4y1A7pf</link>
@@ -431,6 +415,20 @@ https://youtu.be/BHdbsHFs2P0
 感谢观众的支持: https://3b1b.co/support 一键三联与分享，也是最大的支持！&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 29:40</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1WtoTBiEdg</guid>
       <pubDate>Fri, 24 Apr 2026 00:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】如何（以及为什么）对一幅画取对数？</title>
+      <link>https://www.bilibili.com/video/BV1UDRFBSEE1</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/de03e8c379d60bf40f1b11821f4d11474cbb74d5.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 本期视频我们从埃舍尔的画作开始，走入德罗斯特效应，并解释其中的数学原理。  
+  
+How (and why) to take a logarithm of an image
+https://www.youtube.com/watch?v=ldxFjLJ3rVY
+
+翻译&amp;时间轴：贰鼠  
+感谢观众的支持: https://3b1b.co/support  
+一键三联与分享，也是最大的支持！&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 44:52</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1UDRFBSEE1</guid>
+      <pubDate>Mon, 04 May 2026 01:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
