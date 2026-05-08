@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 07 May 2026 06:43:07 +0000</lastBuildDate>
-    <item>
-      <title>正在前往终末地</title>
-      <link>https://www.bilibili.com/video/BV13ZryB2EsD</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/1167b7c5af577d40f162d52c22e2593624a38c33.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 博士超级拼装&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:02</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV13ZryB2EsD</guid>
-      <pubDate>Sat, 17 Jan 2026 06:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 08 May 2026 09:45:30 +0000</lastBuildDate>
     <item>
       <title>瓦尔基里 轻而易举啊</title>
       <link>https://www.bilibili.com/video/BV1khzEBHEVE</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/bcd76cc42c3f3707903559b2a004a49286e66bb4.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 服务器末地保住了，没有掉进虚空&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:28</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV19JRHBnEw3</guid>
       <pubDate>Wed, 06 May 2026 06:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>凯尔希归来归来</title>
+      <link>https://www.bilibili.com/video/BV1XJdNBgEJz</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/70d94298bad0b08599a42f9d0b6b62a5b768299c.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 固有 保留&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:59</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1XJdNBgEJz</guid>
+      <pubDate>Fri, 08 May 2026 06:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
