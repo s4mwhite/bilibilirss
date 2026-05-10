@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 09 May 2026 20:51:45 +0000</lastBuildDate>
-    <item>
-      <title>脑 子 有 危 险 了</title>
-      <link>https://www.bilibili.com/video/BV1EsfmBmEk3</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/44947393b765f8f1736ea0a1ff9044aedb95d069.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:41</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1EsfmBmEk3</guid>
-      <pubDate>Tue, 24 Feb 2026 11:08:33 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 10 May 2026 20:54:47 +0000</lastBuildDate>
     <item>
       <title>石 头 有 危 险 了</title>
       <link>https://www.bilibili.com/video/BV1UTA6zDEEZ</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/33789e75ba8e7cd72f10057c379799026097f8fa.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:04</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1SHR9BuECU</guid>
       <pubDate>Sat, 09 May 2026 10:53:53 +0000</pubDate>
+    </item>
+    <item>
+      <title>俄罗斯方块有危险了</title>
+      <link>https://www.bilibili.com/video/BV1gz5766EEw</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/24ee49385768791c460519b4df7233408bbf402f.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:25</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1gz5766EEw</guid>
+      <pubDate>Sun, 10 May 2026 10:42:11 +0000</pubDate>
     </item>
   </channel>
 </rss>
