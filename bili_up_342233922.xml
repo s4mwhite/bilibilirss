@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 16 May 2026 20:57:41 +0000</lastBuildDate>
-    <item>
-      <title>请找出视频中的人类</title>
-      <link>https://www.bilibili.com/video/BV1nRoXYKEbp</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/4a14b81c95fca7353c78cffcd395ed1b13ef288f.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:09</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1nRoXYKEbp</guid>
-      <pubDate>Fri, 28 Mar 2025 09:29:33 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 17 May 2026 06:50:51 +0000</lastBuildDate>
     <item>
       <title>神人大作战之全员厨房暴乱</title>
       <link>https://www.bilibili.com/video/BV1RJoNY9Ejo</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/68adf9787659f0ab4fe7cbb1078e230984d9178d.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:12</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1TgRpB7EYB</guid>
       <pubDate>Wed, 06 May 2026 03:40:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>真正的空大，群星闪耀时刻，下饭大乱舞</title>
+      <link>https://www.bilibili.com/video/BV1kwL76fEZ4</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/1b840fb3494e8759ea2c65ba38fc7f3706760853.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:28</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1kwL76fEZ4</guid>
+      <pubDate>Sun, 17 May 2026 03:03:27 +0000</pubDate>
     </item>
   </channel>
 </rss>
