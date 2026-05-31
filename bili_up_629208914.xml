@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 30 May 2026 21:04:53 +0000</lastBuildDate>
-    <item>
-      <title>简单激情碎碎念一下</title>
-      <link>https://www.bilibili.com/video/BV1BfXfBaENA</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/ba43908e68ef65a6995a77821febd04303979cef.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 03:23</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1BfXfBaENA</guid>
-      <pubDate>Thu, 02 Apr 2026 13:56:42 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 31 May 2026 04:18:25 +0000</lastBuildDate>
     <item>
       <title>耗个腿子吧耶</title>
       <link>https://www.bilibili.com/video/BV1wUSSBqEzN</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/b274ae616ddb325b3e605525c3f76014646e7522.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:58</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1qrVM6WENN</guid>
       <pubDate>Sat, 30 May 2026 00:22:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>就是工作就是玩耶</title>
+      <link>https://www.bilibili.com/video/BV1h3VJ6CED4</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/2bb557cf0bf5d3b33c435cef84f59d2ce652f52c.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 03:16</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1h3VJ6CED4</guid>
+      <pubDate>Sun, 31 May 2026 00:36:33 +0000</pubDate>
     </item>
   </channel>
 </rss>
