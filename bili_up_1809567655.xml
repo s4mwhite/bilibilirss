@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 06 Jun 2026 07:21:53 +0000</lastBuildDate>
-    <item>
-      <title>你是作者，但不会是唯一一个。</title>
-      <link>https://www.bilibili.com/video/BV1A6j2z8Et7</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/7a4001f4fd036bcb3b523d6578513801465a517c.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 每代人都有自己的想法&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:27</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1A6j2z8Et7</guid>
-      <pubDate>Mon, 26 May 2025 14:07:33 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 06 Jun 2026 13:54:39 +0000</lastBuildDate>
     <item>
       <title>如果有办法，我想再见一次。</title>
       <link>https://www.bilibili.com/video/BV1wA7azpEoY</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/2858b236c3ec8c64068d13c2aa05ad8be33cb65f.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:43</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV14zGH6uEiC</guid>
       <pubDate>Sun, 24 May 2026 13:54:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>那天真有其他人在场，但我没法证明。</title>
+      <link>https://www.bilibili.com/video/BV1YVEn6fEmZ</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/36a36b65d7a5cdced8c027e2371074acb5dd204b.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:03</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1YVEn6fEmZ</guid>
+      <pubDate>Sat, 06 Jun 2026 13:09:35 +0000</pubDate>
     </item>
   </channel>
 </rss>
