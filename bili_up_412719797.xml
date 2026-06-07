@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 07 Jun 2026 14:04:46 +0000</lastBuildDate>
-    <item>
-      <title>奶凶奶凶的象宝宝：你们走开，我很可怕的！</title>
-      <link>https://www.bilibili.com/video/BV1ibGx6aEMC</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/b5b7225ba34133fa69a16767a743730d2289c05b.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 素材来源于网络&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:24</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1ibGx6aEMC</guid>
-      <pubDate>Mon, 25 May 2026 07:21:14 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 07 Jun 2026 21:18:52 +0000</lastBuildDate>
     <item>
       <title>埃塞俄比亚小哥Kalu Putic的变装秀：用旧轮胎、塑料瓶、电线、纸板等废弃物手工做成“废土风”时装</title>
       <link>https://www.bilibili.com/video/BV1BsGx6NEpn</link>
@@ -230,6 +223,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/6e8eb8a1f565a94d6d4c6cbcafbfa27f369cd778.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 18:22</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1NsEt6vEHR</guid>
       <pubDate>Sun, 07 Jun 2026 13:35:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Code创始人:教你正确写出AI提示词，还有搭建自己的Agent智能体</title>
+      <link>https://www.bilibili.com/video/BV1BpEh6YEDU</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/1757ee7eb480734f9f75144052db0c21722cc285.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; Anthropic工程师Claude Code创始人Boris Cherny，亲自教你如何正确给他构建的Claude Code编写提示词，以及传授一些他个人的AI编程实用心得技巧，还有如何去搭建自己的Agent智能体。&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 27:27</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1BpEh6YEDU</guid>
+      <pubDate>Sun, 07 Jun 2026 15:30:16 +0000</pubDate>
     </item>
   </channel>
 </rss>
