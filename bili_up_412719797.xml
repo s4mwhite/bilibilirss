@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 14 Jun 2026 17:24:29 +0000</lastBuildDate>
-    <item>
-      <title>“饮品控”小姐姐分享她的日常，从早到晚吨吨吨不停</title>
-      <link>https://www.bilibili.com/video/BV1vGVY6nE4d</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/82961a64fa13bdf3db9373db04d0e699aad440ee.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; （TT: emilytheperry）&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:36</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1vGVY6nE4d</guid>
-      <pubDate>Fri, 29 May 2026 12:20:51 +0000</pubDate>
-    </item>
+    <lastBuildDate>Mon, 15 Jun 2026 14:28:28 +0000</lastBuildDate>
     <item>
       <title>乌茨别克斯坦小哥吃手抓饭，一大盘美食分分钟就炫完了，最后还顺便“洗盘子”</title>
       <link>https://www.bilibili.com/video/BV1cKV56CE6T</link>
@@ -235,6 +228,15 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/0b5cd7773267803b4482204b10aeb9eb702a00d3.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 恶作剧:主播在直播时,天花板突然漏水，水几秒钟内迅速淹没整个房间。。&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:10</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1p8Js6tE2w</guid>
       <pubDate>Sun, 14 Jun 2026 01:39:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>AMD发布迷你主机:128GB跑本地AI大模型，支持2350 亿参数</title>
+      <link>https://www.bilibili.com/video/BV1ktJ36HE2f</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/4ebed422a19848c4583a9cc14ad555cb09a18fb8.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 【128GB可以跑本地AI大模型】AMD 发布全新 Ryzen AI Max+ 395 迷你主机，苏妈现场用这款设备离线运行 2350 亿参数大模型，全程无需云端、数据中心和外接 GPU。
+
+设备搭载 128GB 统一内存，GPU 可调用约 110GB 内存，容量远超 RTX 4090、RTX 5090，模型推理性能更是超过 RTX 5080 三倍以上。只有128GB就可以跑本地AI大模型，有没有懂AI的朋友评价一下？&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:51</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1ktJ36HE2f</guid>
+      <pubDate>Mon, 15 Jun 2026 04:38:50 +0000</pubDate>
     </item>
   </channel>
 </rss>
