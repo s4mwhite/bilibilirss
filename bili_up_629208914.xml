@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 22 Jun 2026 04:58:38 +0000</lastBuildDate>
-    <item>
-      <title>哈哈</title>
-      <link>https://www.bilibili.com/video/BV1Ard8BAEXj</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/19495a3f3398ef2bb6cc00d0699d29683377e78b.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:14</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Ard8BAEXj</guid>
-      <pubDate>Thu, 16 Apr 2026 10:55:12 +0000</pubDate>
-    </item>
+    <lastBuildDate>Mon, 22 Jun 2026 13:38:55 +0000</lastBuildDate>
     <item>
       <title>高能量女生的一天</title>
       <link>https://www.bilibili.com/video/BV1dRdzB5Ewi</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/5290cc8f3238579bdba3395400beee29d5589646.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:33</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1CQjE6MEr1</guid>
       <pubDate>Sat, 20 Jun 2026 03:41:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>燃起来 大家都在吃苦 你凭什么燃尽</title>
+      <link>https://www.bilibili.com/video/BV1787K6ZEKc</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/50b22e3f1180257f8c39416f69b788b9769645d6.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:21</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1787K6ZEKc</guid>
+      <pubDate>Mon, 22 Jun 2026 10:24:02 +0000</pubDate>
     </item>
   </channel>
 </rss>
