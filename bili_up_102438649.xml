@@ -7,23 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 24 Jun 2026 04:02:10 +0000</lastBuildDate>
-    <item>
-      <title>Kubernetes一小时轻松入门</title>
-      <link>https://www.bilibili.com/video/BV1Se411r7vY</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/31fdbee497ccad8fc08650a2f92d8d0fb1946bb9.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; Kubernetes是用于自动部署、扩缩和管理容器化应用程序的开源系统。
-本课程将用一小时的时间带你快速入门和上手使用Kubernetes。
-课程笔记：https://geekhour.net/2023/12/23/kubernetes/
-课程资料可以关注公众号GeekHour，回复k8s即可下载，
-里面还有其他Docker、MySQL、Redis、Git、MongoDB等等其他课程的精美Cheat Sheet和资料。
-QQ群：197289177，871289920
-
-课程内容：
-00:00 课程简介
-0&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 61:18</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Se411r7vY</guid>
-      <pubDate>Sun, 24 Dec 2023 02:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Wed, 24 Jun 2026 10:56:43 +0000</lastBuildDate>
     <item>
       <title>五分钟彻底掌握Base64编码</title>
       <link>https://www.bilibili.com/video/BV1hk4y1S7PJ</link>
@@ -353,6 +337,14 @@ MuleRun官网地址：https://mulerun.com/
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/1fbc008ad0a0026cb7fcb386ca4c121db257af23.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; Qoder实测体验。不仅能理解项目上下文，还具备记忆、规则和数据库联动等能力，真正实现从0到1的智能开发。&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 11:39</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV15oXnBJEka</guid>
       <pubDate>Thu, 26 Mar 2026 10:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>十分钟上线一个AI Agent：从创建到部署完整演示</title>
+      <link>https://www.bilibili.com/video/BV1btjd6JEcD</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/b63781413cea75ebd36852a9ba323e28e7128f01.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 我们刚更新了一下粉丝福利的机制，点击链接到达活动页（组件链接：https://cloud.tencent.com/act/pro/edgeone-makers-agent?from=30132），点击“点亮 Star &amp; 邀请码福利”活动，粉丝填入邀请码（43621840）即可获得50万Token。
+AI社区地址：https://geekhour.net，欢迎加入！&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 09:23</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1btjd6JEcD</guid>
+      <pubDate>Wed, 24 Jun 2026 10:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
