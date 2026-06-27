@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 27 Jun 2026 03:55:20 +0000</lastBuildDate>
-    <item>
-      <title>炸蛋正在拆除</title>
-      <link>https://www.bilibili.com/video/BV1nQ54zYEAp</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/ca174970b3aec12f604bdde8be5108f26f8f0794.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:28</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1nQ54zYEAp</guid>
-      <pubDate>Fri, 25 Apr 2025 09:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 27 Jun 2026 10:14:25 +0000</lastBuildDate>
     <item>
       <title>快上车</title>
       <link>https://www.bilibili.com/video/BV1dRVtzxEGH</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/63af2fba214108093162b7977e0bfa42a5f0a242.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:31</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1imjh6bErF</guid>
       <pubDate>Fri, 19 Jun 2026 10:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>狗来了</title>
+      <link>https://www.bilibili.com/video/BV1jC7G6VEeW</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/a2d42428e81d9e7398f475665c3d4174d7af8841.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:28</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1jC7G6VEeW</guid>
+      <pubDate>Sat, 27 Jun 2026 10:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
