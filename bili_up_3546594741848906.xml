@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 03 Jul 2026 21:12:39 +0000</lastBuildDate>
-    <item>
-      <title>你吃饭追求什么？</title>
-      <link>https://www.bilibili.com/video/BV1JiV96sEZc</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/16da404af87636396d2d3a1dc221a5631e226f3f.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:01</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1JiV96sEZc</guid>
-      <pubDate>Mon, 01 Jun 2026 03:24:01 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 04 Jul 2026 03:36:03 +0000</lastBuildDate>
     <item>
       <title>相比之下我觉得夜宵吃大饼夹一切更舒服</title>
       <link>https://www.bilibili.com/video/BV1oKVd6XEES</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/08de5ed0f37c149aa15758034138d223f5911b70.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 03:56</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV15hT76hEom</guid>
       <pubDate>Fri, 03 Jul 2026 03:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>一个天津人第一次吃内蒙焙子</title>
+      <link>https://www.bilibili.com/video/BV1p9T46iEGo</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/ec79acfbdd8d7462ddc7a62c65ce3c761dfc3573.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 09:43</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1p9T46iEGo</guid>
+      <pubDate>Sat, 04 Jul 2026 03:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
