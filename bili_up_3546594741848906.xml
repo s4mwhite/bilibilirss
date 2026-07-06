@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 05 Jul 2026 03:54:36 +0000</lastBuildDate>
-    <item>
-      <title>锅贴吃法教程</title>
-      <link>https://www.bilibili.com/video/BV1W5V16qEKS</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/68fd27a25fbfbeef1d60c0121ee709b53e1111fa.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 04:45</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1W5V16qEKS</guid>
-      <pubDate>Wed, 03 Jun 2026 05:39:45 +0000</pubDate>
-    </item>
+    <lastBuildDate>Mon, 06 Jul 2026 18:14:08 +0000</lastBuildDate>
     <item>
       <title>随便吃一口</title>
       <link>https://www.bilibili.com/video/BV1Zr7Z63EX7</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/5cbd28b6960c2dfa7e6eed091af5888a7973322d.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 13:54</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV14wMg6cEJn</guid>
       <pubDate>Sun, 05 Jul 2026 03:08:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>一个天津人第二次吃保定驴肉火烧</title>
+      <link>https://www.bilibili.com/video/BV1a3TU6yECE</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/370e5384758e6d32db63f0329cfd76eb2c1c460c.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:26</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1a3TU6yECE</guid>
+      <pubDate>Mon, 06 Jul 2026 03:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
