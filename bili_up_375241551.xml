@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 07 Jul 2026 03:53:23 +0000</lastBuildDate>
-    <item>
-      <title>我出货</title>
-      <link>https://www.bilibili.com/video/BV1qbPYzjEpw</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/8c431af8f538efd1dd826a0f055957fd296d4610.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 我快速撤离&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:18</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1qbPYzjEpw</guid>
-      <pubDate>Sat, 07 Mar 2026 07:38:39 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 07 Jul 2026 07:45:07 +0000</lastBuildDate>
     <item>
       <title>速通终末地送货#2</title>
       <link>https://www.bilibili.com/video/BV1bjPzzSEjH</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/ed984f34aff735d248aacb86772fc9dd0df649a8.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 钻头还挺帅&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:20</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV12wKD6vET8</guid>
       <pubDate>Mon, 29 Jun 2026 06:18:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>危机合约涤墨作战现状</title>
+      <link>https://www.bilibili.com/video/BV1SVTd64ERy</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/8edde6a1543b6b0b5b34c0eaea68d3007a0ada7b.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 围棋戴尔强强&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:12</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1SVTd64ERy</guid>
+      <pubDate>Tue, 07 Jul 2026 06:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
