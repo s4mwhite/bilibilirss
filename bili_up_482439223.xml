@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
-    <title>開楽设计 的 Bilibili 投稿</title>
+    <title>开乐设计 的 Bilibili 投稿</title>
     <link>https://space.bilibili.com/482439223</link>
-    <description>B站 UP 主 開楽设计 的最新视频投稿</description>
+    <description>B站 UP 主 开乐设计 的最新视频投稿</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 08 Jul 2026 21:14:53 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 03:51:42 +0000</lastBuildDate>
     <item>
       <title>一个LOGO诞生的全过程记录</title>
       <link>https://www.bilibili.com/video/BV1oE411n73w</link>
