@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 18 Jul 2026 20:55:33 +0000</lastBuildDate>
-    <item>
-      <title>我是个小众的人</title>
-      <link>https://www.bilibili.com/video/BV1KLjV6tEXA</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/6c431562879e559135dcb2818b2c92b8be91fc65.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:56</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1KLjV6tEXA</guid>
-      <pubDate>Wed, 17 Jun 2026 03:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 19 Jul 2026 03:21:17 +0000</lastBuildDate>
     <item>
       <title>天津带冰碴的酸梅汤随堂小测验</title>
       <link>https://www.bilibili.com/video/BV12VLD68EU4</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/c644303384c9bd48dad2df21624c0ab9b13987ba.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:07</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV11cNd6mEvr</guid>
       <pubDate>Sat, 18 Jul 2026 03:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>一个天津人第一次吃洛阳牛肉汤</title>
+      <link>https://www.bilibili.com/video/BV1sdKw6NEye</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/f4ee3c7f62f729ca98c5956f84cda2fd9358be18.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:54</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1sdKw6NEye</guid>
+      <pubDate>Sun, 19 Jul 2026 03:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
