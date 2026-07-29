@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 29 Jul 2026 03:11:12 +0000</lastBuildDate>
-    <item>
-      <title>曾 哥 有 危 险 了</title>
-      <link>https://www.bilibili.com/video/BV1QCReBpEFe</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/10059d0265c811d89e80601f8b8fc9d25ccde8b7.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:25</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1QCReBpEFe</guid>
-      <pubDate>Mon, 04 May 2026 11:09:55 +0000</pubDate>
-    </item>
+    <lastBuildDate>Wed, 29 Jul 2026 17:19:05 +0000</lastBuildDate>
     <item>
       <title>钱 包 有 危 险 了</title>
       <link>https://www.bilibili.com/video/BV1C2RxBEELe</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/7f6ab67146b1573b9b3fdeb85ec2b2ec7ae957bf.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 23:21</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1o43g69EaD</guid>
       <pubDate>Sat, 25 Jul 2026 10:39:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>你 干 不 过 我 你 信 吗</title>
+      <link>https://www.bilibili.com/video/BV1WJ326KESY</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/04af88fe2523eec9c4c9c6286d887373909449e0.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 14:12</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1WJ326KESY</guid>
+      <pubDate>Wed, 29 Jul 2026 09:57:23 +0000</pubDate>
     </item>
   </channel>
 </rss>
