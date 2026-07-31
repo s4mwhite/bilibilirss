@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 31 Jul 2026 06:48:32 +0000</lastBuildDate>
-    <item>
-      <title>小 先 生 有 危 险 了</title>
-      <link>https://www.bilibili.com/video/BV1SHR9BuECU</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/33789e75ba8e7cd72f10057c379799026097f8fa.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:04</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1SHR9BuECU</guid>
-      <pubDate>Sat, 09 May 2026 10:53:53 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 31 Jul 2026 14:19:01 +0000</lastBuildDate>
     <item>
       <title>俄罗斯方块有危险了</title>
       <link>https://www.bilibili.com/video/BV1gz5766EEw</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/05344329cb2b37044d59a98c509f34c67091ce7f.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:51</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1Dg3t6bEyQ</guid>
       <pubDate>Thu, 30 Jul 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>你 吃 不 完 我 你 信 吗</title>
+      <link>https://www.bilibili.com/video/BV1aQGw6bEfS</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/9073d7755be3c9a29e57819424e4eb794745be17.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 11:44</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1aQGw6bEfS</guid>
+      <pubDate>Fri, 31 Jul 2026 09:43:56 +0000</pubDate>
     </item>
   </channel>
 </rss>
