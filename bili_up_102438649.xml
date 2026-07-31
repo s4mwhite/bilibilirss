@@ -7,26 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 30 Jul 2026 06:33:17 +0000</lastBuildDate>
-    <item>
-      <title>五分钟彻底掌握Base64编码</title>
-      <link>https://www.bilibili.com/video/BV1hk4y1S7PJ</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/32bd0d87564143eb72cb0e01cec6636a44cc0833.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 五分钟让你彻底掌握Base64编码的原理和应用！
-
-你可以在以下平台关注和找到我：
-公众号：GeekHour
-QQ群：197289177，871289920
-Youtube：https://www.youtube.com/channel/UCaHGGhmThVehDUapGxl7RVQ
-
-其他视频教程资源：
-Git: BV1HM411377j
-Docker: BV14s4y1i7Vf
-Kubernetes: BV1Se411r7vY
-Redis: BV1Jj411D7oG
-MongoDB: BV16u4y&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 04:27</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1hk4y1S7PJ</guid>
-      <pubDate>Mon, 15 Jan 2024 13:42:35 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 31 Jul 2026 17:44:22 +0000</lastBuildDate>
     <item>
       <title>五分钟涨知识系列 - 大语言模型 ｜ kimi.ai</title>
       <link>https://www.bilibili.com/video/BV1Zr421W72A</link>
@@ -345,6 +326,18 @@ MuleRun官网地址：https://mulerun.com/
 AI社区地址：https://geekhour.net，欢迎加入！&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 09:23</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1btjd6JEcD</guid>
       <pubDate>Wed, 24 Jun 2026 10:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Codex 完整上手指南：安装配置、实战演示与模型切换</title>
+      <link>https://www.bilibili.com/video/BV1pUGc6kEX1</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/06addfbd2b62e61ecffb197d6bbf709f842f9272.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; Codex快速上手：安装注册、实战使用、国产大模型接入、使用技巧与最佳实践。
+
+讯飞星辰MaaS平台：https://maas.xfyun.cn/overview
+CC Switch项目地址：https://github.com/farion1231/cc-switch
+资料下载：https://pan.quark.cn/s/c96196c25530 提取码：TDb6
+详细图文教程：https://geekhour.net/articles/codex&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 16:42</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1pUGc6kEX1</guid>
+      <pubDate>Fri, 31 Jul 2026 10:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
