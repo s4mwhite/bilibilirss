@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 01 Aug 2026 13:38:27 +0000</lastBuildDate>
-    <item>
-      <title>你的大炎队友</title>
-      <link>https://www.bilibili.com/video/BV1fCXtB3EoN</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/9a39aec65c8eb1ab4d88f3fc2f8d35b823cd8e17.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 大炎不区&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:20</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1fCXtB3EoN</guid>
-      <pubDate>Fri, 27 Mar 2026 06:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 02 Aug 2026 21:01:56 +0000</lastBuildDate>
     <item>
       <title>物理队要怎么打牛</title>
       <link>https://www.bilibili.com/video/BV1c6XtB5EPd</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/4eaa11616762984265a761c24e1f20e14b50bc7a.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 大狗大狗大狗大狗大狗大狗大狗大狗叫叫叫&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 03:23</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV18t3p6kEMr</guid>
       <pubDate>Thu, 30 Jul 2026 06:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>抽 夏 活 杰 哥</title>
+      <link>https://www.bilibili.com/video/BV1ti3m6VEcg</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/baddf34e8d4ce96569b8a47aa4b843cd7ef416f8.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 感觉合成玉要告急了&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 03:26</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1ti3m6VEcg</guid>
+      <pubDate>Sun, 02 Aug 2026 06:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
