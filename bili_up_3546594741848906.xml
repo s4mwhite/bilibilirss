@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 04 Aug 2026 21:15:39 +0000</lastBuildDate>
-    <item>
-      <title>度假不是旅行</title>
-      <link>https://www.bilibili.com/video/BV1iwMa6zETf</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/490695b1ac8914a425d9fa5824bbd6b72c0d7d79.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:06</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1iwMa6zETf</guid>
-      <pubDate>Wed, 08 Jul 2026 03:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Wed, 05 Aug 2026 10:40:56 +0000</lastBuildDate>
     <item>
       <title>走进海河牛奶实验室，看看天津的品牌海河到底好在哪</title>
       <link>https://www.bilibili.com/video/BV1HZMG6hEye</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/10bb3d54b7e1f68cb2616b6db9d28b4a34997f10.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:53</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1wxuw6iEQc</guid>
       <pubDate>Tue, 04 Aug 2026 06:24:50 +0000</pubDate>
+    </item>
+    <item>
+      <title>天津涮羊肉全面解析</title>
+      <link>https://www.bilibili.com/video/BV1KEMr6DEdU</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/eacaba79c7e1bd58967aa4ba1ff7c00b8827422c.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 13:30</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1KEMr6DEdU</guid>
+      <pubDate>Wed, 05 Aug 2026 03:10:50 +0000</pubDate>
     </item>
   </channel>
 </rss>
