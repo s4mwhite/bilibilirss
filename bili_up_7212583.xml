@@ -7,16 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 07 Aug 2026 09:05:16 +0000</lastBuildDate>
-    <item>
-      <title>设计师 vs AI绘画</title>
-      <link>https://www.bilibili.com/video/BV1x94y1x7P5</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/bd554f8bf8f0df099906555683eddb0b6a1b08b1.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; AI工具：ideogram
-素材网站：freepik
-制作软件：Illustrator＋After Effects&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:22</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1x94y1x7P5</guid>
-      <pubDate>Tue, 05 Sep 2023 10:05:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 07 Aug 2026 20:47:36 +0000</lastBuildDate>
     <item>
       <title>这些图形，一定要多来几个</title>
       <link>https://www.bilibili.com/video/BV1rN411H7ND</link>
@@ -232,6 +223,13 @@ https:/&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:27</description>
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/65dad0c41925d3ed1c406b728bd23d3efa8719f5.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:19</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1UAKn6pEFR</guid>
       <pubDate>Fri, 24 Jul 2026 11:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>我有个绝妙的idea，就差...</title>
+      <link>https://www.bilibili.com/video/BV1KKut6LEd2</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/b6b7e116ca39b17a85c2b155bffb2f5f3bbd4ce0.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 03:15</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1KKut6LEd2</guid>
+      <pubDate>Fri, 07 Aug 2026 11:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
