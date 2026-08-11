@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 11 Aug 2026 05:13:41 +0000</lastBuildDate>
-    <item>
-      <title>你知道河狸宝宝为啥喜欢啃尾巴吗？</title>
-      <link>https://www.bilibili.com/video/BV1xfNE6VExz</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/0d0cbf26afbdaf61f6d033af8e7c0008ca75fbbe.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; Snugbarn&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:01</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1xfNE6VExz</guid>
-      <pubDate>Fri, 10 Jul 2026 13:41:15 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 11 Aug 2026 13:15:46 +0000</lastBuildDate>
     <item>
       <title>有这种好事，难道你不想来一下？</title>
       <link>https://www.bilibili.com/video/BV1fJNG61EDj</link>
@@ -236,6 +229,16 @@ Insider 的团队深入印度，一方面记录下了在政府的纵容和不作
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/44c1ad7ef5d72076e0e53dae7407aaf3b659a7cd.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; Foil Arms and Hog&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 04:55</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1AKuZ6oEwy</guid>
       <pubDate>Mon, 10 Aug 2026 13:25:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>国际空间站视角下，如巨龙般盘旋的南极光</title>
+      <link>https://www.bilibili.com/video/BV1Geuz6dEX3</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/de3acdfec2a5c696128552b56a634abd60739ee5.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; Seán Doran
+国际空间站飞过南极时，航天员们记录到了如游龙般蜿蜒的大规模极光，视觉效果非常震撼。
+
+(原始文档实际并非视频文件，而是由5234张照片拼接处理而成，展示效果是空间站真实飞行速度的4倍)&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 11:20</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Geuz6dEX3</guid>
+      <pubDate>Tue, 11 Aug 2026 11:13:17 +0000</pubDate>
     </item>
   </channel>
 </rss>
