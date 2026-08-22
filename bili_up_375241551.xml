@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 22 Aug 2026 01:27:30 +0000</lastBuildDate>
-    <item>
-      <title>庄方已启动</title>
-      <link>https://www.bilibili.com/video/BV1JwdUBrEXR</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/1630d89965d722af13ef630178e7538d90b9c64b.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 我铸剑&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:09</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1JwdUBrEXR</guid>
-      <pubDate>Tue, 21 Apr 2026 06:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 22 Aug 2026 20:28:33 +0000</lastBuildDate>
     <item>
       <title>卫戍协议结束哩</title>
       <link>https://www.bilibili.com/video/BV1KbonBVEdm</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/b7f0644e8c9f3135a85112af2eb8589f26f917fe.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 梦回萨米肉鸽了&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:16</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1kH8z6xEVz</guid>
       <pubDate>Fri, 21 Aug 2026 12:37:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>提弗洛斯再旅记</title>
+      <link>https://www.bilibili.com/video/BV1a9816ZErj</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/0bba82ef0ee0f1be7147850b7816fbeb102d1d71.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 还有谁没再旅&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:24</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1a9816ZErj</guid>
+      <pubDate>Sat, 22 Aug 2026 06:50:39 +0000</pubDate>
     </item>
   </channel>
 </rss>
