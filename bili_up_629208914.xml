@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 24 Aug 2026 16:42:45 +0000</lastBuildDate>
-    <item>
-      <title>豪吃啊，就是玩 耶</title>
-      <link>https://www.bilibili.com/video/BV1KxVY6rEi8</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/4efd5d5fd682ec1ae6a562e4b51da91b73009598.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:01</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1KxVY6rEi8</guid>
-      <pubDate>Fri, 29 May 2026 13:12:59 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 25 Aug 2026 01:34:17 +0000</lastBuildDate>
     <item>
       <title>就是工作就是玩耶</title>
       <link>https://www.bilibili.com/video/BV1h3VJ6CED4</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/0ce66f83befb7851aaed6820ebb8ba218bd72506.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:24</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1TCb66TES8</guid>
       <pubDate>Tue, 18 Aug 2026 06:40:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>展个背玩</title>
+      <link>https://www.bilibili.com/video/BV1mwhu6DEsM</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/dc869e6e7f164c336e1f30a9ef5cd7a992a41ece.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:18</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1mwhu6DEsM</guid>
+      <pubDate>Tue, 25 Aug 2026 00:23:49 +0000</pubDate>
     </item>
   </channel>
 </rss>
