@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 29 Aug 2026 13:44:10 +0000</lastBuildDate>
-    <item>
-      <title>表情识人</title>
-      <link>https://www.bilibili.com/video/BV1CqV266EY2</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/2316fa9def236ca4bf5729a345b284d2a59657a8.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:34</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1CqV266EY2</guid>
-      <pubDate>Wed, 03 Jun 2026 02:03:59 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 29 Aug 2026 19:18:53 +0000</lastBuildDate>
     <item>
       <title>只能说就是玩耶</title>
       <link>https://www.bilibili.com/video/BV1sZEZ6sEkB</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/28842554002ad72c8a650b37de8c98ec338bde4b.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:10</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1VvhF6MExa</guid>
       <pubDate>Thu, 27 Aug 2026 04:38:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>人不狠 话超多</title>
+      <link>https://www.bilibili.com/video/BV1vk416xEu1</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/4b43207f3848c0c5bce66f8e3a30ceed0ac3840c.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 健身女vlog&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:38</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1vk416xEu1</guid>
+      <pubDate>Sat, 29 Aug 2026 13:45:53 +0000</pubDate>
     </item>
   </channel>
 </rss>
