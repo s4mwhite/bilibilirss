@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 29 Aug 2026 06:30:31 +0000</lastBuildDate>
-    <item>
-      <title>一个简单的平板小挑战，我行你也行</title>
-      <link>https://www.bilibili.com/video/BV1VxTw6UE6S</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/de95212baac8e5b0484839be8ae87dae36d0c5b3.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 我就说了～超级简单的&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:15</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1VxTw6UE6S</guid>
-      <pubDate>Tue, 30 Jun 2026 13:24:55 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 29 Aug 2026 22:30:41 +0000</lastBuildDate>
     <item>
       <title>刘海……or战斗模式</title>
       <link>https://www.bilibili.com/video/BV1Y9Tj6dE5S</link>
@@ -328,9 +321,16 @@ Rpe控制在7上下做渐进
     <item>
       <title>在童话里，我头发是紫色的，走着六亲不认的步伐</title>
       <link>https://www.bilibili.com/video/BV19RtA6gEfV</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/4e99d93f0da0da4cff89e9a1dd5d43ec4d229f6b.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 如梦夏塔&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:38</description>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/b94a4fd408429195050604091d91791f2bba0ba0.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 如梦夏塔&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:38</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV19RtA6gEfV</guid>
       <pubDate>Fri, 28 Aug 2026 08:06:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>做一些补充训练……</title>
+      <link>https://www.bilibili.com/video/BV11B4y6uEaK</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/ee03b236e9c729f92a4b2a3f555e0bb24758c6e3.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 谢谢两个罐罐的陪伴&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:31</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV11B4y6uEaK</guid>
+      <pubDate>Sat, 29 Aug 2026 08:59:03 +0000</pubDate>
     </item>
   </channel>
 </rss>
