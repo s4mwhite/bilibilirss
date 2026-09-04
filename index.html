@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bilibili RSS · 关注管理</title>
+<style>
+  :root {
+    --bili-pink: #fb7299;
+    --bili-blue: #00a1d6;
+    --bg: #f6f7f9;
+    --card: #ffffff;
+    --text: #22262e;
+    --muted: #8a919e;
+    --border: #e6e8ec;
+    --danger: #e5484d;
+    --ok: #18a058;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+      "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    line-height: 1.6;
+  }
+  header.top {
+    background: linear-gradient(135deg, var(--bili-blue), var(--bili-pink));
+    color: #fff; padding: 28px 20px 24px;
+  }
+  header.top .wrap { max-width: 960px; margin: 0 auto; }
+  header.top h1 { margin: 0 0 6px; font-size: 24px; }
+  header.top p { margin: 4px 0; opacity: .92; font-size: 14px; }
+  .stats { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
+  .stat {
+    background: rgba(255,255,255,.18); border: 1px solid rgba(255,255,255,.35);
+    border-radius: 10px; padding: 6px 14px; font-size: 13px;
+  }
+  .stat b { font-size: 17px; margin-right: 4px; }
+  main.wrap { max-width: 960px; margin: -14px auto 60px; padding: 0 16px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 18px; margin-top: 14px;
+    box-shadow: 0 2px 10px rgba(20,30,50,.04);
+  }
+  .card h2 { margin: 0 0 4px; font-size: 17px; }
+  .card .desc { margin: 0 0 12px; color: var(--muted); font-size: 13px; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  label.field { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--muted); }
+  input[type=text], input[type=password], textarea {
+    border: 1px solid var(--border); border-radius: 8px; padding: 9px 12px;
+    font-size: 14px; color: var(--text); background: #fff; outline: none;
+  }
+  input[type=text]:focus, input[type=password]:focus, textarea:focus {
+    border-color: var(--bili-pink); box-shadow: 0 0 0 3px rgba(251,114,153,.15);
+  }
+  textarea { width: 100%; min-height: 88px; resize: vertical; font-family: inherit; }
+  button {
+    border: none; border-radius: 8px; padding: 9px 18px; font-size: 14px;
+    cursor: pointer; background: var(--bili-pink); color: #fff; font-weight: 600;
+    transition: filter .15s, transform .05s;
+  }
+  button:hover { filter: brightness(1.06); }
+  button:active { transform: scale(.98); }
+  button.secondary { background: #eef0f4; color: var(--text); font-weight: 500; }
+  button.blue { background: var(--bili-blue); }
+  button.danger { background: var(--danger); }
+  button.ghost { background: transparent; color: var(--bili-blue); padding: 6px 8px; font-weight: 500; }
+  button:disabled { opacity: .55; cursor: not-allowed; }
+  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+  .toolbar .spacer { flex: 1; }
+  #search { flex: 1; min-width: 180px; }
+  ul.list { list-style: none; margin: 0; padding: 0; }
+  ul.list li {
+    display: flex; gap: 12px; align-items: flex-start;
+    border: 1px solid var(--border); border-radius: 10px;
+    padding: 12px 14px; margin-bottom: 10px; background: #fff;
+  }
+  ul.list li:hover { border-color: #f3b8c9; }
+  .avatar {
+    width: 42px; height: 42px; border-radius: 50%; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--bili-blue), var(--bili-pink));
+    color: #fff; display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 17px;
+  }
+  .info { flex: 1; min-width: 0; }
+  .info .name { font-weight: 700; font-size: 15px; }
+  .info .name .pending {
+    font-size: 11px; font-weight: 500; color: #b7791f; background: #fef3c7;
+    border-radius: 6px; padding: 1px 7px; margin-left: 6px; white-space: nowrap;
+  }
+  .info .meta { color: var(--muted); font-size: 12.5px; word-break: break-all; }
+  .info .meta a { color: var(--bili-blue); text-decoration: none; }
+  .info .meta a:hover { text-decoration: underline; }
+  .note-input {
+    margin-top: 6px; width: 100%; max-width: 420px;
+    border: 1px dashed var(--border); border-radius: 8px;
+    padding: 6px 10px; font-size: 13px;
+  }
+  .actions { display: flex; flex-direction: column; gap: 6px; flex-shrink: 0; }
+  .empty {
+    text-align: center; color: var(--muted); padding: 34px 10px; font-size: 14px;
+    border: 1px dashed var(--border); border-radius: 10px;
+  }
+  #status {
+    position: sticky; bottom: 12px; margin-top: 14px;
+    border-radius: 10px; padding: 11px 16px; font-size: 13.5px;
+    display: none; box-shadow: 0 4px 18px rgba(0,0,0,.1);
+  }
+  #status.ok { display: block; background: #e7f6ec; color: #137333; border: 1px solid #b9e4c6; }
+  #status.err { display: block; background: #fdecec; color: #b3261e; border: 1px solid #f5c6c2; }
+  #status.info { display: block; background: #e8f3fb; color: #0b5cad; border: 1px solid #bfe0f5; }
+  details.help { font-size: 13.5px; }
+  details.help summary { cursor: pointer; color: var(--bili-blue); font-weight: 600; }
+  details.help ol { margin: 8px 0; padding-left: 20px; }
+  details.help code { background: #f1f2f5; border-radius: 5px; padding: 1px 6px; font-size: 12.5px; }
+  .conn { font-size: 13px; font-weight: 600; }
+  .conn.ok { color: var(--ok); }
+  .conn.err { color: var(--danger); }
+  footer { text-align: center; color: var(--muted); font-size: 12.5px; padding: 18px; }
+  footer a { color: var(--bili-blue); text-decoration: none; }
+  @media (max-width: 560px) {
+    ul.list li { flex-wrap: wrap; }
+    .actions { flex-direction: row; width: 100%; }
+    .actions button { flex: 1; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <h1>📺 Bilibili RSS · 关注管理</h1>
+    <p>在这里增 / 删 UP 主，点一下保存，GitHub Actions 就会自动重新生成 RSS 和 OPML，无需再改代码。</p>
+    <div class="stats">
+      <div class="stat"><b id="statCount">–</b>个在管 UP 主</div>
+      <div class="stat">上次同步：<b id="statSync" style="font-size:13px">–</b></div>
+      <div class="stat">有未保存修改：<b id="statDirty">否</b></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- 1. 连接配置 -->
+  <section class="card">
+    <h2>🔑 1 · 连接 GitHub 仓库</h2>
+    <p class="desc">管理页本身是纯静态网页，保存时通过 GitHub API 把 <code>ups.json</code> 写回仓库。Token 只保存在<strong>你当前浏览器</strong>里，不会上传到任何地方。</p>
+    <div class="row">
+      <label class="field">Owner<input type="text" id="cfgOwner" size="14" /></label>
+      <label class="field">仓库<input type="text" id="cfgRepo" size="16" /></label>
+      <label class="field">分支<input type="text" id="cfgBranch" size="8" /></label>
+      <label class="field" style="flex:1;min-width:220px">Token（需 contents 读写权限）<input type="password" id="cfgToken" placeholder="github_pat_... / ghp_..." autocomplete="off" /></label>
+    </div>
+    <div class="row" style="margin-top:12px">
+      <button class="secondary" id="btnTest">测试连接</button>
+      <button class="secondary" id="btnReload">从云端重新载入</button>
+      <span class="conn" id="connState"></span>
+    </div>
+    <details class="help" style="margin-top:10px">
+      <summary>如何创建一个 Token？（点开看步骤，只需做一次）</summary>
+      <ol>
+        <li>打开 <a href="https://github.com/settings/tokens/new" target="_blank" rel="noopener">github.com/settings/tokens/new</a>（推荐选 <b>Fine-grained</b> 精细 Token）；</li>
+        <li>Repository access 只勾选 <b>Only select repositories</b> 并选择这个 RSS 仓库；</li>
+        <li>Permissions 里给 <b>Contents</b> 开 <b>Read and write</b>，其他保持默认；</li>
+        <li>有效期建议 90 天或更长，生成后复制粘贴到上面输入框。Token 过期后页面会提示 401，重新生成一个填入即可。</li>
+      </ol>
+    </details>
+  </section>
+
+  <!-- 2. 添加 -->
+  <section class="card">
+    <h2>➕ 2 · 添加 UP 主</h2>
+    <p class="desc">每行一个：直接粘 <b>UID 数字</b>，或粘 B 站个人空间链接（如 <code>https://space.bilibili.com/7349</code>），支持批量粘贴。</p>
+    <textarea id="addBox" placeholder="例如：&#10;7349&#10;https://space.bilibili.com/2&#10;375241551"></textarea>
+    <div class="row" style="margin-top:10px">
+      <button id="btnAdd">加入列表</button>
+      <label class="secondary" style="border-radius:8px;padding:9px 18px;font-size:14px;cursor:pointer;background:#eef0f4">
+        从 OPML 导入 <input type="file" id="opmlFile" accept=".opml,.xml" style="display:none" />
+      </label>
+      <span class="desc" id="addHint" style="margin:0"></span>
+    </div>
+  </section>
+
+  <!-- 3. 列表 -->
+  <section class="card">
+    <h2>📋 3 · 关注列表</h2>
+    <p class="desc">备注（选填）会一起保存，方便你记住“这个 UP 是谁”。昵称由定时任务自动同步，无需手填。</p>
+    <div class="toolbar">
+      <input type="text" id="search" placeholder="🔍 搜索昵称 / UID / 备注…" />
+      <span class="spacer"></span>
+      <button class="secondary" id="btnSelectAll">全选</button>
+      <button class="danger" id="btnBatchDel">删除选中</button>
+    </div>
+    <ul class="list" id="upList"></ul>
+    <div class="empty" id="emptyTip" style="display:none">还没有匹配的 UP 主，去上面添加吧 👆</div>
+  </section>
+
+  <!-- 4. 保存与订阅 -->
+  <section class="card">
+    <h2>🚀 4 · 保存 &amp; 订阅</h2>
+    <p class="desc">保存后会提交到仓库并<strong>自动触发</strong> GitHub Actions 重新抓取（约 1～5 分钟，可在 Actions 页看进度）。</p>
+    <div class="row">
+      <button id="btnSave" class="blue">💾 保存到 GitHub</button>
+      <button class="secondary" id="btnExport">下载备份（ups.json）</button>
+    </div>
+    <div class="row" style="margin-top:12px">
+      <button class="ghost" id="btnCopyOpml">📋 复制 OPML 订阅地址</button>
+      <button class="ghost" id="btnCopyAll">📋 复制全部单条 RSS 链接</button>
+      <button class="ghost" id="btnActions">▶ 去看同步进度（Actions）</button>
+    </div>
+    <p class="desc" style="margin-top:10px">OPML 地址：<code id="opmlUrl"></code></p>
+  </section>
+
+  <div id="status"></div>
+</main>
+
+<footer>
+  纯静态管理页 · 数据文件 <a id="upsLink" href="ups.json" target="_blank" rel="noopener">ups.json</a>
+  · RSS 由 GitHub Actions 定时生成并托管在 GitHub Pages（全免费）
+</footer>
+
+<script>
+"use strict";
+/* ============ 基础状态 ============ */
+const $ = (id) => document.getElementById(id);
+const LS_KEY = "biliRssMgr.v1";
+let ups = [];            // [{uid, name, note}]
+let fileSha = null;      // 云端 ups.json 的 sha（保存时需要）
+let dirty = false;
+
+const DEFAULTS = { owner: "s4mwhite", repo: "bilibilirss", branch: "main", token: "" };
+
+function loadCfg() {
+  try {
+    return Object.assign({}, DEFAULTS, JSON.parse(localStorage.getItem(LS_KEY) || "{}"));
+  } catch { return Object.assign({}, DEFAULTS); }
+}
+function saveCfg(cfg) { localStorage.setItem(LS_KEY, JSON.stringify(cfg)); }
+function getCfg() {
+  return {
+    owner: $("cfgOwner").value.trim(),
+    repo: $("cfgRepo").value.trim(),
+    branch: $("cfgBranch").value.trim() || "main",
+    token: $("cfgToken").value.trim(),
+  };
+}
+function pagesBase() {
+  const c = getCfg();
+  return `https://${c.owner}.github.io/${c.repo}/`;
+}
+function apiContentsUrl() {
+  const c = getCfg();
+  return `https://api.github.com/repos/${c.owner}/${c.repo}/contents/ups.json`;
+}
+
+/* ============ 提示条 ============ */
+let statusTimer = null;
+function toast(msg, type = "info", sticky = false) {
+  const el = $("status");
+  el.className = type;
+  el.innerHTML = msg;
+  clearTimeout(statusTimer);
+  if (!sticky) statusTimer = setTimeout(() => { el.className = ""; el.style.display = "none"; }, 6000);
+  el.style.display = "block";
+}
+
+/* ============ 数据载入 ============ */
+function normalize(list) {
+  const seen = new Set(), out = [];
+  for (const it of list) {
+    const uid = Number(String(it && it.uid).trim());
+    if (!uid || uid <= 0 || seen.has(uid)) continue;
+    seen.add(uid);
+    out.push({ uid, name: String((it && it.name) || ""), note: String((it && it.note) || "") });
+  }
+  return out;
+}
+
+async function loadLocal() {
+  // 优先读同目录 ups.json（部署到 Pages 后即为最新已发布数据）
+  const res = await fetch("ups.json", { cache: "no-store" });
+  if (!res.ok) throw new Error("本地 ups.json 读取失败（" + res.status + "）");
+  fileSha = null; // 本地文件没有 sha，保存前会自动去云端取
+  return normalize(await res.json());
+}
+
+async function loadRemote() {
+  const c = getCfg();
+  const res = await fetch(apiContentsUrl() + "?ref=" + encodeURIComponent(c.branch), {
+    headers: c.token ? { Authorization: "Bearer " + c.token } : {},
+  });
+  if (res.status === 401) throw new Error("Token 无效或已过期（401），请重新生成");
+  if (res.status === 404) throw new Error("仓库 / 分支 / 文件不存在（404），请检查配置");
+  if (!res.ok) throw new Error("GitHub API 读取失败（" + res.status + "）");
+  const data = await res.json();
+  fileSha = data.sha || null;
+  const text = decodeURIComponent(escape(atob(data.content.replace(/\n/g, ""))));
+  return normalize(JSON.parse(text));
+}
+
+async function refreshSyncTime() {
+  try {
+    const res = await fetch("subscriptions.opml", { cache: "no-store" });
+    if (!res.ok) return;
+    const m = (await res.text()).match(/[?&]v=(\d+)/);
+    if (m) {
+      const d = new Date(Number(m[1]) * 1000);
+      $("statSync").textContent = d.toLocaleString("zh-CN", { hour12: false });
+    }
+  } catch { /* 忽略，本地预览时可能没有该文件 */ }
+}
+
+/* ============ 渲染 ============ */
+function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+function rssUrl(uid) { return pagesBase() + "bili_up_" + uid + ".xml"; }
+
+function render() {
+  const kw = $("search").value.trim().toLowerCase();
+  const list = $("upList");
+  list.innerHTML = "";
+  let shown = 0;
+  ups.forEach((up, idx) => {
+    const hay = (up.name + " " + up.uid + " " + up.note).toLowerCase();
+    if (kw && !hay.includes(kw)) return;
+    shown++;
+    const li = document.createElement("li");
+    const firstChar = (up.name || String(up.uid)).trim().charAt(0) || "?";
+    li.innerHTML =
+      `<input type="checkbox" data-chk="${idx}" style="margin-top:12px;width:16px;height:16px" />` +
+      `<div class="avatar">${esc(firstChar)}</div>` +
+      `<div class="info">` +
+        `<div class="name">${esc(up.name || ("UP主_" + up.uid))}` +
+          (up.name ? "" : `<span class="pending">待同步昵称</span>`) + `</div>` +
+        `<div class="meta">UID <b>${up.uid}</b> · ` +
+          `<a href="https://space.bilibili.com/${up.uid}" target="_blank" rel="noopener">B站主页</a> · ` +
+          `<a href="${esc(rssUrl(up.uid))}" target="_blank" rel="noopener">RSS</a> ` +
+          `<a href="javascript:void 0" data-copy="${up.uid}">复制RSS</a></div>` +
+        `<input class="note-input" data-note="${idx}" placeholder="备注（选填，如：游戏区/科普），会自动保存" value="${esc(up.note)}" />` +
+      `</div>` +
+      `<div class="actions"><button class="danger" data-del="${idx}">删除</button></div>`;
+    list.appendChild(li);
+  });
+  $("emptyTip").style.display = shown ? "none" : "block";
+  $("statCount").textContent = ups.length;
+  $("statDirty").textContent = dirty ? "是" : "否";
+  $("opmlUrl").textContent = pagesBase() + "subscriptions.opml";
+}
+
+function markDirty() { dirty = true; render(); }
+
+/* ============ 添加 / 删除 ============ */
+function extractUids(text) {
+  const found = [];
+  const push = (n) => { if (n > 0) found.push(n); };
+  // 1) B 站空间链接里的 UID（不限制长度，2、7349 这类短 UID 也能识别）
+  const urlRe = /space\.bilibili\.com\/(\d{1,20})/g;
+  const consumed = [];
+  let m;
+  while ((m = urlRe.exec(text)) !== null) { push(Number(m[1])); consumed.push(m[0]); }
+  // 2) 去掉已识别的链接，按分隔符切分，纯数字 token 即 UID
+  let rest = String(text);
+  consumed.forEach((s) => { rest = rest.replace(s, " "); });
+  rest.split(/[\s,，;；、|]+/).forEach((tok) => {
+    if (/^\d{1,20}$/.test(tok)) push(Number(tok));
+    else {
+      // 3) 兜底：文本里夹带的长数字串（如从别处复制的 “…UID375241551…”）
+      const runs = tok.match(/\d{6,20}/g);
+      if (runs) runs.forEach((r) => push(Number(r)));
+    }
+  });
+  return found;
+}
+
+// 尝试从 B 站公开接口预取昵称（浏览器跨域可能失败，失败则静默回落为“待同步”）
+async function tryFetchName(uid) {
+  try {
+    const ctl = new AbortController();
+    const t = setTimeout(() => ctl.abort(), 6000);
+    const res = await fetch(`https://api.bilibili.com/x/space/acc/info?mid=${uid}&jsonp=jsonp`, { signal: ctl.signal });
+    clearTimeout(t);
+    const j = await res.json();
+    if (j && j.code === 0 && j.data && j.data.name) return j.data.name;
+  } catch { /* 跨域/WAF 均属正常，回落 */ }
+  return "";
+}
+
+async function addUids(uidList) {
+  const have = new Set(ups.map((u) => u.uid));
+  const fresh = [...new Set(uidList)].filter((u) => u && !have.has(u));
+  if (!fresh.length) { $("addHint").textContent = "这些 UID 都已在列表中，无需重复添加。"; return; }
+  $("addHint").textContent = `正在加入 ${fresh.length} 个…（尝试预取昵称）`;
+  const names = await Promise.all(fresh.map(tryFetchName));
+  fresh.forEach((uid, i) => ups.unshift({ uid, name: names[i] || "", note: "" }));
+  $("addBox").value = "";
+  $("addHint").textContent = `已加入 ${fresh.length} 个，别忘了第 4 步点“保存到 GitHub”。`;
+  markDirty();
+}
+
+function deleteAt(idx) {
+  const [rm] = ups.splice(idx, 1);
+  toast(`已移除 <b>${esc(rm.name || rm.uid)}</b>（${rm.uid}），记得去第 4 步保存。`, "info");
+  markDirty();
+}
+
+/* ============ 保存到 GitHub ============ */
+function toB64Unicode(str) { return btoa(unescape(encodeURIComponent(str))); }
+
+async function ensureSha() {
+  if (fileSha) return fileSha;
+  const c = getCfg();
+  if (!c.token) throw new Error("请先填写 Token（保存需要写权限，读取公开仓库可不填）");
+  const res = await fetch(apiContentsUrl() + "?ref=" + encodeURIComponent(c.branch), {
+    headers: { Authorization: "Bearer " + c.token },
+  });
+  if (res.status === 401) throw new Error("Token 无效或已过期（401）");
+  if (res.status === 404) { fileSha = null; return null; } // 文件尚不存在则新建
+  if (!res.ok) throw new Error("获取文件版本失败（" + res.status + "）");
+  fileSha = (await res.json()).sha || null;
+  return fileSha;
+}
+
+async function saveToGitHub() {
+  const c = getCfg();
+  saveCfg(c);
+  if (!c.owner || !c.repo) { toast("请先填写 Owner 和仓库名", "err"); return; }
+  if (!c.token) { toast("请先填写 Token，否则无法写入仓库。Token 获取方法见第 1 步下方说明。", "err", true); return; }
+  const btn = $("btnSave");
+  btn.disabled = true;
+  try {
+    toast("正在保存到 GitHub…", "info");
+    const sha = await ensureSha();
+    const content = toB64Unicode(JSON.stringify(ups, null, 2) + "\n");
+    const body = { message: `管理页更新关注列表（${ups.length} 个 UP 主）`, content, branch: c.branch };
+    if (sha) body.sha = sha;
+    const res = await fetch(apiContentsUrl(), {
+      method: "PUT",
+      headers: { Authorization: "Bearer " + c.token, "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    if (res.status === 401) throw new Error("Token 无效或已过期（401），请重新生成");
+    if (res.status === 404) throw new Error("仓库或分支不存在（404），请检查配置");
+    if (res.status === 422) throw new Error("文件版本冲突（422），请点“从云端重新载入”后再保存");
+    if (!res.ok) throw new Error("保存失败（" + res.status + "）");
+    const j = await res.json();
+    fileSha = (j.content && j.content.sha) || null;
+    dirty = false; render();
+    toast(`✅ 保存成功！共 <b>${ups.length}</b> 个 UP 主。Actions 已自动触发，约 1～5 分钟后 RSS/OPML 更新完成，可点“去看同步进度”查看。`, "ok", true);
+  } catch (e) {
+    toast("❌ " + esc(e.message), "err", true);
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+/* ============ 事件绑定 ============ */
+function bind() {
+  const cfg = loadCfg();
+  $("cfgOwner").value = cfg.owner; $("cfgRepo").value = cfg.repo;
+  $("cfgBranch").value = cfg.branch; $("cfgToken").value = cfg.token;
+
+  $("btnAdd").onclick = () => {
+    const uids = extractUids($("addBox").value);
+    if (!uids.length) { $("addHint").textContent = "没识别到 UID，请粘贴 UID 数字或 B 站空间链接。"; return; }
+    addUids(uids);
+  };
+
+  $("opmlFile").onchange = async (e) => {
+    const f = e.target.files[0];
+    if (!f) return;
+    const text = await f.text();
+    const uids = [];
+    const re = /bili_up_(\d+)\.xml|space\.bilibili\.com\/(\d+)/g;
+    let m;
+    while ((m = re.exec(text)) !== null) uids.push(Number(m[1] || m[2]));
+    e.target.value = "";
+    if (!uids.length) { toast("这个 OPML 里没找到可识别的 UP 主", "err"); return; }
+    addUids(uids);
+  };
+
+  $("upList").onclick = (e) => {
+    const t = e.target;
+    if (t.dataset.copy) {
+      navigator.clipboard.writeText(rssUrl(t.dataset.copy))
+        .then(() => toast("RSS 链接已复制 ✓", "ok"))
+        .catch(() => toast("复制失败，请手动复制", "err"));
+    } else if (t.dataset.del !== undefined) {
+      deleteAt(Number(t.dataset.del));
+    }
+  };
+  $("upList").oninput = (e) => {
+    const t = e.target;
+    if (t.dataset.note !== undefined) {
+      ups[Number(t.dataset.note)].note = t.value;
+      if (!dirty) markDirty(); else { $("statDirty").textContent = "是"; }
+    }
+  };
+
+  $("search").oninput = render;
+
+  $("btnSelectAll").onclick = () => {
+    const boxes = document.querySelectorAll("[data-chk]");
+    const all = [...boxes].every((b) => b.checked);
+    boxes.forEach((b) => (b.checked = !all));
+  };
+  $("btnBatchDel").onclick = () => {
+    const idxs = [...document.querySelectorAll("[data-chk]:checked")].map((b) => Number(b.dataset.chk));
+    if (!idxs.length) { toast("请先勾选要删除的 UP 主", "err"); return; }
+    if (!confirm(`确定删除选中的 ${idxs.length} 个 UP 主吗？（保存后生效）`)) return;
+    idxs.sort((a, b) => b - a).forEach((i) => ups.splice(i, 1));
+    toast(`已移除 ${idxs.length} 个，记得去第 4 步保存。`, "info");
+    markDirty();
+  };
+
+  $("btnTest").onclick = async () => {
+    const c = getCfg(); saveCfg(c);
+    $("connState").textContent = "连接中…"; $("connState").className = "conn";
+    try {
+      const res = await fetch(`https://api.github.com/repos/${c.owner}/${c.repo}`, {
+        headers: c.token ? { Authorization: "Bearer " + c.token } : {},
+      });
+      if (res.status === 401) throw new Error("Token 无效（401）");
+      if (res.status === 404) throw new Error("仓库不存在或无权访问（404）");
+      if (!res.ok) throw new Error("连接失败（" + res.status + "）");
+      $("connState").textContent = "● 连接正常" + (c.token ? "（Token 有效）" : "（未填 Token，仅读取）");
+      $("connState").className = "conn ok";
+    } catch (e) {
+      $("connState").textContent = "● " + e.message;
+      $("connState").className = "conn err";
+    }
+  };
+  $("btnReload").onclick = async () => {
+    const c = getCfg(); saveCfg(c);
+    if (dirty && !confirm("有未保存的修改，重新载入会丢失，继续吗？")) return;
+    try {
+      toast("正在从云端载入…", "info");
+      ups = await loadRemote();
+      dirty = false; render();
+      toast(`已载入云端数据，共 ${ups.length} 个 UP 主`, "ok");
+    } catch (e) { toast("❌ " + esc(e.message), "err", true); }
+  };
+
+  $("btnSave").onclick = saveToGitHub;
+  $("btnExport").onclick = () => {
+    const blob = new Blob([JSON.stringify(ups, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "ups-backup.json";
+    a.click();
+    URL.revokeObjectURL(a.href);
+  };
+  $("btnCopyOpml").onclick = () => {
+    navigator.clipboard.writeText(pagesBase() + "subscriptions.opml")
+      .then(() => toast("OPML 订阅地址已复制，粘贴到 Folo / 阅读器即可 ✓", "ok"))
+      .catch(() => toast("复制失败，请手动复制页面上的地址", "err"));
+  };
+  $("btnCopyAll").onclick = () => {
+    navigator.clipboard.writeText(ups.map((u) => rssUrl(u.uid)).join("\n"))
+      .then(() => toast(`已复制 ${ups.length} 条 RSS 链接 ✓`, "ok"))
+      .catch(() => toast("复制失败", "err"));
+  };
+  $("btnActions").onclick = () => {
+    const c = getCfg();
+    window.open(`https://github.com/${c.owner}/${c.repo}/actions`, "_blank", "noopener");
+  };
+  ["cfgOwner", "cfgRepo", "cfgBranch", "cfgToken"].forEach((id) => {
+    $(id).oninput = () => { saveCfg(getCfg()); render(); };
+  });
+}
+
+/* ============ 启动 ============ */
+(async function init() {
+  bind();
+  render();
+  refreshSyncTime();
+  try {
+    ups = await loadLocal();
+    render();
+  } catch (e) {
+    toast("本地数据读取失败，请填写 Token 后点“从云端重新载入”。（直接双击打开文件时会这样，部署到 Pages 后自动正常）", "err", true);
+  }
+})();
+</script>
+</body>
+</html>
