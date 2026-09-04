@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 04 Sep 2026 08:43:37 +0000</lastBuildDate>
-    <item>
-      <title>我的第一部科普动画终于上线了</title>
-      <link>https://www.bilibili.com/video/BV12iFezdEZS</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/3a5cfdca2e837027288530ba538372fceb96e0c5.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:13</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV12iFezdEZS</guid>
-      <pubDate>Thu, 05 Feb 2026 14:49:29 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 04 Sep 2026 16:04:57 +0000</lastBuildDate>
     <item>
       <title>新疆塔城，一片靠蚂蚁播种的花海</title>
       <link>https://www.bilibili.com/video/BV1UmFhzDEdG</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/da6447db4c63e0b936322db7e6d93ef0185094e0.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 04:48</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1bUti6WE3K</guid>
       <pubDate>Fri, 04 Sep 2026 06:11:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>万人追更的终南山怪虫，只有我们拍到了真相！</title>
+      <link>https://www.bilibili.com/video/BV1yuto66E8J</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/1630841f6b3f1630e9c319e0e0f0747f09ad28b3.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 13:55</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1yuto66E8J</guid>
+      <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
