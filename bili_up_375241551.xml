@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 05 Sep 2026 14:54:43 +0000</lastBuildDate>
-    <item>
-      <title>我寻思我会航空学了</title>
-      <link>https://www.bilibili.com/video/BV19JRHBnEw3</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/bcd76cc42c3f3707903559b2a004a49286e66bb4.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 服务器末地保住了，没有掉进虚空&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:28</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV19JRHBnEw3</guid>
-      <pubDate>Wed, 06 May 2026 06:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 06 Sep 2026 08:33:12 +0000</lastBuildDate>
     <item>
       <title>凯尔希归来归来</title>
       <link>https://www.bilibili.com/video/BV1XJdNBgEJz</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/03dfd2af28714c6d86dab9129dca4f3ef4c14eb0.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 联动池终于没吃保底了&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:32</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1yytr6hEHf</guid>
       <pubDate>Sat, 05 Sep 2026 06:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>钓鱼来</title>
+      <link>https://www.bilibili.com/video/BV1Pgb76hEuk</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/5628a0b60d7e25d5a06c56318cb506b8594b4013.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 时间会证明小红鱼&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:06</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Pgb76hEuk</guid>
+      <pubDate>Sun, 06 Sep 2026 06:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
