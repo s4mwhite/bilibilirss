@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 08 Sep 2026 08:45:46 +0000</lastBuildDate>
-    <item>
-      <title>效果达到了，奇怪点也没啥问题～</title>
-      <link>https://www.bilibili.com/video/BV13wuozDEvA</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/43d8a6dfb9369687b0e39921068e3fa9fce7fa63.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:39</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV13wuozDEvA</guid>
-      <pubDate>Sat, 19 Jul 2025 12:39:49 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 08 Sep 2026 22:29:35 +0000</lastBuildDate>
     <item>
       <title>这里都有现成的了，你还要“以假乱真”？</title>
       <link>https://www.bilibili.com/video/BV1mh4dzXE9X</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/a5ef240016e3dd7494f826f8debb5a91b74f24db.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:37</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1J2bR6hEzf</guid>
       <pubDate>Sun, 16 Aug 2026 14:12:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>这是我送你的礼物，但是你亲手画的。</title>
+      <link>https://www.bilibili.com/video/BV1qHYJ6iEyZ</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/c39e8a32608f9b09068565766e25f94c1730b4a4.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:56</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1qHYJ6iEyZ</guid>
+      <pubDate>Tue, 08 Sep 2026 14:12:41 +0000</pubDate>
     </item>
   </channel>
 </rss>
