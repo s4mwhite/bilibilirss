@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 13 Sep 2026 22:16:19 +0000</lastBuildDate>
-    <item>
-      <title>我一个科普博主，为什么要给《中国妖鬼》写推荐语</title>
-      <link>https://www.bilibili.com/video/BV1xzcMzQE6t</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/6e2279e4ad22509c76d2c12d066bf028fa18e72d.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:31</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1xzcMzQE6t</guid>
-      <pubDate>Mon, 09 Feb 2026 07:47:23 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 15 Sep 2026 04:16:16 +0000</lastBuildDate>
     <item>
       <title>亮记闲谈-了解动植物知识有什么用？</title>
       <link>https://www.bilibili.com/video/BV1o7PSzZEti</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://archive.biliimg.com/bfs/archive/51cf3fe2502787bbf4483089231c9a2448adca4e.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 无穷小亮首部科普动画，带你一起开启自然大探索（每周更新）&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:00</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1VAYE6fEZG</guid>
       <pubDate>Fri, 11 Sep 2026 09:18:13 +0000</pubDate>
+    </item>
+    <item>
+      <title>【生命奇观2】要不是要拍这片子我早跑了</title>
+      <link>https://www.bilibili.com/video/BV18CYv6iEFc</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/357516fbd3de903429e78276d3e73575516aa7ae.png" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:52</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV18CYv6iEFc</guid>
+      <pubDate>Mon, 14 Sep 2026 04:00:02 +0000</pubDate>
     </item>
   </channel>
 </rss>

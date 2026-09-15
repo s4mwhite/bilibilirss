@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 14 Sep 2026 20:13:09 +0000</lastBuildDate>
-    <item>
-      <title>欢迎来天津吃炸河虾</title>
-      <link>https://www.bilibili.com/video/BV12Dbk6gEEc</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/9fc885e8765a2e915c0da8f548f52eb50a6fda60.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:16</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV12Dbk6gEEc</guid>
-      <pubDate>Sun, 16 Aug 2026 03:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 15 Sep 2026 04:14:45 +0000</lastBuildDate>
     <item>
       <title>露营烧烤 保姆级教程！</title>
       <link>https://www.bilibili.com/video/BV14xbX6TEHi</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/1630e0505eeb2b59dae342c8f7af727c15734a96.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 03:28</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1qrYa6gEWc</guid>
       <pubDate>Mon, 14 Sep 2026 03:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>凌晨5点的天津早点</title>
+      <link>https://www.bilibili.com/video/BV1G1eV6UEsZ</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/8da7c2bc8a222ec850dea3df23f3e356e0136f02.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:04</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1G1eV6UEsZ</guid>
+      <pubDate>Tue, 15 Sep 2026 03:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
