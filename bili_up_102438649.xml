@@ -7,22 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 16 Sep 2026 19:28:24 +0000</lastBuildDate>
-    <item>
-      <title>【GeekHour】30分钟Linux入门教程</title>
-      <link>https://www.bilibili.com/video/BV1cq421w72c</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/b3731956294f320e5e7eaa1135af5b7922571075.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 30分钟Linux光速入门课程！
-课程资料可以关注公众号GeekHour，回复Linux即可下载，
-里面还有其他Docker、MySQL、Redis、Git、MongoDB等等其他课程的精美Cheat Sheet和资料。
-QQ群：197289177，871289920
-
-课程内容：
-00:00 Linux简介及环境安装
-08:21 vi编辑器的使用
-21:29 常用命令&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 36:26</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1cq421w72c</guid>
-      <pubDate>Fri, 05 Apr 2024 03:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Thu, 17 Sep 2026 13:15:15 +0000</lastBuildDate>
     <item>
       <title>30分钟Shell光速入门教程</title>
       <link>https://www.bilibili.com/video/BV17m411U7cC</link>
@@ -324,6 +309,15 @@ CC Switch项目地址：https://github.com/farion1231/cc-switch
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/f598e2fedd69f93d96b8533ff650ba9ee2c560e1.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 这期视频将用10分钟带你快速上手 Herdr，了解核心概念、常用快捷键和实用技巧，掌握 Herdr 的基本操作与使用方法。&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 09:20</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1KXbH6EEF3</guid>
       <pubDate>Sun, 06 Sep 2026 09:03:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>【AI教程】豆包工作从零到一保姆级教程｜全流程实操</title>
+      <link>https://www.bilibili.com/video/BV1R5eg6GE6S</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/e65903c766f59f0a1f5cbd4ec297e32ca71d0b31.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 豆包工作全流程实操教程，打工人早下班利器！
+官网：https://www.doubao.com/work
+本教程配套资源：https://geekhour.net/ai-tools/doubao-work&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 11:51</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1R5eg6GE6S</guid>
+      <pubDate>Thu, 17 Sep 2026 09:18:31 +0000</pubDate>
     </item>
   </channel>
 </rss>
