@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 19 Sep 2026 08:44:41 +0000</lastBuildDate>
-    <item>
-      <title>你 蠢 不 过 我 你 信 吗</title>
-      <link>https://www.bilibili.com/video/BV1dg7N6QEAi</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/39251708cae1cad832e248085e10d472acb375f8.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 18:29</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1dg7N6QEAi</guid>
-      <pubDate>Mon, 22 Jun 2026 13:00:33 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 19 Sep 2026 15:40:39 +0000</lastBuildDate>
     <item>
       <title>你 喊 不 过 我 你 信 吗</title>
       <link>https://www.bilibili.com/video/BV11q7863ExJ</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/df55e8a1c38356b8a735ee2703968698dd5285a2.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 37:28</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1B2Yi6pEUF</guid>
       <pubDate>Sun, 13 Sep 2026 12:05:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>你 飞 不 过 我 你 信 吗</title>
+      <link>https://www.bilibili.com/video/BV1uWeh6oEjk</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/b5efc8e8d3bf5ce753bf3bc06d4a70864130a175.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 20:18</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1uWeh6oEjk</guid>
+      <pubDate>Sat, 19 Sep 2026 13:01:48 +0000</pubDate>
     </item>
   </channel>
 </rss>
