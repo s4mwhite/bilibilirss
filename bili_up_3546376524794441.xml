@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 22 Sep 2026 22:49:17 +0000</lastBuildDate>
-    <item>
-      <title>你 睡 不 过 我 你 信 吗</title>
-      <link>https://www.bilibili.com/video/BV1XSKQ6HEPh</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/3fa8e4185dcc324bbded7cdd36c6b7fcbbffa687.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 18:23</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1XSKQ6HEPh</guid>
-      <pubDate>Mon, 29 Jun 2026 10:41:18 +0000</pubDate>
-    </item>
+    <lastBuildDate>Wed, 23 Sep 2026 13:29:13 +0000</lastBuildDate>
     <item>
       <title>你 跑 不 过 我 你 信 吗</title>
       <link>https://www.bilibili.com/video/BV1iRMP6hEto</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/3c2979d4a16dae084d9b620169a458c71b5d2ec3.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:19</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1G8hE6WEi1</guid>
       <pubDate>Tue, 22 Sep 2026 12:25:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>面具之下是更美的面具</title>
+      <link>https://www.bilibili.com/video/BV1Wph46cEbN</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/cef456b171ef3834f03eadf6980ed8bd3bd6d745.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:22</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Wph46cEbN</guid>
+      <pubDate>Wed, 23 Sep 2026 04:21:05 +0000</pubDate>
     </item>
   </channel>
 </rss>
