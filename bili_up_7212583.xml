@@ -7,15 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 22 Sep 2026 22:50:38 +0000</lastBuildDate>
-    <item>
-      <title>10个设计小妙招，人人都可能用到</title>
-      <link>https://www.bilibili.com/video/BV1bN411b7HR</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/739b21ce0d3ebc01a2e215dfad565ed98fd491e3.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 关于设计的一些小灵感。
-制作视频使用的软件是：Illustrator(绘制图形)＋Sketch(排版)＋After Effects(制作动效)&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:09</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1bN411b7HR</guid>
-      <pubDate>Tue, 10 Oct 2023 10:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Wed, 23 Sep 2026 19:35:36 +0000</lastBuildDate>
     <item>
       <title>它动了！它动了！</title>
       <link>https://www.bilibili.com/video/BV1Db4y1g7f3</link>
@@ -241,6 +233,13 @@ https:/&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:27</description>
 聊斋全图.清代绘本&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:47</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1TbtZ62EbD</guid>
       <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>最抽象的一集</title>
+      <link>https://www.bilibili.com/video/BV1echi6TE8D</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/2304873f95e0adc9e87ba2eb8421c3ee95a2539f.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:13</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1echi6TE8D</guid>
+      <pubDate>Wed, 23 Sep 2026 09:30:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
