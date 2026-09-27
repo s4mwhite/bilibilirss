@@ -7,23 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 25 Sep 2026 19:57:23 +0000</lastBuildDate>
-    <item>
-      <title>【官方双语】卷积的两种可视化|概率论中的X+Y既美妙又复杂</title>
-      <link>https://www.bilibili.com/video/BV1Yk4y1K7Az</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/6499eeeaa6b72d1c1074278597830e3cad22c584.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 随机变量之和，与中心极限定理的联系。关于“卷积”，我们将从离散情形到连续情形，看两种可视化的方式。
-
-更多信息请看下方评论
-翻译：saniac  Diro
-校对：ZSC 
-时轴：ZSC
-后期：愚者
-
-X+Y, in probability, is a beautiful mess - Visualizing continuous convolutions
-https://youtu.be/IaSGqQa5O-M&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 27:25</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Yk4y1K7Az</guid>
-      <pubDate>Fri, 07 Jul 2023 15:00:17 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 27 Sep 2026 04:40:17 +0000</lastBuildDate>
     <item>
       <title>【官方双语】分圆的规律突然离了谱，这是它背后的原因（莫则圆问题）</title>
       <link>https://www.bilibili.com/video/BV1ym4y1j7cr</link>
@@ -429,6 +413,20 @@ https://youtu.be/l6DKRf-fAAM
 感谢观众的支持: https://3b1b.co/support 一键三联与分享，也是最大的支持！&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 32:20</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1yVNU6xERx</guid>
       <pubDate>Tue, 14 Jul 2026 01:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】压缩即智能：Part 2，究竟什么是交叉熵？</title>
+      <link>https://www.bilibili.com/video/BV1u7hQ6rEQB</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/622be8107486095a85b7287e9c7f483056a35264.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 承接上一期，这一期我们来看一下什么是交叉熵，以及为什么是要用交叉熵  
+But what is cross-entropy --  Compression is Intelligence Part 2  
+https://youtu.be/GlYgs6v2YfU  
+翻译&amp;时间轴 astra 校正：贰鼠   
+
+【官方双语】压缩即智能：Part1，重新发明熵  https://www.bilibili.com/video/BV1yVNU6xERx  
+
+感谢观众的支持: https://3b1b.co/s&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 33:51</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1u7hQ6rEQB</guid>
+      <pubDate>Sat, 26 Sep 2026 02:30:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
