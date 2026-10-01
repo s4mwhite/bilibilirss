@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 29 Sep 2026 23:33:30 +0000</lastBuildDate>
-    <item>
-      <title>你 顶 不 过 我 你 信 吗</title>
-      <link>https://www.bilibili.com/video/BV1WJ326KESY</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/d17943ed752fa72953f84cb2b637c3079a7f6b84.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 14:12</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1WJ326KESY</guid>
-      <pubDate>Wed, 29 Jul 2026 09:57:23 +0000</pubDate>
-    </item>
+    <lastBuildDate>Thu, 01 Oct 2026 05:07:09 +0000</lastBuildDate>
     <item>
       <title>最 开 智 的 一 集</title>
       <link>https://www.bilibili.com/video/BV1Dg3t6bEyQ</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/bfbeb356913fb9188c6c0c4da5c49b59ed26697d.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:48</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1oqaH6uEiH</guid>
       <pubDate>Tue, 29 Sep 2026 12:17:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>最 有 意 义 的 一 集</title>
+      <link>https://www.bilibili.com/video/BV1FiaZ62EKF</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/45c59a2e04b6f4646713a4a2ce592bd4f9acdf05.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:45</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1FiaZ62EKF</guid>
+      <pubDate>Wed, 30 Sep 2026 10:08:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
