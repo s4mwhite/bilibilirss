@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 01 Oct 2026 05:07:09 +0000</lastBuildDate>
-    <item>
-      <title>最 开 智 的 一 集</title>
-      <link>https://www.bilibili.com/video/BV1Dg3t6bEyQ</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/05344329cb2b37044d59a98c509f34c67091ce7f.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:51</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Dg3t6bEyQ</guid>
-      <pubDate>Thu, 30 Jul 2026 09:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 02 Oct 2026 14:35:33 +0000</lastBuildDate>
     <item>
       <title>你 吃 不 完 我 你 信 吗</title>
       <link>https://www.bilibili.com/video/BV1aQGw6bEfS</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/45c59a2e04b6f4646713a4a2ce592bd4f9acdf05.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:45</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1FiaZ62EKF</guid>
       <pubDate>Wed, 30 Sep 2026 10:08:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>旅 游 最 舒 服 的 一集</title>
+      <link>https://www.bilibili.com/video/BV1NPam6ZEb4</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/a4e7109c54a19c88fc6fdbd95517e2b8c78eb4e2.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:12</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1NPam6ZEb4</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
