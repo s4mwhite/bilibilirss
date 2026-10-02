@@ -7,20 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 01 Oct 2026 20:54:43 +0000</lastBuildDate>
-    <item>
-      <title>赛博生物：16.67万个果蝇神经元接管3架无人机</title>
-      <link>https://www.bilibili.com/video/BV1qzes6nEVw</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/4092eb14dfb10601017bf776869cd38cf9e4725e.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 科学界最近诞生了一个极为震撼的实验，研究人员把一套完整绘制的果蝇大脑连接图谱输入计算机，构建出一个数字仿真大脑，并将其直接接入无人机系统。
-
-整个过程中，没有编写一行复杂的飞行代码，没有手势预设，也没有规避障碍物的规则算法。研究人员只是将无人机摄像头捕捉到的画面实时传输给数字果蝇的“眼睛”，由其神经元产生的电信号直接输出给电机控制油门。
-
-实验结果出人意料：一架自动悬停，一架顺畅从椅子旁滑过，另一架则平稳落到了地板上。生物在数亿年演化中烙印在基因深处的飞行本能，在被搬进数字世界后依然生效。
-
-还有人用它打&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:14</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1qzes6nEVw</guid>
-      <pubDate>Wed, 16 Sep 2026 02:12:21 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 02 Oct 2026 04:57:26 +0000</lastBuildDate>
     <item>
       <title>关键时刻：原来有对象的好处有这么多</title>
       <link>https://www.bilibili.com/video/BV1SGew6rESk</link>
@@ -241,6 +228,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/d91f020d73bad5b8196ab7153059d5f3159124e4.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 当动画里的桥段发生在现实中：小鸟跟踪一只猫咪，每当猫回头小鸟就把头扭向一边，假装自己根本没在跟着它。&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:04</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1uUa66yEFB</guid>
       <pubDate>Thu, 01 Oct 2026 12:36:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>生活中的一些小意外，主打一个猝不及防。。</title>
+      <link>https://www.bilibili.com/video/BV1AJa66eELE</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/35bcfb6af067a500c29225720bbf6168d79d4a9c.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:52</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1AJa66eELE</guid>
+      <pubDate>Fri, 02 Oct 2026 02:54:27 +0000</pubDate>
     </item>
   </channel>
 </rss>

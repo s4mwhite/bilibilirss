@@ -7,22 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 30 Sep 2026 04:56:15 +0000</lastBuildDate>
-    <item>
-      <title>【官方双语】分圆的规律突然离了谱，这是它背后的原因（莫则圆问题）</title>
-      <link>https://www.bilibili.com/video/BV1ym4y1j7cr</link>
-      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/0410d5de7a1f9e4a816ee4c041d23e4c6f966c3d.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 1，2，4，8，16。。。一个规律突然被打破了，这是它背后的原因。
-
-翻译：贰鼠
-校对：ZSC  䶭
-时间轴：贰鼠
-后期：ZSC 愚者
-
-Explaining the absurd circle division pattern - Moser's circle problem
-https://youtu.be/YtkIWDE36qU&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 16:51</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1ym4y1j7cr</guid>
-      <pubDate>Tue, 18 Jul 2023 13:42:56 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 02 Oct 2026 04:58:34 +0000</lastBuildDate>
     <item>
       <title>【官方双语】到底为什么“中心极限”是正态分布啊</title>
       <link>https://www.bilibili.com/video/BV1EP411p7bV</link>
@@ -427,6 +412,18 @@ https://youtu.be/GlYgs6v2YfU
 感谢观众的支持: https://3b1b.co/s&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 33:51</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1u7hQ6rEQB</guid>
       <pubDate>Sat, 26 Sep 2026 02:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【官方双语】AI 未能解决的最后一道IMO真题</title>
+      <link>https://www.bilibili.com/video/BV1znaf61EnS</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/6ede825d8a25d03a009ef28d0cee112ec1778e5f.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 这一期我们来看一道难住了 AI 的精妙谜题，以及引出破解它所需的思维直觉。  
+The last IMO problem AI could not solve  
+https://youtu.be/Nbwv5wHQoj0  
+翻译：astra 校正&amp;时间轴&amp;后期：贰鼠  
+感谢观众的支持: https://3b1b.co/support  
+一键三联与分享，也是最大的支持！&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 51:56</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1znaf61EnS</guid>
+      <pubDate>Thu, 01 Oct 2026 01:45:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
