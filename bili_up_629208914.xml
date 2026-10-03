@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 01 Oct 2026 20:54:22 +0000</lastBuildDate>
-    <item>
-      <title>就是玩耶</title>
-      <link>https://www.bilibili.com/video/BV1yPL96PEHs</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/f87792887f4f634d7298a76d38bc3a55000c189d.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:40</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1yPL96PEHs</guid>
-      <pubDate>Wed, 17 Jun 2026 06:42:50 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 03 Oct 2026 04:40:13 +0000</lastBuildDate>
     <item>
       <title>心态好才能练的好</title>
       <link>https://www.bilibili.com/video/BV131jw6MEkH</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i0.hdslb.com/bfs/archive/46b89752a3efb54f1a5990f265a3493680734baa.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:29</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1r5af6SEWR</guid>
       <pubDate>Wed, 30 Sep 2026 15:08:07 +0000</pubDate>
+    </item>
+    <item>
+      <title>随便练练就这样了</title>
+      <link>https://www.bilibili.com/video/BV1jFa26rEgF</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/687d6d1d7fa454cbc780ce3b223f76a14d6cd12a.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:12</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1jFa26rEgF</guid>
+      <pubDate>Fri, 02 Oct 2026 01:12:46 +0000</pubDate>
     </item>
   </channel>
 </rss>
