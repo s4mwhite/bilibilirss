@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 03 Oct 2026 04:39:44 +0000</lastBuildDate>
-    <item>
-      <title>你 吃 不 完 我 你 信 吗</title>
-      <link>https://www.bilibili.com/video/BV1aQGw6bEfS</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/9073d7755be3c9a29e57819424e4eb794745be17.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 11:44</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1aQGw6bEfS</guid>
-      <pubDate>Fri, 31 Jul 2026 09:43:56 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 04 Oct 2026 13:49:56 +0000</lastBuildDate>
     <item>
       <title>你 吸 不 过 我 你 信 吗</title>
       <link>https://www.bilibili.com/video/BV1HA3o6ZEbL</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/a4e7109c54a19c88fc6fdbd95517e2b8c78eb4e2.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:12</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1NPam6ZEb4</guid>
       <pubDate>Fri, 02 Oct 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>你 打 不 到 我 你 信 吗</title>
+      <link>https://www.bilibili.com/video/BV1z2Ha62E3q</link>
+      <description>&lt;img src="https://i2.hdslb.com/bfs/archive/a8646a08080ab80c962c28ddb4f360d13b6044f0.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 15:15</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1z2Ha62E3q</guid>
+      <pubDate>Sat, 03 Oct 2026 10:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
