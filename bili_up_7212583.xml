@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 05 Oct 2026 04:56:52 +0000</lastBuildDate>
-    <item>
-      <title>它动了！它动了！</title>
-      <link>https://www.bilibili.com/video/BV1Db4y1g7f3</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/f1d5779a0c76c329ba2a38cd485fe530935bccd4.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 关于手机系统的动效设计...&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:20</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Db4y1g7f3</guid>
-      <pubDate>Tue, 14 Nov 2023 10:01:10 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 06 Oct 2026 23:41:50 +0000</lastBuildDate>
     <item>
       <title>【年度弹幕盘点】一起发条弹幕，告别2023</title>
       <link>https://www.bilibili.com/video/BV1hw411G7wT</link>
@@ -240,6 +233,17 @@ https:/&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:27</description>
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/2304873f95e0adc9e87ba2eb8421c3ee95a2539f.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:13</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1echi6TE8D</guid>
       <pubDate>Wed, 23 Sep 2026 09:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>哪里的月亮更圆？</title>
+      <link>https://www.bilibili.com/video/BV1TWHj67EqQ</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/14aa718c18aba5c273ed3a60412c6b935527ec3d.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 参考文献：
+
+[1] Kovács Z, Udvarnoki Z, Papp E, et al. Psychophysical study of the moon illusion in paintings and landscape photos[J]. Proceedings of the Royal Society A, 2021, 477: 20200737.
+[2] 缪凯. 中国古代绘画中月的意象研究[D]. 昆明: 云南大学, 2024.
+[3] 谢鲁荻. 宋元绘画中月意象的启示——以个人创作&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 03:17</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1TWHj67EqQ</guid>
+      <pubDate>Tue, 06 Oct 2026 03:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
