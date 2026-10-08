@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 07 Oct 2026 21:07:15 +0000</lastBuildDate>
-    <item>
-      <title>最 恐 怖 的 一 集</title>
-      <link>https://www.bilibili.com/video/BV17eb26qEHr</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/0e1b80d974ff9680ca9c42ac64fa27f10ecbeb22.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 66:44</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV17eb26qEHr</guid>
-      <pubDate>Sat, 15 Aug 2026 15:33:39 +0000</pubDate>
-    </item>
+    <lastBuildDate>Thu, 08 Oct 2026 15:24:35 +0000</lastBuildDate>
     <item>
       <title>你 香 不 过 我 你 信 吗</title>
       <link>https://www.bilibili.com/video/BV1Ei836VE69</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/f651beb77be696b08d825c7b4de68c134af00f39.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 08:17</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV16AHC61E4k</guid>
       <pubDate>Wed, 07 Oct 2026 11:38:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>你 丢 不 过 我 你 信 吗</title>
+      <link>https://www.bilibili.com/video/BV1aqHQ6sEMt</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/e87de193c074217b42d47e55f818ef74987f7d84.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 06:21</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1aqHQ6sEMt</guid>
+      <pubDate>Thu, 08 Oct 2026 10:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
