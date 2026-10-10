@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 09 Oct 2026 05:28:41 +0000</lastBuildDate>
-    <item>
-      <title>好东西是不少，但咱别全加里面了呀！</title>
-      <link>https://www.bilibili.com/video/BV1LnY9z5ERc</link>
-      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/170d19cb22938bb7af4eef7bba0852517fcc3976.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 01:46</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1LnY9z5ERc</guid>
-      <pubDate>Thu, 21 Aug 2025 13:47:21 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 10 Oct 2026 05:12:17 +0000</lastBuildDate>
     <item>
       <title>其实我拍到了，更像你的你。</title>
       <link>https://www.bilibili.com/video/BV1TChRzhEke</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i1.hdslb.com/bfs/archive/fb68b6fcaa64cd25b850633155bf3d25d9a29e4d.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; &lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 02:21</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1sFan61EPi</guid>
       <pubDate>Tue, 29 Sep 2026 12:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>我记忆中的德国，本可以带来一个新的世界</title>
+      <link>https://www.bilibili.com/video/BV1HKpb63Etg</link>
+      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/1f0094e74c032a023664c1510fd8ff171399f268.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 04:06</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1HKpb63Etg</guid>
+      <pubDate>Fri, 09 Oct 2026 12:56:36 +0000</pubDate>
     </item>
   </channel>
 </rss>
