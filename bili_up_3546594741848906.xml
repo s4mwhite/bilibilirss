@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 13 Oct 2026 23:39:59 +0000</lastBuildDate>
-    <item>
-      <title>睁眼第一顿大饼夹一切</title>
-      <link>https://www.bilibili.com/video/BV1qrYa6gEWc</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/1630e0505eeb2b59dae342c8f7af727c15734a96.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 03:28</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1qrYa6gEWc</guid>
-      <pubDate>Mon, 14 Sep 2026 03:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Wed, 14 Oct 2026 04:16:53 +0000</lastBuildDate>
     <item>
       <title>凌晨5点的天津早点</title>
       <link>https://www.bilibili.com/video/BV1G1eV6UEsZ</link>
@@ -217,6 +210,13 @@
       <description>&lt;img src="https://i2.hdslb.com/bfs/archive/a3bb1008cb22598357e0c01e76f6dcc94063f394.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 05:46</description>
       <guid isPermaLink="false">https://www.bilibili.com/video/BV135po66E2G</guid>
       <pubDate>Tue, 13 Oct 2026 03:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>教天津朋友吃重庆火锅</title>
+      <link>https://www.bilibili.com/video/BV1Bypi6tE1F</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/42a137de52ca72bdc595c17987643ec1b789452e.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; -&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 07:14</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1Bypi6tE1F</guid>
+      <pubDate>Wed, 14 Oct 2026 03:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
