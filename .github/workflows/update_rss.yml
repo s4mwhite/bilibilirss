@@ -8,10 +8,14 @@ on:
   # 2. 手动触发：方便你修改代码后立即测试
   workflow_dispatch:
 
-  # 3. 推送触发：每次你修改 UID 列表推送代码时也会运行
+  # 3. 推送触发：每次你在管理界面保存关注列表（ups.json 变更）推送代码时也会运行
   push:
     branches:
       - main
+    paths:
+      - 'ups.json'
+      - 'request.py'
+      - '.github/workflows/update_rss.yml'
 
 jobs:
   build:
