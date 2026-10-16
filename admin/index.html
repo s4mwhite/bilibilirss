@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
+<!-- 只允许连接自身和 api.github.com：即使有恶意脚本混进来，也没法把 Token 发到别处 -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://cdn.jsdelivr.net; style-src 'unsafe-inline'; img-src https://*.hdslb.com data:; connect-src 'self' https://api.github.com; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
 <title>B站 RSS 后台</title>
 <style>
 :root {
@@ -346,19 +349,26 @@ dialog h2, .pane h2 { margin: 0; font-size: 16px; font-weight: 650; }
 
 <dialog id="tokenDialog">
   <form method="dialog" class="form" id="tokenForm">
-    <h2>设置 GitHub Token</h2>
-    <input type="password" id="tokenInput" placeholder="github_pat_…" autocomplete="off" spellcheck="false">
-    <label class="check"><input type="checkbox" id="rememberInput" checked> 在这台设备上记住（不勾选则关闭页面后失效）</label>
-    <ol class="steps">
-      <li>打开 <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a>（Fine-grained token）</li>
-      <li>Repository access 选 <b>Only select repositories</b> → <b id="repoNameStep"></b></li>
-      <li>Repository permissions：<b>Contents</b> 选 Read and write，<b>Actions</b> 选 Read and write</li>
-      <li>（可选）<b>Secrets</b> 选 Read and write：用于在本页更新 B 站 Cookie。该权限只能覆盖 Secrets，读不出原值</li>
-    </ol>
-    <p class="note">Token 只保存在你的浏览器里，只会发送给 api.github.com。</p>
+    <h2 id="tokenTitle">设置 GitHub Token</h2>
+    <input type="text" name="username" autocomplete="username" value="bilibilirss-admin" hidden>
+    <div class="form" id="unlockFields">
+      <input type="password" id="unlockInput" placeholder="输入密码解锁" autocomplete="current-password">
+    </div>
+    <div class="form" id="setupFields">
+      <input type="password" id="tokenInput" placeholder="github_pat_…" autocomplete="off" spellcheck="false">
+      <ol class="steps" id="tokenSteps">
+        <li>打开 <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a>（Fine-grained token），建议设置过期时间</li>
+        <li>Repository access 选 <b>Only select repositories</b> → <b id="repoNameStep"></b></li>
+        <li>Repository permissions：<b>Contents</b> 选 Read and write，<b>Actions</b> 选 Read and write</li>
+        <li>（可选）<b>Secrets</b> 选 Read and write：用于在本页更新 B 站 Cookie。该权限只能覆盖 Secrets，读不出原值</li>
+      </ol>
+      <input type="password" id="pwInput" placeholder="设置解锁密码（至少 8 位）" autocomplete="new-password">
+      <input type="password" id="pw2Input" placeholder="再输入一次密码" autocomplete="new-password">
+    </div>
+    <p class="note" id="tokenNote"></p>
     <p class="msg" id="tokenMsg"></p>
     <div class="btns">
-      <button class="btn ghost left" type="button" id="clearTokenBtn">清除 Token</button>
+      <button class="btn ghost left" type="button" id="resetVaultBtn">忘记密码 / 更换 Token</button>
       <button class="btn" type="button" id="cancelTokenBtn">取消</button>
       <button class="btn primary" type="submit" id="saveTokenBtn">保存</button>
     </div>
@@ -373,19 +383,32 @@ const REPO = onPages ? location.pathname.split('/')[1] : 'bilibilirss';
 const BRANCH = 'main';
 const WORKFLOW = 'update_rss.yml';
 const SITE = `https://${OWNER}.github.io/${REPO}`;
-const TOKEN_KEY = 'bilirss_admin_token';
+const VAULT_KEY = 'bilirss_admin_vault';         // 用密码加密后的 Token
+const LEGACY_TOKEN_KEY = 'bilirss_admin_token';  // 旧版明文 Token，读到后提示加密
+const KDF_ITERATIONS = 600000;
+const IDLE_LOCK_MS = 30 * 60 * 1000;
+
+// 不允许被其他网页用 iframe 嵌入（防止诱导点击）
+if (window.top !== window.self) {
+  document.body.innerHTML = '<p style="padding:24px">出于安全考虑，管理后台不能嵌入在其他网页中打开。</p>';
+  throw new Error('framed');
+}
 
 // ---------- 状态 ----------
-let token = null;
+let token = null;       // 解锁后的 Token，只放在内存里
+let vault = null;       // localStorage 里的密文
+let plainLegacy = false; // 当前 Token 来自旧版明文存储，尚未加密
 let base = [];          // 服务器上的 ups.json
 let sha = null;         // ups.json 的 sha，保存时做并发校验
 let ops = [];           // 尚未保存的修改
 let status = null;      // status.json
 let latestRun = null;
 let runs = [];          // 最近 10 次 Actions 运行
+let runsLoaded = false; // 第一次请求返回前不显示“暂无运行记录”
 let secretsMeta;        // Secrets 的更新时间：undefined 未读取，null 无权限
 let pollTimer = null;
 let filter = 'all';
+let lastActive = Date.now();
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -393,14 +416,49 @@ const today = () => new Date().toISOString().slice(0, 10);
 const rssUrl = uid => `${SITE}/bili_up_${uid}.xml`;
 
 function storage(fn) { try { return fn(); } catch { return null; } }
-function loadToken() {
-  token = storage(() => localStorage.getItem(TOKEN_KEY)) || storage(() => sessionStorage.getItem(TOKEN_KEY)) || null;
+
+// ---------- Token 加密保存：PBKDF2-SHA256 派生密钥 + AES-GCM ----------
+const bytesToB64 = bytes => { let bin = ''; for (const b of bytes) bin += String.fromCharCode(b); return btoa(bin); };
+const b64ToBytes = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+async function deriveKey(password, salt, iterations) {
+  const material = await crypto.subtle.importKey('raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveKey']);
+  return crypto.subtle.deriveKey({ name: 'PBKDF2', salt, iterations, hash: 'SHA-256' }, material, { name: 'AES-GCM', length: 256 }, false, ['encrypt', 'decrypt']);
 }
-function storeToken(value, remember) {
-  storage(() => localStorage.removeItem(TOKEN_KEY));
-  storage(() => sessionStorage.removeItem(TOKEN_KEY));
-  if (value) storage(() => (remember ? localStorage : sessionStorage).setItem(TOKEN_KEY, value));
-  token = value || null;
+async function sealToken(value, password) {
+  const salt = crypto.getRandomValues(new Uint8Array(16));
+  const iv = crypto.getRandomValues(new Uint8Array(12));
+  const key = await deriveKey(password, salt, KDF_ITERATIONS);
+  const ct = new Uint8Array(await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, key, new TextEncoder().encode(value)));
+  return { v: 1, iter: KDF_ITERATIONS, salt: bytesToB64(salt), iv: bytesToB64(iv), ct: bytesToB64(ct) };
+}
+async function openVault(box, password) {
+  const key = await deriveKey(password, b64ToBytes(box.salt), box.iter);
+  const pt = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64ToBytes(box.iv) }, key, b64ToBytes(box.ct));
+  return new TextDecoder().decode(pt);
+}
+function removeLegacyToken() {
+  storage(() => localStorage.removeItem(LEGACY_TOKEN_KEY));
+  storage(() => sessionStorage.removeItem(LEGACY_TOKEN_KEY));
+}
+function loadToken() {
+  try { vault = JSON.parse(storage(() => localStorage.getItem(VAULT_KEY)) || 'null'); } catch { vault = null; }
+  const legacy = storage(() => localStorage.getItem(LEGACY_TOKEN_KEY)) || storage(() => sessionStorage.getItem(LEGACY_TOKEN_KEY));
+  if (legacy && vault) removeLegacyToken();
+  else if (legacy) { token = legacy; plainLegacy = true; }
+}
+function saveVault(box) {
+  storage(() => localStorage.setItem(VAULT_KEY, JSON.stringify(box)));
+  vault = box;
+  plainLegacy = false;
+  removeLegacyToken();
+}
+function lock(msg = '已锁定') {
+  if (!token) return;
+  token = null;
+  secretsMeta = undefined;
+  clearTimeout(pollTimer);
+  loadAll();
+  toast(msg);
 }
 
 // ---------- 工具 ----------
@@ -490,8 +548,15 @@ async function loadAll() {
     await Promise.all([loadUps(), loadStatus()]);
   } catch (e) {
     if (e.status === 401) {
-      storeToken(null);
-      toast('Token 无效或已过期，已切换为只读模式', true);
+      token = null;
+      if (plainLegacy) {
+        // 旧的明文 Token 已失效：直接删掉，走正常的设置流程
+        removeLegacyToken();
+        plainLegacy = false;
+        toast('原来保存的 Token 已失效，已删除，请重新设置', true);
+      } else {
+        toast('Token 已失效或过期，已切换为只读模式。请在「解锁」里点「忘记密码 / 更换 Token」重新设置', true);
+      }
       return loadAll();
     }
     toast(`读取 ups.json 失败：${e.message}`, true);
@@ -645,7 +710,7 @@ function onRowAction(e) {
 }
 
 async function save() {
-  if (!token) { openTokenDialog('保存修改需要先设置 Token。'); return; }
+  if (!token || plainLegacy) { needAuth('保存修改'); return; }
   const btn = $('saveBtn');
   btn.disabled = true; btn.textContent = '保存中…';
   try {
@@ -675,7 +740,7 @@ async function save() {
 }
 
 async function triggerRun() {
-  if (!token) { openTokenDialog('手动触发更新需要先设置 Token。'); return; }
+  if (!token || plainLegacy) { needAuth('手动触发更新'); return; }
   const btn = $('runBtn');
   btn.disabled = true;
   try {
@@ -696,6 +761,7 @@ async function refreshRun() {
     runs = r.workflow_runs || [];
     latestRun = runs[0] || null;
   } catch { /* 未登录时可能触发 API 限流，忽略 */ }
+  runsLoaded = true;
   const running = latestRun && latestRun.status !== 'completed';
   if (wasRunning && !running) {
     await loadStatus();
@@ -725,6 +791,7 @@ function renderRun() {
   const events = EVENTS;
   $('runsDot').hidden = !(latestRun && latestRun.status === 'completed' && latestRun.conclusion !== 'success');
   if (!latestRun) {
+    if (!runsLoaded) return;
     dot.className = 'dot';
     text.innerHTML = status?.updated_at ? `数据更新于 ${esc(ago(status.updated_at))}` : '暂无运行记录';
     return;
@@ -747,7 +814,11 @@ function renderBanners() {
   if (status?.run?.login_ok === false) {
     out.push(`<div class="banner warn">B 站登录 Cookie 已失效，抓取在匿名进行，412 风控会明显变多。请在浏览器重新登录 B 站后 <a href="#cookie">在「Cookie」页更新</a>。</div>`);
   }
-  if (!token) {
+  if (plainLegacy) {
+    out.push(`<div class="banner warn">Token 目前以明文保存在浏览器里，<a href="#" data-open-token>设置一个密码</a>把它加密保存。</div>`);
+  } else if (!token && vault) {
+    out.push(`<div class="banner info">已锁定：可以浏览和暂存修改，<a href="#" data-open-token>输入密码解锁</a>后才能保存、更新 Cookie。</div>`);
+  } else if (!token) {
     out.push(`<div class="banner info">只读模式：可以浏览和暂存修改，<a href="#" data-open-token>设置 Token</a> 后才能保存。</div>`);
   }
   $('banners').innerHTML = out.join('');
@@ -808,7 +879,7 @@ function renderRuns() {
       <span class="when">${esc(ago(r.run_started_at || r.created_at))}</span>
       <span class="dur">${r.status === 'completed' ? esc(duration(r)) : ''}</span>
     </div>`;
-  }).join('') : '<p class="note">暂无运行记录</p>';
+  }).join('') : `<p class="note">${runsLoaded ? '暂无运行记录' : '读取中…'}</p>`;
 }
 
 function showTab(name) {
@@ -902,39 +973,107 @@ function render() {
   const { count, text } = changeSummary();
   $('savebar').hidden = count === 0;
   $('saveText').innerHTML = `${count} 项未保存<span class="detail">的修改：${esc(text)}</span>`;
-  $('tokenBtn').textContent = token ? 'Token 已设置' : '设置 Token';
+  $('tokenBtn').textContent = plainLegacy ? '设置密码' : token ? '锁定' : vault ? '解锁' : '设置 Token';
 }
 
-// ---------- Token 对话框 ----------
-function openTokenDialog(msg = '') {
-  $('tokenMsg').textContent = msg;
-  $('tokenInput').value = '';
-  $('clearTokenBtn').hidden = !token;
-  $('tokenDialog').showModal();
-  $('tokenInput').focus();
+// ---------- Token 对话框：解锁 / 首次设置 / 给旧的明文 Token 加密 ----------
+let tokenMode = 'setup';
+function needAuth(action) {
+  openTokenDialog(vault && !token ? `${action}需要先解锁。` : `${action}需要先设置 Token。`);
 }
+function openTokenDialog(msg = '', mode) {
+  tokenMode = mode || (plainLegacy && token ? 'encrypt' : vault && !token ? 'unlock' : 'setup');
+  const titles = { unlock: '解锁管理后台', setup: '设置 GitHub Token', encrypt: '设置解锁密码' };
+  const notes = {
+    unlock: '密码只在本机用来解密 Token，不会发送到任何地方。连续 30 分钟不操作会自动锁定。',
+    setup: 'Token 会用这个密码加密后保存在本机浏览器里，只会发送给 api.github.com；之后每次打开页面都要输入密码解锁。密码无法找回，忘了就重新设置 Token。',
+    encrypt: '设置密码后 Token 会加密保存，明文副本会被删除；之后每次打开页面都要输入密码解锁。',
+  };
+  $('tokenTitle').textContent = titles[tokenMode];
+  $('tokenNote').textContent = notes[tokenMode];
+  $('unlockFields').hidden = tokenMode !== 'unlock';
+  $('setupFields').hidden = tokenMode === 'unlock';
+  $('tokenInput').hidden = $('tokenSteps').hidden = tokenMode === 'encrypt';
+  $('resetVaultBtn').hidden = tokenMode !== 'unlock';
+  $('saveTokenBtn').textContent = tokenMode === 'unlock' ? '解锁' : '加密保存';
+  for (const id of ['unlockInput', 'tokenInput', 'pwInput', 'pw2Input']) $(id).value = '';
+  $('tokenMsg').textContent = msg;
+  if (!$('tokenDialog').open) $('tokenDialog').showModal();
+  $(tokenMode === 'unlock' ? 'unlockInput' : tokenMode === 'encrypt' ? 'pwInput' : 'tokenInput').focus();
+}
+function tokenError(err) {
+  return err.status === 401 ? 'Token 无效或已过期'
+    : err.status === 404 ? `这个 Token 访问不到 ${OWNER}/${REPO}，请检查 Repository access`
+    : `验证失败：${err.message}`;
+}
+async function finishUnlock(message) {
+  $('tokenDialog').close();
+  lastActive = Date.now();
+  toast(message);
+  await loadAll();
+}
+
 async function submitToken(e) {
   e.preventDefault();
-  const value = $('tokenInput').value.trim();
-  if (!value) { $('tokenMsg').textContent = '请粘贴 Token'; return; }
+  const msg = $('tokenMsg'), btn = $('saveTokenBtn');
+  msg.textContent = '';
+
+  if (tokenMode === 'unlock') {
+    const pw = $('unlockInput').value;
+    if (!pw) { msg.textContent = '请输入密码'; return; }
+    btn.disabled = true;
+    try {
+      let value;
+      try { value = await openVault(vault, pw); }
+      catch { msg.textContent = '密码错误'; $('unlockInput').select(); return; }
+      token = value;
+      try { await gh(''); }
+      catch (err) {
+        token = null;
+        msg.textContent = err.status === 401 ? 'Token 已失效或过期，请点「忘记密码 / 更换 Token」重新设置' : tokenError(err);
+        return;
+      }
+      await finishUnlock('已解锁');
+    } finally { btn.disabled = false; }
+    return;
+  }
+
+  const value = tokenMode === 'encrypt' ? token : $('tokenInput').value.trim();
+  const pw = $('pwInput').value;
+  if (!value) { msg.textContent = '请粘贴 Token'; return; }
+  if (pw.length < 8) { msg.textContent = '密码至少 8 位'; return; }
+  if (pw !== $('pw2Input').value) { msg.textContent = '两次输入的密码不一致'; return; }
+  btn.disabled = true;
   const prev = token;
-  token = value;
-  $('saveTokenBtn').disabled = true;
   try {
-    await gh('');
-    storeToken(value, $('rememberInput').checked);
-    $('tokenDialog').close();
-    toast('Token 已保存');
-    const pending = ops;
-    await loadAll();
-    ops = pending;
-    render();
+    token = value;
+    try { await gh(''); }
+    catch (err) {
+      token = prev;
+      if (tokenMode === 'encrypt' && err.status === 401) {
+        // 旧的明文 Token 已经失效：删掉它，改为重新设置
+        removeLegacyToken(); plainLegacy = false; token = null;
+        openTokenDialog('原来保存的 Token 已失效，请重新粘贴一个新的 Token', 'setup');
+      } else {
+        msg.textContent = tokenError(err);
+      }
+      return;
+    }
+    saveVault(await sealToken(value, pw));
+    await finishUnlock(tokenMode === 'encrypt' ? 'Token 已加密保存' : 'Token 已加密保存并解锁');
   } catch (err) {
     token = prev;
-    $('tokenMsg').textContent = err.status === 401 ? 'Token 无效或已过期' : err.status === 404 ? `这个 Token 访问不到 ${OWNER}/${REPO}，请检查 Repository access` : `验证失败：${err.message}`;
-  } finally {
-    $('saveTokenBtn').disabled = false;
-  }
+    msg.textContent = `保存失败：${err.message}`;
+  } finally { btn.disabled = false; }
+}
+
+function resetVault() {
+  if (!confirm('将删除这台设备上加密保存的 Token，需要重新粘贴 Token 并设置新密码。继续吗？')) return;
+  storage(() => localStorage.removeItem(VAULT_KEY));
+  vault = null;
+  token = null;
+  openTokenDialog('', 'setup');
+  render();
 }
 
 // ---------- 更新 Cookie（写入仓库 Secrets） ----------
@@ -1007,7 +1146,7 @@ async function loadSecretsMeta() {
 
 async function submitCookie(e) {
   e.preventDefault();
-  if (!token) { openTokenDialog('更新 Cookie 需要先设置 Token（需包含 Secrets 读写权限）。'); return; }
+  if (!token || plainLegacy) { needAuth('更新 Cookie'); return; }
   const msg = $('cookieMsg');
   const values = Object.values(COOKIE_SECRETS)
     .map(name => [name, $(`ck${name}`).value.trim()])
@@ -1058,7 +1197,8 @@ $('sort').onchange = render;
 $('saveBtn').onclick = save;
 $('discardBtn').onclick = () => { ops = []; render(); };
 $('runBtn').onclick = triggerRun;
-$('tokenBtn').onclick = () => openTokenDialog();
+$('tokenBtn').onclick = () => (token && !plainLegacy ? lock() : openTokenDialog());
+$('resetVaultBtn').onclick = resetVault;
 $('banners').onclick = e => { if (e.target.closest('[data-open-token]')) { e.preventDefault(); openTokenDialog(); } };
 $('tabs').onclick = e => { const t = e.target.closest('[data-tab]'); if (t) location.hash = t.dataset.tab; };
 window.addEventListener('hashchange', () => showTab(location.hash.slice(1)));
@@ -1066,9 +1206,18 @@ $('cookieForm').onsubmit = submitCookie;
 $('cookiePaste').oninput = onCookiePaste;
 $('tokenForm').onsubmit = submitToken;
 $('cancelTokenBtn').onclick = () => $('tokenDialog').close();
-$('clearTokenBtn').onclick = () => { storeToken(null); $('tokenDialog').close(); toast('Token 已清除'); loadAll(); };
 window.addEventListener('beforeunload', e => { if (changeSummary().count) { e.preventDefault(); e.returnValue = ''; } });
-document.addEventListener('visibilitychange', () => { if (!document.hidden && latestRun && latestRun.status !== 'completed') refreshRun(); });
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) return;
+  checkIdle();
+  if (latestRun && latestRun.status !== 'completed') refreshRun();
+});
+// 连续 30 分钟没有操作自动锁定（后台标签页的定时器会被浏览器放慢，回到页面时再检查一次）
+for (const ev of ['pointerdown', 'keydown', 'wheel', 'touchstart']) addEventListener(ev, () => { lastActive = Date.now(); }, { passive: true, capture: true });
+function checkIdle() {
+  if (token && vault && !plainLegacy && Date.now() - lastActive > IDLE_LOCK_MS) lock('超过 30 分钟未操作，已自动锁定');
+}
+setInterval(checkIdle, 30000);
 
 loadToken();
 showTab(location.hash.slice(1));
