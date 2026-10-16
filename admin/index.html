@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>B站订阅管理</title>
+<style>
+:root {
+  --bg: #f6f7f9;
+  --card: #ffffff;
+  --text: #18191c;
+  --muted: #61666d;
+  --faint: #9499a0;
+  --line: #e3e5e7;
+  --accent: #fb7299;
+  --accent-ink: #ffffff;
+  --accent-soft: #ffeef3;
+  --blue: #00aeec;
+  --ok: #1a9c4e;
+  --ok-soft: #e5f6ec;
+  --err: #e5484d;
+  --err-soft: #fdecec;
+  --warn: #b45309;
+  --warn-soft: #fff4e0;
+  --idle: #6b7280;
+  --idle-soft: #eef0f2;
+  --shadow: 0 1px 2px rgba(0,0,0,.04), 0 2px 8px rgba(0,0,0,.04);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111214;
+    --card: #1b1c1f;
+    --text: #e8e9eb;
+    --muted: #a2a7ae;
+    --faint: #6f747b;
+    --line: #2c2e33;
+    --accent: #ff7aa2;
+    --accent-ink: #1b1c1f;
+    --accent-soft: #3a2029;
+    --ok: #4cc27a;
+    --ok-soft: #173023;
+    --err: #ff6b6f;
+    --err-soft: #3a1c1d;
+    --warn: #f0b35a;
+    --warn-soft: #3a2c14;
+    --idle: #9aa0a8;
+    --idle-soft: #26282c;
+    --shadow: none;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+button, input, select { font: inherit; color: inherit; }
+.wrap { max-width: 960px; margin: 0 auto; padding: 24px 16px 120px; }
+
+header { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+header h1 { font-size: 20px; margin: 0; font-weight: 650; letter-spacing: .2px; }
+header .repo { color: var(--faint); font-size: 13px; text-decoration: none; }
+header .repo:hover { color: var(--muted); }
+header .spacer { flex: 1; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  height: 32px; padding: 0 12px; border-radius: 8px;
+  border: 1px solid var(--line); background: var(--card);
+  cursor: pointer; white-space: nowrap; text-decoration: none;
+}
+.btn:hover { border-color: var(--faint); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 600; }
+.btn.primary:hover { filter: brightness(1.05); }
+.btn.ghost { border-color: transparent; background: transparent; color: var(--muted); }
+.btn.ghost:hover { background: var(--idle-soft); color: var(--text); }
+.btn.sm { height: 28px; padding: 0 8px; font-size: 13px; border-radius: 6px; }
+.btn.danger:hover { color: var(--err); }
+
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); }
+
+.runbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 12px 16px; margin-bottom: 12px; }
+.runbar .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--idle); flex: none; }
+.runbar .dot.ok { background: var(--ok); }
+.runbar .dot.err { background: var(--err); }
+.runbar .dot.run { background: var(--blue); animation: pulse 1.2s infinite; }
+@keyframes pulse { 50% { opacity: .3; } }
+.runbar .meta { color: var(--muted); }
+.runbar .stats { color: var(--muted); margin-left: auto; font-variant-numeric: tabular-nums; }
+.runbar .stats b { color: var(--text); font-weight: 600; }
+
+.banner { padding: 12px 16px; border-radius: 10px; margin-bottom: 12px; font-size: 13.5px; }
+.banner.warn { background: var(--warn-soft); color: var(--warn); }
+.banner.info { background: var(--idle-soft); color: var(--muted); }
+.banner a { font-weight: 600; }
+
+.feeds { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+.feed { padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.feed .label { font-weight: 600; display: flex; align-items: center; gap: 6px; }
+.feed .tag { font-size: 11px; padding: 1px 6px; border-radius: 4px; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.feed .desc { color: var(--muted); font-size: 13px; }
+.feed .url { display: flex; gap: 8px; align-items: center; }
+.feed code { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; color: var(--muted); background: var(--bg); padding: 5px 8px; border-radius: 6px; }
+
+.add { padding: 14px 16px; margin-bottom: 12px; }
+.add form { display: flex; gap: 8px; flex-wrap: wrap; }
+.add input { height: 36px; padding: 0 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); outline: none; min-width: 0; }
+.add input:focus { border-color: var(--accent); }
+.add .uid-input { flex: 3 1 260px; }
+.add .name-input { flex: 1 1 140px; }
+.add .btn { height: 36px; }
+.add .hint { margin-top: 8px; color: var(--faint); font-size: 12.5px; }
+.add .hint.err { color: var(--err); }
+
+.toolbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 20px 0 10px; }
+.toolbar input, .toolbar select { height: 32px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); padding: 0 10px; outline: none; }
+.toolbar input { flex: 1 1 200px; min-width: 0; }
+.chips { display: flex; gap: 4px; flex-wrap: wrap; }
+.chip { height: 28px; padding: 0 10px; border-radius: 14px; border: 1px solid var(--line); background: var(--card); cursor: pointer; font-size: 13px; color: var(--muted); }
+.chip.on { background: var(--text); color: var(--bg); border-color: var(--text); }
+.chip .n { opacity: .7; margin-left: 2px; font-variant-numeric: tabular-nums; }
+
+.list { overflow: hidden; }
+.row { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 16px; border-top: 1px solid var(--line); }
+.row:first-child { border-top: 0; }
+.row.removed { opacity: .5; }
+.row.removed .name { text-decoration: line-through; }
+.row.added { background: linear-gradient(90deg, var(--accent-soft), transparent 60%); }
+.avatar { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; background: var(--idle-soft); display: grid; place-items: center; color: var(--muted); font-weight: 600; overflow: hidden; }
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
+.main { min-width: 0; }
+.line1 { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.name { font-weight: 600; font-size: 15px; text-decoration: none; }
+.name:hover { color: var(--accent); }
+.remark { color: var(--muted); font-size: 12.5px; }
+.uid { color: var(--faint); font-size: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.badge { font-size: 11.5px; padding: 1px 7px; border-radius: 10px; font-weight: 600; white-space: nowrap; }
+.badge.ok { background: var(--ok-soft); color: var(--ok); }
+.badge.error { background: var(--err-soft); color: var(--err); cursor: help; }
+.badge.paused, .badge.pending { background: var(--idle-soft); color: var(--idle); }
+.badge.added, .badge.changed { background: var(--accent-soft); color: var(--accent); }
+.badge.removed { background: var(--err-soft); color: var(--err); }
+.line2 { color: var(--muted); font-size: 13px; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.line2 a { text-decoration: none; }
+.line2 a:hover { color: var(--accent); }
+.line2 .ago { color: var(--faint); margin-left: 6px; }
+.line2 .errtext { color: var(--err); }
+.actions { display: flex; gap: 2px; }
+
+.empty { padding: 40px 16px; text-align: center; color: var(--faint); }
+
+.savebar {
+  position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%);
+  width: min(720px, calc(100% - 32px));
+  display: flex; align-items: center; gap: 10px; padding: 10px 12px 10px 16px;
+  background: var(--text); color: var(--bg); border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.2);
+}
+.savebar[hidden] { display: none; }
+.savebar .txt { flex: 1; min-width: 0; font-size: 13.5px; }
+.savebar .btn { border-color: transparent; }
+.savebar .btn.ghost { color: var(--bg); opacity: .75; }
+.savebar .btn.ghost:hover { background: transparent; opacity: 1; }
+
+.toast {
+  position: fixed; left: 50%; top: 20px; transform: translate(-50%, -20px);
+  background: var(--text); color: var(--bg); padding: 8px 14px; border-radius: 8px;
+  font-size: 13.5px; opacity: 0; pointer-events: none; transition: .2s; max-width: calc(100% - 32px);
+}
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+.toast.err { background: var(--err); color: #fff; }
+
+dialog { border: 1px solid var(--line); border-radius: 14px; padding: 0; background: var(--card); color: var(--text); width: min(520px, calc(100% - 32px)); }
+dialog::backdrop { background: rgba(0,0,0,.4); }
+dialog form { padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+dialog h2 { margin: 0; font-size: 17px; }
+dialog input[type=password] { height: 36px; padding: 0 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); outline: none; width: 100%; font-family: ui-monospace, Menlo, monospace; }
+dialog input[type=password]:focus { border-color: var(--accent); }
+dialog .steps { margin: 0; padding-left: 20px; color: var(--muted); font-size: 13px; }
+dialog .steps li { margin: 3px 0; }
+dialog .steps b { color: var(--text); font-weight: 600; }
+dialog .note { color: var(--faint); font-size: 12.5px; margin: 0; }
+dialog .check { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
+dialog .btns { display: flex; gap: 8px; justify-content: flex-end; }
+dialog .btns .left { margin-right: auto; }
+dialog .msg { font-size: 13px; color: var(--err); min-height: 1em; margin: 0; }
+
+@media (max-width: 640px) {
+  .wrap { padding-top: 16px; }
+  .feeds { grid-template-columns: 1fr; }
+  .row { grid-template-columns: 40px minmax(0, 1fr); padding: 12px; }
+  .avatar { width: 40px; height: 40px; }
+  .actions { grid-column: 2; flex-wrap: wrap; margin-left: -8px; }
+  .runbar .stats { margin-left: 0; width: 100%; }
+  .savebar .detail { display: none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>B站订阅管理</h1>
+    <a class="repo" id="repoLink" target="_blank" rel="noopener"></a>
+    <span class="spacer"></span>
+    <button class="btn" id="runBtn" title="手动触发一次抓取">立即更新</button>
+    <button class="btn" id="tokenBtn">设置 Token</button>
+  </header>
+
+  <div class="card runbar" id="runbar">
+    <span class="dot" id="runDot"></span>
+    <span id="runText">读取运行状态…</span>
+    <span class="stats" id="stats"></span>
+  </div>
+
+  <div id="banners"></div>
+
+  <div class="feeds">
+    <div class="card feed">
+      <div class="label">合并源 <span class="tag">推荐</span></div>
+      <div class="desc">所有 UP 合成一个源，Folo 订阅一次，以后在这里增删即可自动生效。</div>
+      <div class="url"><code id="allUrl"></code><button class="btn sm" data-copy="all">复制</button></div>
+    </div>
+    <div class="card feed">
+      <div class="label">OPML 清单</div>
+      <div class="desc">想按 UP 分开订阅：导入 OPML，或在下方列表里单独复制某个 UP 的 RSS。</div>
+      <div class="url"><code id="opmlUrl"></code><button class="btn sm" data-copy="opml">复制</button></div>
+    </div>
+  </div>
+
+  <div class="card add">
+    <form id="addForm" autocomplete="off">
+      <input class="uid-input" id="uidInput" placeholder="UID 或空间链接，可一次粘贴多个（空格/换行/逗号分隔）">
+      <input class="name-input" id="nameInput" placeholder="备注（可选）">
+      <button class="btn primary" type="submit">添加</button>
+    </form>
+    <div class="hint" id="addHint">例：<code>space.bilibili.com/102438649</code> 或 <code>102438649</code>。修改会先暂存，点底部「保存并更新」后才提交。</div>
+  </div>
+
+  <div class="toolbar">
+    <input id="search" type="search" placeholder="搜索昵称 / 备注 / UID">
+    <div class="chips" id="chips"></div>
+    <select id="sort">
+      <option value="order">按添加顺序</option>
+      <option value="latest">按最新投稿</option>
+      <option value="name">按昵称</option>
+    </select>
+  </div>
+
+  <div class="card list" id="list"><div class="empty">加载中…</div></div>
+</div>
+
+<div class="savebar" id="savebar" hidden>
+  <span class="txt" id="saveText"></span>
+  <button class="btn ghost" id="discardBtn">放弃修改</button>
+  <button class="btn primary" id="saveBtn">保存并更新</button>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<dialog id="tokenDialog">
+  <form method="dialog" id="tokenForm">
+    <h2>设置 GitHub Token</h2>
+    <input type="password" id="tokenInput" placeholder="github_pat_…" autocomplete="off" spellcheck="false">
+    <label class="check"><input type="checkbox" id="rememberInput" checked> 在这台设备上记住（不勾选则关闭页面后失效）</label>
+    <ol class="steps">
+      <li>打开 <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a>（Fine-grained token）</li>
+      <li>Repository access 选 <b>Only select repositories</b> → <b id="repoNameStep"></b></li>
+      <li>Repository permissions：<b>Contents</b> 选 Read and write，<b>Actions</b> 选 Read and write</li>
+    </ol>
+    <p class="note">Token 只保存在你的浏览器里，只会发送给 api.github.com。</p>
+    <p class="msg" id="tokenMsg"></p>
+    <div class="btns">
+      <button class="btn ghost left" type="button" id="clearTokenBtn">清除 Token</button>
+      <button class="btn" type="button" id="cancelTokenBtn">取消</button>
+      <button class="btn primary" type="submit" id="saveTokenBtn">保存</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+// ---------- 配置：部署在 <owner>.github.io/<repo>/admin/ 时自动识别 ----------
+const onPages = location.hostname.endsWith('.github.io');
+const OWNER = onPages ? location.hostname.split('.')[0] : 's4mwhite';
+const REPO = onPages ? location.pathname.split('/')[1] : 'bilibilirss';
+const BRANCH = 'main';
+const WORKFLOW = 'update_rss.yml';
+const SITE = `https://${OWNER}.github.io/${REPO}`;
+const TOKEN_KEY = 'bilirss_admin_token';
+
+// ---------- 状态 ----------
+let token = null;
+let base = [];          // 服务器上的 ups.json
+let sha = null;         // ups.json 的 sha，保存时做并发校验
+let ops = [];           // 尚未保存的修改
+let status = null;      // status.json
+let latestRun = null;
+let pollTimer = null;
+let filter = 'all';
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const today = () => new Date().toISOString().slice(0, 10);
+const rssUrl = uid => `${SITE}/bili_up_${uid}.xml`;
+
+function storage(fn) { try { return fn(); } catch { return null; } }
+function loadToken() {
+  token = storage(() => localStorage.getItem(TOKEN_KEY)) || storage(() => sessionStorage.getItem(TOKEN_KEY)) || null;
+}
+function storeToken(value, remember) {
+  storage(() => localStorage.removeItem(TOKEN_KEY));
+  storage(() => sessionStorage.removeItem(TOKEN_KEY));
+  if (value) storage(() => (remember ? localStorage : sessionStorage).setItem(TOKEN_KEY, value));
+  token = value || null;
+}
+
+// ---------- 工具 ----------
+function b64decode(s) {
+  return new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g, '')), c => c.charCodeAt(0)));
+}
+function b64encode(s) {
+  const bytes = new TextEncoder().encode(s);
+  let bin = '';
+  for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+  return btoa(bin);
+}
+function ago(ts) {
+  if (!ts) return '';
+  const t = typeof ts === 'number' ? ts * 1000 : Date.parse(ts);
+  const s = Math.max(0, (Date.now() - t) / 1000);
+  if (s < 60) return '刚刚';
+  if (s < 3600) return `${Math.floor(s / 60)} 分钟前`;
+  if (s < 86400) return `${Math.floor(s / 3600)} 小时前`;
+  if (s < 86400 * 30) return `${Math.floor(s / 86400)} 天前`;
+  return new Date(t).toLocaleDateString('zh-CN');
+}
+let toastTimer;
+function toast(msg, isErr = false) {
+  const el = $('toast');
+  el.textContent = msg;
+  el.className = 'toast show' + (isErr ? ' err' : '');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { el.className = 'toast'; }, isErr ? 5000 : 2500);
+}
+async function copy(text) {
+  try { await navigator.clipboard.writeText(text); }
+  catch {
+    const ta = document.createElement('textarea');
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); ta.remove();
+  }
+  toast('已复制');
+}
+
+async function gh(path, { method = 'GET', body, raw = false } = {}) {
+  const headers = { Accept: raw ? 'application/vnd.github.raw+json' : 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' };
+  if (token) headers.Authorization = `Bearer ${token}`;
+  if (body) headers['Content-Type'] = 'application/json';
+  const res = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}${path}`, { method, headers, body: body && JSON.stringify(body), cache: 'no-store' });
+  if (!res.ok) {
+    let msg = '';
+    try { msg = (await res.json()).message || ''; } catch {}
+    const err = new Error(`${res.status} ${msg}`.trim());
+    err.status = res.status;
+    throw err;
+  }
+  if (res.status === 204) return null;
+  return raw ? res.text() : res.json();
+}
+// 没有 Token 时直接读 GitHub Pages 上的静态文件（只读）
+async function pagesJson(file) {
+  const res = await fetch(new URL(`../${file}?t=${Date.now()}`, location.href), { cache: 'no-store' });
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`${res.status}`);
+  return res.json();
+}
+
+// ---------- 数据 ----------
+async function loadUps() {
+  if (token) {
+    const file = await gh(`/contents/ups.json?ref=${BRANCH}`);
+    sha = file.sha;
+    base = JSON.parse(b64decode(file.content)).ups || [];
+  } else {
+    base = ((await pagesJson('ups.json')) || {}).ups || [];
+    sha = null;
+  }
+}
+async function loadStatus() {
+  try {
+    if (token) status = JSON.parse(await gh(`/contents/status.json?ref=${BRANCH}`, { raw: true }));
+    else status = await pagesJson('status.json');
+  } catch (e) {
+    if (e.status !== 404) console.warn('status.json 读取失败', e);
+    status = null;
+  }
+}
+async function loadAll() {
+  try {
+    await Promise.all([loadUps(), loadStatus()]);
+  } catch (e) {
+    if (e.status === 401) {
+      storeToken(null);
+      toast('Token 无效或已过期，已切换为只读模式', true);
+      return loadAll();
+    }
+    toast(`读取 ups.json 失败：${e.message}`, true);
+  }
+  render();
+  refreshRun();
+}
+
+function applyOps(list, opList) {
+  const out = list.map(u => ({ ...u }));
+  for (const op of opList) {
+    const i = out.findIndex(u => String(u.uid) === String(op.uid));
+    if (op.type === 'add') {
+      if (i < 0) out.push({ uid: op.uid, name: op.name || '', enabled: true, added_at: today() });
+    } else if (i >= 0) {
+      if (op.type === 'remove') out.splice(i, 1);
+      else if (op.type === 'toggle') out[i].enabled = op.enabled;
+      else if (op.type === 'rename') out[i].name = op.name;
+    }
+  }
+  return out;
+}
+const current = () => applyOps(base, ops);
+
+// 把当前修改和服务器版本逐行对比，得到每行的标记（新增 / 待删除 / 已修改）
+function viewRows() {
+  const cur = current();
+  const curMap = new Map(cur.map(u => [String(u.uid), u]));
+  const baseKeys = new Set(base.map(u => String(u.uid)));
+  const rows = [];
+  for (const b of base) {
+    const c = curMap.get(String(b.uid));
+    if (!c) rows.push({ ...b, _state: 'removed' });
+    else rows.push({ ...c, _state: (c.enabled !== false) !== (b.enabled !== false) || (c.name || '') !== (b.name || '') ? 'changed' : '' });
+  }
+  for (const c of cur) if (!baseKeys.has(String(c.uid))) rows.push({ ...c, _state: 'added' });
+  return rows;
+}
+
+function stOf(uid) { return status?.ups?.[String(uid)] || null; }
+function displayName(up) { return stOf(up.uid)?.name || up.name || `UID ${up.uid}`; }
+function upState(up) {
+  const st = stOf(up.uid);
+  if (up.enabled === false) return { cls: 'paused', text: '已暂停' };
+  if (!st || st.ok == null) return { cls: 'pending', text: '待抓取' };
+  if (st.ok === false) return { cls: 'error', text: st.fail_streak > 1 ? `连续失败 ${st.fail_streak} 次` : '本次失败' };
+  return { cls: 'ok', text: '正常' };
+}
+
+// 与 Python json.dumps 的格式保持一致，减少无谓的 diff
+function serialize(list) {
+  const order = ['uid', 'name', 'enabled', 'added_at'];
+  const lines = list.map(u => {
+    const obj = { uid: u.uid, name: u.name || '', enabled: u.enabled !== false, added_at: u.added_at || today() };
+    for (const k of Object.keys(u)) if (!order.includes(k) && !k.startsWith('_')) obj[k] = u[k];
+    return '    {' + Object.entries(obj).map(([k, v]) => `${JSON.stringify(k)}: ${JSON.stringify(v)}`).join(', ') + '}';
+  });
+  return '{\n  "ups": [\n' + lines.join(',\n') + '\n  ]\n}\n';
+}
+
+function changeSummary() {
+  const rows = viewRows().filter(r => r._state);
+  const added = rows.filter(r => r._state === 'added');
+  const removed = rows.filter(r => r._state === 'removed');
+  const changed = rows.filter(r => r._state === 'changed');
+  const parts = [];
+  if (added.length) parts.push(`新增 ${added.length}`);
+  if (removed.length) parts.push(`删除 ${removed.length}`);
+  if (changed.length) parts.push(`修改 ${changed.length}`);
+  const baseMap = new Map(base.map(u => [String(u.uid), u]));
+  const label = r => (stOf(r.uid)?.name || r.name) ? `${displayName(r)} (${r.uid})` : String(r.uid);
+  const detail = [
+    ...added.map(r => `+ ${label(r)}`),
+    ...removed.map(r => `- ${label(r)}`),
+    ...changed.map(r => {
+      const b = baseMap.get(String(r.uid));
+      const what = (b.enabled !== false) !== (r.enabled !== false) ? (r.enabled === false ? '暂停' : '启用') : `备注改为「${r.name}」`;
+      return `~ ${label(r)}：${what}`;
+    }),
+  ];
+  return { count: rows.length, text: parts.join('，'), message: `管理页：${parts.join('，')} 个 UP\n\n${detail.join('\n')}` };
+}
+
+// ---------- 操作 ----------
+function parseInput(text) {
+  const uids = [], bad = [];
+  for (const tok of text.split(/[\s,，;；]+/).filter(Boolean)) {
+    const m = tok.match(/space\.bilibili\.com\/(\d+)/) || tok.match(/bilibili\.com\/space\/(\d+)/) || tok.match(/^(?:uid[:：]?)?(\d+)$/i);
+    const n = m && Number(m[1]);
+    if (n && Number.isSafeInteger(n)) uids.push(n); else bad.push(tok);
+  }
+  return { uids: [...new Set(uids)], bad };
+}
+
+function addUps(e) {
+  e.preventDefault();
+  const hint = $('addHint');
+  const { uids, bad } = parseInput($('uidInput').value);
+  const name = $('nameInput').value.trim();
+  if (!uids.length) {
+    hint.className = 'hint err';
+    hint.textContent = bad.some(b => /b23\.tv/.test(b))
+      ? 'b23.tv 短链接无法直接识别，请先在浏览器打开，复制跳转后的空间页地址。'
+      : '没有识别到 UID，请输入数字 UID 或 space.bilibili.com/… 链接。';
+    return;
+  }
+  const curKeys = new Set(current().map(u => String(u.uid)));
+  const removedKeys = new Set(viewRows().filter(r => r._state === 'removed').map(r => String(r.uid)));
+  const added = [], restored = [], dup = [];
+  for (const uid of uids) {
+    const k = String(uid);
+    if (removedKeys.has(k)) { ops = ops.filter(o => !(o.type === 'remove' && String(o.uid) === k)); restored.push(uid); }
+    else if (curKeys.has(k)) dup.push(uid);
+    else { ops.push({ type: 'add', uid, name: uids.length === 1 ? name : '' }); added.push(uid); }
+  }
+  const msg = [];
+  if (added.length) msg.push(`已暂存 ${added.length} 个新 UP`);
+  if (restored.length) msg.push(`撤销删除 ${restored.length} 个`);
+  if (dup.length) msg.push(`${dup.join('、')} 已在列表中`);
+  if (bad.length) msg.push(`无法识别：${bad.slice(0, 3).join('、')}${bad.length > 3 ? '…' : ''}`);
+  hint.className = 'hint' + (added.length || restored.length ? '' : ' err');
+  hint.textContent = msg.join('；') + (added.length ? '。点底部「保存并更新」提交。' : '');
+  if (added.length || restored.length) { $('uidInput').value = ''; $('nameInput').value = ''; }
+  render();
+}
+
+function onRowAction(e) {
+  const btn = e.target.closest('[data-act]');
+  if (!btn) return;
+  const uid = Number(btn.dataset.uid);
+  const k = String(uid);
+  const row = viewRows().find(r => String(r.uid) === k);
+  switch (btn.dataset.act) {
+    case 'copy': return copy(rssUrl(uid));
+    case 'toggle': ops.push({ type: 'toggle', uid, enabled: row.enabled === false }); break;
+    case 'remove':
+      if (row._state === 'added') ops = ops.filter(o => String(o.uid) !== k);
+      else ops.push({ type: 'remove', uid });
+      break;
+    case 'undo': ops = ops.filter(o => String(o.uid) !== k); break;
+    case 'rename': {
+      const v = prompt(`给 ${displayName(row)} 设置备注（留空则清除）`, row.name || '');
+      if (v === null) return;
+      ops.push({ type: 'rename', uid, name: v.trim() });
+      break;
+    }
+  }
+  render();
+}
+
+async function save() {
+  if (!token) { openTokenDialog('保存修改需要先设置 Token。'); return; }
+  const btn = $('saveBtn');
+  btn.disabled = true; btn.textContent = '保存中…';
+  try {
+    for (let attempt = 0; ; attempt++) {
+      const list = current();
+      const { message } = changeSummary();
+      try {
+        const res = await gh('/contents/ups.json', { method: 'PUT', body: { message, content: b64encode(serialize(list)), sha, branch: BRANCH } });
+        sha = res.content.sha;
+        base = list;
+        ops = [];
+        toast('已保存，GitHub Actions 正在更新 RSS（约 3–5 分钟）');
+        render();
+        setTimeout(refreshRun, 4000);
+        return;
+      } catch (e) {
+        // 别处（另一台设备 / 手动编辑）改过 ups.json：拉最新版本，把暂存的修改重新套上去再试
+        if ((e.status === 409 || e.status === 422) && attempt === 0) { await loadUps(); continue; }
+        throw e;
+      }
+    }
+  } catch (e) {
+    toast(e.status === 403 || e.status === 404 ? `保存失败：Token 没有 Contents 写权限（${e.message}）` : `保存失败：${e.message}`, true);
+  } finally {
+    btn.disabled = false; btn.textContent = '保存并更新';
+  }
+}
+
+async function triggerRun() {
+  if (!token) { openTokenDialog('手动触发更新需要先设置 Token。'); return; }
+  const btn = $('runBtn');
+  btn.disabled = true;
+  try {
+    await gh(`/actions/workflows/${WORKFLOW}/dispatches`, { method: 'POST', body: { ref: BRANCH } });
+    toast('已触发更新');
+    setTimeout(refreshRun, 3000);
+  } catch (e) {
+    toast(e.status === 403 || e.status === 404 ? `触发失败：Token 没有 Actions 写权限（${e.message}）` : `触发失败：${e.message}`, true);
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+async function refreshRun() {
+  const wasRunning = latestRun && latestRun.status !== 'completed';
+  try {
+    const r = await gh(`/actions/workflows/${WORKFLOW}/runs?per_page=1&branch=${BRANCH}`);
+    latestRun = r.workflow_runs?.[0] || null;
+  } catch { /* 未登录时可能触发 API 限流，忽略 */ }
+  const running = latestRun && latestRun.status !== 'completed';
+  if (wasRunning && !running) {
+    await loadStatus();
+    render();
+    toast(latestRun.conclusion === 'success' ? 'RSS 已更新完成' : 'RSS 更新结束，但有失败，详见运行日志', latestRun.conclusion !== 'success');
+  }
+  renderRun();
+  clearTimeout(pollTimer);
+  if (running && token) pollTimer = setTimeout(refreshRun, 10000);
+}
+
+// ---------- 渲染 ----------
+function renderRun() {
+  const dot = $('runDot'), text = $('runText');
+  const events = { schedule: '定时', push: '保存触发', workflow_dispatch: '手动' };
+  if (!latestRun) {
+    dot.className = 'dot';
+    text.innerHTML = status?.updated_at ? `数据更新于 ${esc(ago(status.updated_at))}` : '暂无运行记录';
+    return;
+  }
+  const r = latestRun;
+  const link = `<a href="${esc(r.html_url)}" target="_blank" rel="noopener">`;
+  const ev = events[r.event] || r.event;
+  if (r.status !== 'completed') {
+    dot.className = 'dot run';
+    text.innerHTML = `${link}正在更新</a> <span class="meta">· ${esc(ev)} · ${esc(ago(r.run_started_at || r.created_at))}开始</span>`;
+  } else {
+    const ok = r.conclusion === 'success';
+    dot.className = 'dot ' + (ok ? 'ok' : 'err');
+    text.innerHTML = `${link}上次更新${ok ? '成功' : '失败'}</a> <span class="meta">· ${esc(ev)} · ${esc(ago(r.updated_at))}</span>`;
+  }
+}
+
+function renderBanners() {
+  const out = [];
+  if (status?.run?.login_ok === false) {
+    out.push(`<div class="banner warn">B 站登录 Cookie 已失效，抓取在匿名进行，412 风控会明显变多。请在浏览器重新登录 B 站，把 Cookie 里的 SESSDATA / bili_jct / buvid3 更新到 <a href="https://github.com/${OWNER}/${REPO}/settings/secrets/actions" target="_blank" rel="noopener">仓库 Secrets</a>。</div>`);
+  }
+  if (!token) {
+    out.push(`<div class="banner info">只读模式：可以浏览和暂存修改，<a href="#" data-open-token>设置 Token</a> 后才能保存。</div>`);
+  }
+  $('banners').innerHTML = out.join('');
+}
+
+function renderStats(rows) {
+  const live = rows.filter(r => r._state !== 'removed');
+  const n = { all: live.length, ok: 0, error: 0, paused: 0, pending: 0 };
+  for (const r of live) n[upState(r).cls]++;
+  $('stats').innerHTML = `<b>${n.all}</b> 个 UP · <b>${n.ok}</b> 正常 · <b>${n.error}</b> 失败 · <b>${n.paused}</b> 暂停`;
+  const chips = [['all', '全部'], ['ok', '正常'], ['error', '失败'], ['paused', '暂停'], ['pending', '待抓取']];
+  $('chips').innerHTML = chips
+    .filter(([k]) => k === 'all' || n[k] || filter === k)
+    .map(([k, label]) => `<button class="chip${filter === k ? ' on' : ''}" data-filter="${k}">${label}<span class="n">${n[k]}</span></button>`)
+    .join('');
+}
+
+function rowHtml(r) {
+  const st = stOf(r.uid);
+  const state = upState(r);
+  const name = displayName(r);
+  const badges = [];
+  if (r._state === 'added') badges.push('<span class="badge added">待添加</span>');
+  else if (r._state === 'removed') badges.push('<span class="badge removed">待删除</span>');
+  else if (r._state === 'changed') badges.push('<span class="badge changed">已修改</span>');
+  if (r._state !== 'removed') {
+    const tip = st?.ok === false ? `${st.last_error || ''}${st.last_ok_at ? `\n上次成功：${ago(st.last_ok_at)}` : ''}` : (st?.last_ok_at ? `上次成功：${ago(st.last_ok_at)}` : '');
+    badges.push(`<span class="badge ${state.cls}" title="${esc(tip)}">${state.text}</span>`);
+  }
+  const remark = r.name && r.name !== name ? `<span class="remark">${esc(r.name)}</span>` : '';
+  let line2;
+  if (st?.latest) {
+    line2 = `<a href="https://www.bilibili.com/video/${esc(st.latest.bvid)}" target="_blank" rel="noopener">${esc(st.latest.title)}</a><span class="ago">${esc(ago(st.latest.created))}</span>`;
+  } else if (st?.ok === false) {
+    line2 = `<span class="errtext">${esc(st.last_error || '抓取失败')}</span>`;
+  } else if (st && st.ok) {
+    line2 = '暂无投稿';
+  } else {
+    line2 = r._state === 'added' ? '保存后由 GitHub Actions 抓取' : '等待下次抓取';
+  }
+  const initial = esc([...name.replace(/^UID /, '')][0] || '?');
+  const face = st?.face
+    ? `<img src="${esc(st.face)}@96w_96h.webp" referrerpolicy="no-referrer" loading="lazy" alt="" data-i="${initial}" onerror="this.parentNode.textContent=this.dataset.i">`
+    : '';
+  const actions = r._state === 'removed'
+    ? `<button class="btn sm" data-act="undo" data-uid="${r.uid}">撤销</button>`
+    : `<button class="btn ghost sm" data-act="copy" data-uid="${r.uid}" title="${esc(rssUrl(r.uid))}">复制 RSS</button>
+       <button class="btn ghost sm" data-act="rename" data-uid="${r.uid}">备注</button>
+       <button class="btn ghost sm" data-act="toggle" data-uid="${r.uid}">${r.enabled === false ? '启用' : '暂停'}</button>
+       ${r._state === 'changed' ? `<button class="btn ghost sm" data-act="undo" data-uid="${r.uid}">撤销</button>` : ''}
+       <button class="btn ghost sm danger" data-act="remove" data-uid="${r.uid}">删除</button>`;
+  return `<div class="row ${r._state}">
+    <div class="avatar">${face || initial}</div>
+    <div class="main">
+      <div class="line1">
+        <a class="name" href="https://space.bilibili.com/${r.uid}" target="_blank" rel="noopener">${esc(name)}</a>
+        ${remark}<span class="uid">${r.uid}</span>${badges.join('')}
+      </div>
+      <div class="line2">${line2}</div>
+    </div>
+    <div class="actions">${actions}</div>
+  </div>`;
+}
+
+function render() {
+  const rows = viewRows();
+  renderBanners();
+  renderStats(rows);
+  renderRun();
+
+  const q = $('search').value.trim().toLowerCase();
+  let shown = rows.filter(r => {
+    if (filter !== 'all' && (r._state === 'removed' || upState(r).cls !== filter)) return false;
+    if (!q) return true;
+    return [displayName(r), r.name, String(r.uid)].some(s => (s || '').toLowerCase().includes(q));
+  });
+  const sort = $('sort').value;
+  if (sort === 'latest') shown.sort((a, b) => (stOf(b.uid)?.latest?.created || 0) - (stOf(a.uid)?.latest?.created || 0));
+  if (sort === 'name') shown.sort((a, b) => displayName(a).localeCompare(displayName(b), 'zh-CN'));
+
+  $('list').innerHTML = shown.length
+    ? shown.map(rowHtml).join('')
+    : `<div class="empty">${rows.length ? '没有符合条件的 UP' : '还没有订阅任何 UP，在上方添加一个吧'}</div>`;
+
+  const { count, text } = changeSummary();
+  $('savebar').hidden = count === 0;
+  $('saveText').innerHTML = `${count} 项未保存<span class="detail">的修改：${esc(text)}</span>`;
+  $('tokenBtn').textContent = token ? 'Token 已设置' : '设置 Token';
+}
+
+// ---------- Token 对话框 ----------
+function openTokenDialog(msg = '') {
+  $('tokenMsg').textContent = msg;
+  $('tokenInput').value = '';
+  $('clearTokenBtn').hidden = !token;
+  $('tokenDialog').showModal();
+  $('tokenInput').focus();
+}
+async function submitToken(e) {
+  e.preventDefault();
+  const value = $('tokenInput').value.trim();
+  if (!value) { $('tokenMsg').textContent = '请粘贴 Token'; return; }
+  const prev = token;
+  token = value;
+  $('saveTokenBtn').disabled = true;
+  try {
+    await gh('');
+    storeToken(value, $('rememberInput').checked);
+    $('tokenDialog').close();
+    toast('Token 已保存');
+    const pending = ops;
+    await loadAll();
+    ops = pending;
+    render();
+  } catch (err) {
+    token = prev;
+    $('tokenMsg').textContent = err.status === 401 ? 'Token 无效或已过期' : err.status === 404 ? `这个 Token 访问不到 ${OWNER}/${REPO}，请检查 Repository access` : `验证失败：${err.message}`;
+  } finally {
+    $('saveTokenBtn').disabled = false;
+  }
+}
+
+// ---------- 初始化 ----------
+$('repoLink').href = `https://github.com/${OWNER}/${REPO}`;
+$('repoLink').textContent = `${OWNER}/${REPO}`;
+$('repoNameStep').textContent = REPO;
+$('allUrl').textContent = `${SITE}/all.xml`;
+$('opmlUrl').textContent = `${SITE}/subscriptions.opml`;
+document.querySelector('[data-copy="all"]').onclick = () => copy(`${SITE}/all.xml`);
+document.querySelector('[data-copy="opml"]').onclick = () => copy(`${SITE}/subscriptions.opml`);
+$('addForm').onsubmit = addUps;
+$('list').onclick = onRowAction;
+$('chips').onclick = e => { const c = e.target.closest('[data-filter]'); if (c) { filter = c.dataset.filter; render(); } };
+$('search').oninput = render;
+$('sort').onchange = render;
+$('saveBtn').onclick = save;
+$('discardBtn').onclick = () => { ops = []; render(); };
+$('runBtn').onclick = triggerRun;
+$('tokenBtn').onclick = () => openTokenDialog();
+$('banners').onclick = e => { if (e.target.closest('[data-open-token]')) { e.preventDefault(); openTokenDialog(); } };
+$('tokenForm').onsubmit = submitToken;
+$('cancelTokenBtn').onclick = () => $('tokenDialog').close();
+$('clearTokenBtn').onclick = () => { storeToken(null); $('tokenDialog').close(); toast('Token 已清除'); loadAll(); };
+window.addEventListener('beforeunload', e => { if (changeSummary().count) { e.preventDefault(); e.returnValue = ''; } });
+document.addEventListener('visibilitychange', () => { if (!document.hidden && latestRun && latestRun.status !== 'completed') refreshRun(); });
+
+loadToken();
+loadAll();
+</script>
+</body>
+</html>
