@@ -38,7 +38,14 @@ ALL_FEED_LIMIT = 200
 RETRY_DELAYS = [8, 20]             # 412 风控是随机拦截，等一会儿重试大多能过
 SECOND_PASS_COOLDOWN = 30          # 第一轮结束后，对失败的 UP 再试一轮前的冷却
 INFO_REFRESH_DAYS = 7              # 昵称/头像缓存的刷新周期，减少一半请求
+RUN_BUDGET = 20 * 60               # 超过这个时长不再重试，保证在 Actions 30 分钟超时前写完文件
 # =========================================
+
+RUN_STARTED = time.monotonic()
+
+
+def over_budget():
+    return time.monotonic() - RUN_STARTED > RUN_BUDGET
 
 
 def now_iso():
@@ -123,7 +130,7 @@ async def with_retry(make_call, label, delays=RETRY_DELAYS):
         try:
             return await make_call()
         except Exception as e:
-            if attempt == len(delays):
+            if attempt == len(delays) or over_budget():
                 raise
             wait = delays[attempt] + random.uniform(0, 3)
             log(f"   ↻ {label} 失败（{short_error(e)}），{wait:.1f}s 后重试...")
@@ -378,6 +385,9 @@ async def main():
         if round_no == 2:
             # 第一轮全军覆没多半是 Cookie 失效，不必再试
             if not pending or len(pending) == len(enabled):
+                break
+            if over_budget():
+                log(f"⏱️ 已运行超过 {RUN_BUDGET // 60} 分钟，跳过第二轮，{len(pending)} 个失败的 UP 沿用上次结果")
                 break
             log(f"--- 第二轮：{len(pending)} 个 UP 失败，冷却 {SECOND_PASS_COOLDOWN}s 后重试 ---")
             await asyncio.sleep(SECOND_PASS_COOLDOWN)
