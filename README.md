@@ -20,12 +20,14 @@
 - 暂停 / 启用、删除、备注；修改先暂存，点「保存并更新」后作为一次提交写入 `ups.json`
 - 保存后会自动触发 Actions 重新生成 RSS（约 3–5 分钟），也可以点「立即更新」
 - 显示每个 UP 的抓取状态、最新投稿，以及 B 站登录 Cookie 是否已失效
+- 「更新 Cookie」：粘贴整段 Cookie 自动识别，在浏览器里加密后写入仓库 Secrets
 
 不设置 Token 时是只读模式。保存修改需要一个 Fine-grained Token：
 
 1. 打开 <https://github.com/settings/personal-access-tokens/new>
 2. Repository access 选 **Only select repositories** → `bilibilirss`
 3. Repository permissions：**Contents** 和 **Actions** 都选 Read and write
+4. （可选）**Secrets** 选 Read and write，用于在管理页更新 Cookie。该权限只能覆盖 Secrets，读不出原值
 
 Token 只保存在浏览器里，只发送给 `api.github.com`。注意 localStorage 按域名隔离，`s4mwhite.github.io` 下的其他 Pages 项目也能读到它；介意的话在设置时不勾选「记住」，关闭页面后即失效。
 
@@ -44,4 +46,9 @@ Token 只保存在浏览器里，只发送给 `api.github.com`。注意 localSto
 
 抓取依赖仓库 Secrets 里的 `SESSDATA`、`BILI_JCT`、`BUVID3`。B 站 Cookie 大约半年失效一次，失效后接口仍可匿名访问，但 412 风控会明显变多。
 
-管理页顶部和 Actions 运行摘要会提示失效。更新方法：浏览器登录 B 站 → 开发者工具 → Application → Cookies → `bilibili.com`，复制 `SESSDATA`、`bili_jct`、`buvid3` 的值，到仓库 Settings → Secrets and variables → Actions 中更新同名 Secrets。
+管理页顶部和 Actions 运行摘要会提示失效。更新方法：
+
+1. 浏览器登录 B 站，打开开发者工具 → Network，点开任意一个 `bilibili.com` 的请求，复制请求头里整段 `Cookie`
+2. 在管理页点「更新 Cookie」粘贴，会自动识别 `SESSDATA`、`bili_jct`、`buvid3`，保存后默认立即运行一次验证
+
+值在浏览器里用仓库公钥加密（libsodium sealed box，从 jsDelivr 加载，锁定版本并校验 SRI）后才发给 GitHub。不想给 Token 加 Secrets 权限的话，也可以到仓库 Settings → Secrets and variables → Actions 手动更新同名 Secrets。

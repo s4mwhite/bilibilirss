@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>B站订阅管理</title>
+<title>B站 RSS 后台</title>
 <style>
 :root {
   --bg: #f6f7f9;
@@ -87,10 +87,10 @@ header .spacer { flex: 1; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); }
 
 .runbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 12px 16px; margin-bottom: 12px; }
-.runbar .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--idle); flex: none; }
-.runbar .dot.ok { background: var(--ok); }
-.runbar .dot.err { background: var(--err); }
-.runbar .dot.run { background: var(--blue); animation: pulse 1.2s infinite; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--idle); flex: none; }
+.dot.ok { background: var(--ok); }
+.dot.err { background: var(--err); }
+.dot.run { background: var(--blue); animation: pulse 1.2s infinite; }
 @keyframes pulse { 50% { opacity: .3; } }
 .runbar .meta { color: var(--muted); }
 .runbar .stats { color: var(--muted); margin-left: auto; font-variant-numeric: tabular-nums; }
@@ -119,7 +119,7 @@ header .spacer { flex: 1; }
 .add .hint { margin-top: 8px; color: var(--faint); font-size: 12.5px; }
 .add .hint.err { color: var(--err); }
 
-.toolbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 20px 0 10px; }
+.toolbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 16px 0 10px; }
 .toolbar input, .toolbar select { height: 32px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); padding: 0 10px; outline: none; }
 .toolbar input { flex: 1 1 200px; min-width: 0; }
 .chips { display: flex; gap: 4px; flex-wrap: wrap; }
@@ -179,20 +179,54 @@ header .spacer { flex: 1; }
 
 dialog { border: 1px solid var(--line); border-radius: 14px; padding: 0; background: var(--card); color: var(--text); width: min(520px, calc(100% - 32px)); }
 dialog::backdrop { background: rgba(0,0,0,.4); }
-dialog form { padding: 20px; display: flex; flex-direction: column; gap: 12px; }
-dialog h2 { margin: 0; font-size: 17px; }
-dialog input[type=password] { height: 36px; padding: 0 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); outline: none; width: 100%; font-family: ui-monospace, Menlo, monospace; }
-dialog input[type=password]:focus { border-color: var(--accent); }
-dialog .steps { margin: 0; padding-left: 20px; color: var(--muted); font-size: 13px; }
-dialog .steps li { margin: 3px 0; }
-dialog .steps b { color: var(--text); font-weight: 600; }
-dialog .note { color: var(--faint); font-size: 12.5px; margin: 0; }
-dialog .check { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
-dialog .btns { display: flex; gap: 8px; justify-content: flex-end; }
-dialog .btns .left { margin-right: auto; }
-dialog .msg { font-size: 13px; color: var(--err); min-height: 1em; margin: 0; }
+dialog form { padding: 20px; }
+dialog h2, .pane h2 { margin: 0; font-size: 16px; font-weight: 650; }
+.form { display: flex; flex-direction: column; gap: 12px; }
+.form input[type=password] { height: 36px; padding: 0 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); outline: none; width: 100%; font-family: ui-monospace, Menlo, monospace; }
+.form input[type=password]:focus { border-color: var(--accent); }
+.form input:disabled, .form textarea:disabled { opacity: .5; }
+.form .steps { margin: 0; padding-left: 20px; color: var(--muted); font-size: 13px; }
+.form .steps li { margin: 3px 0; }
+.form .steps b { color: var(--text); font-weight: 600; }
+.note { color: var(--faint); font-size: 12.5px; margin: 0; }
+.form .check { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
+.form .btns { display: flex; gap: 8px; justify-content: flex-end; }
+.form .btns .left { margin-right: auto; }
+.form .msg { font-size: 13px; color: var(--err); min-height: 1em; margin: 0; }
+.form textarea { width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); outline: none; resize: vertical; font: 12.5px/1.5 ui-monospace, Menlo, monospace; }
+.form textarea:focus { border-color: var(--accent); }
+.form .field { display: grid; grid-template-columns: 76px minmax(0, 1fr); align-items: center; gap: 8px; font-size: 13px; color: var(--muted); font-family: ui-monospace, Menlo, monospace; }
+.form .parsed { color: var(--ok); }
+
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin: 20px 0 16px; overflow-x: auto; }
+.tab { height: 40px; padding: 0 14px; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; background: none; color: var(--muted); cursor: pointer; white-space: nowrap; }
+.tab:hover { color: var(--text); }
+.tab.on { color: var(--text); border-bottom-color: var(--accent); font-weight: 600; }
+.tab-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--err); margin-left: 6px; vertical-align: middle; }
+.tab-dot[hidden] { display: none; }
+.pane { padding: 16px; margin-bottom: 12px; }
+.pane-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
+.pane > h2 { margin-bottom: 12px; }
+.kv { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 8px 20px; margin: 0; font-size: 13.5px; }
+.kv dt { color: var(--muted); }
+.kv dd { margin: 0; min-width: 0; }
+.kv .meta { color: var(--faint); margin-left: 6px; }
+.st-ok { color: var(--ok); font-weight: 600; }
+.st-err { color: var(--err); font-weight: 600; }
+.st-idle { color: var(--idle); font-weight: 600; }
+.cookie-form { max-width: 600px; }
+.runlist .run { display: grid; grid-template-columns: 8px 56px 64px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); font-size: 13.5px; }
+.runlist .run:first-child { border-top: 0; padding-top: 0; }
+.runlist .when { color: var(--muted); }
+.runlist .dur { color: var(--faint); font-variant-numeric: tabular-nums; }
+.fails { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 12px; display: flex; flex-direction: column; gap: 8px; font-size: 13.5px; }
+.fails .fail { display: flex; gap: 8px; flex-wrap: wrap; align-items: baseline; }
+.fails .fail .errtext { color: var(--err); }
+.fails .fail .meta { color: var(--faint); }
 
 @media (max-width: 640px) {
+  .runlist .run { grid-template-columns: 8px 48px minmax(0, 1fr) auto; }
+  .runlist .ev { display: none; }
   .wrap { padding-top: 16px; }
   .feeds { grid-template-columns: 1fr; }
   .row { grid-template-columns: 40px minmax(0, 1fr); padding: 12px; }
@@ -206,7 +240,7 @@ dialog .msg { font-size: 13px; color: var(--err); min-height: 1em; margin: 0; }
 <body>
 <div class="wrap">
   <header>
-    <h1>B站订阅管理</h1>
+    <h1>B站 RSS 后台</h1>
     <a class="repo" id="repoLink" target="_blank" rel="noopener"></a>
     <span class="spacer"></span>
     <button class="btn" id="runBtn" title="手动触发一次抓取">立即更新</button>
@@ -221,39 +255,85 @@ dialog .msg { font-size: 13px; color: var(--err); min-height: 1em; margin: 0; }
 
   <div id="banners"></div>
 
-  <div class="feeds">
-    <div class="card feed">
-      <div class="label">合并源 <span class="tag">推荐</span></div>
-      <div class="desc">所有 UP 合成一个源，Folo 订阅一次，以后在这里增删即可自动生效。</div>
-      <div class="url"><code id="allUrl"></code><button class="btn sm" data-copy="all">复制</button></div>
+  <nav class="tabs" id="tabs">
+    <button class="tab" data-tab="subs">订阅</button>
+    <button class="tab" data-tab="cookie">Cookie<span class="tab-dot" id="cookieDot" hidden></span></button>
+    <button class="tab" data-tab="runs">运行记录<span class="tab-dot" id="runsDot" hidden></span></button>
+  </nav>
+
+  <section class="panel" id="tab-subs">
+    <div class="feeds">
+      <div class="card feed">
+        <div class="label">合并源 <span class="tag">推荐</span></div>
+        <div class="desc">所有 UP 合成一个源，Folo 订阅一次，以后在这里增删即可自动生效。</div>
+        <div class="url"><code id="allUrl"></code><button class="btn sm" data-copy="all">复制</button></div>
+      </div>
+      <div class="card feed">
+        <div class="label">OPML 清单</div>
+        <div class="desc">想按 UP 分开订阅：导入 OPML，或在下方列表里单独复制某个 UP 的 RSS。</div>
+        <div class="url"><code id="opmlUrl"></code><button class="btn sm" data-copy="opml">复制</button></div>
+      </div>
     </div>
-    <div class="card feed">
-      <div class="label">OPML 清单</div>
-      <div class="desc">想按 UP 分开订阅：导入 OPML，或在下方列表里单独复制某个 UP 的 RSS。</div>
-      <div class="url"><code id="opmlUrl"></code><button class="btn sm" data-copy="opml">复制</button></div>
+
+    <div class="card add">
+      <form id="addForm" autocomplete="off">
+        <input class="uid-input" id="uidInput" placeholder="UID 或空间链接，可一次粘贴多个（空格/换行/逗号分隔）">
+        <input class="name-input" id="nameInput" placeholder="备注（可选）">
+        <button class="btn primary" type="submit">添加</button>
+      </form>
+      <div class="hint" id="addHint">例：<code>space.bilibili.com/102438649</code> 或 <code>102438649</code>。修改会先暂存，点底部「保存并更新」后才提交。</div>
     </div>
-  </div>
 
-  <div class="card add">
-    <form id="addForm" autocomplete="off">
-      <input class="uid-input" id="uidInput" placeholder="UID 或空间链接，可一次粘贴多个（空格/换行/逗号分隔）">
-      <input class="name-input" id="nameInput" placeholder="备注（可选）">
-      <button class="btn primary" type="submit">添加</button>
-    </form>
-    <div class="hint" id="addHint">例：<code>space.bilibili.com/102438649</code> 或 <code>102438649</code>。修改会先暂存，点底部「保存并更新」后才提交。</div>
-  </div>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="搜索昵称 / 备注 / UID">
+      <div class="chips" id="chips"></div>
+      <select id="sort">
+        <option value="order">按添加顺序</option>
+        <option value="latest">按最新投稿</option>
+        <option value="name">按昵称</option>
+      </select>
+    </div>
 
-  <div class="toolbar">
-    <input id="search" type="search" placeholder="搜索昵称 / 备注 / UID">
-    <div class="chips" id="chips"></div>
-    <select id="sort">
-      <option value="order">按添加顺序</option>
-      <option value="latest">按最新投稿</option>
-      <option value="name">按昵称</option>
-    </select>
-  </div>
+    <div class="card list" id="list"><div class="empty">加载中…</div></div>
+  </section>
 
-  <div class="card list" id="list"><div class="empty">加载中…</div></div>
+  <section class="panel" id="tab-cookie" hidden>
+    <div class="card pane">
+      <h2>登录状态</h2>
+      <dl class="kv" id="loginInfo"></dl>
+    </div>
+    <div class="card pane">
+      <h2>更新 Cookie</h2>
+      <form class="form cookie-form" id="cookieForm" autocomplete="off">
+        <p class="note">在已登录 B 站的浏览器里打开开发者工具 → Network，点开任意一个 bilibili.com 的请求，把请求头里整段 <b>Cookie</b> 粘到下面，会自动识别（原文不保留）；也可以在 Application → Cookies 里分别复制三个值。</p>
+        <textarea id="cookiePaste" rows="3" spellcheck="false" placeholder="粘贴整段 Cookie：…; SESSDATA=…; bili_jct=…; buvid3=…"></textarea>
+        <p class="note parsed" id="cookieParsed" hidden></p>
+        <label class="field">SESSDATA<input type="password" id="ckSESSDATA" spellcheck="false"></label>
+        <label class="field">bili_jct<input type="password" id="ckBILI_JCT" spellcheck="false"></label>
+        <label class="field">buvid3<input type="password" id="ckBUVID3" spellcheck="false"></label>
+        <label class="check"><input type="checkbox" id="ckRun" checked> 保存后立即运行一次，验证登录状态</label>
+        <p class="note">值会先在浏览器里用仓库公钥加密再发给 GitHub，写入后无法通过页面或 API 读回。留空的项保持不变。需要 Token 有 Secrets 读写权限。</p>
+        <p class="msg" id="cookieMsg"></p>
+        <div class="btns">
+          <button class="btn primary" type="submit" id="saveCookieBtn">加密并保存</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="panel" id="tab-runs" hidden>
+    <div class="card pane">
+      <h2>最近一次抓取</h2>
+      <div id="lastRun"></div>
+    </div>
+    <div class="card pane">
+      <div class="pane-head">
+        <h2>运行记录</h2>
+        <a class="btn ghost sm" id="allRunsLink" target="_blank" rel="noopener">在 GitHub 查看全部</a>
+      </div>
+      <div class="runlist" id="runList"></div>
+    </div>
+  </section>
 </div>
 
 <div class="savebar" id="savebar" hidden>
@@ -265,7 +345,7 @@ dialog .msg { font-size: 13px; color: var(--err); min-height: 1em; margin: 0; }
 <div class="toast" id="toast"></div>
 
 <dialog id="tokenDialog">
-  <form method="dialog" id="tokenForm">
+  <form method="dialog" class="form" id="tokenForm">
     <h2>设置 GitHub Token</h2>
     <input type="password" id="tokenInput" placeholder="github_pat_…" autocomplete="off" spellcheck="false">
     <label class="check"><input type="checkbox" id="rememberInput" checked> 在这台设备上记住（不勾选则关闭页面后失效）</label>
@@ -273,6 +353,7 @@ dialog .msg { font-size: 13px; color: var(--err); min-height: 1em; margin: 0; }
       <li>打开 <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a>（Fine-grained token）</li>
       <li>Repository access 选 <b>Only select repositories</b> → <b id="repoNameStep"></b></li>
       <li>Repository permissions：<b>Contents</b> 选 Read and write，<b>Actions</b> 选 Read and write</li>
+      <li>（可选）<b>Secrets</b> 选 Read and write：用于在本页更新 B 站 Cookie。该权限只能覆盖 Secrets，读不出原值</li>
     </ol>
     <p class="note">Token 只保存在你的浏览器里，只会发送给 api.github.com。</p>
     <p class="msg" id="tokenMsg"></p>
@@ -301,6 +382,8 @@ let sha = null;         // ups.json 的 sha，保存时做并发校验
 let ops = [];           // 尚未保存的修改
 let status = null;      // status.json
 let latestRun = null;
+let runs = [];          // 最近 10 次 Actions 运行
+let secretsMeta;        // Secrets 的更新时间：undefined 未读取，null 无权限
 let pollTimer = null;
 let filter = 'all';
 
@@ -370,8 +453,9 @@ async function gh(path, { method = 'GET', body, raw = false } = {}) {
     err.status = res.status;
     throw err;
   }
-  if (res.status === 204) return null;
-  return raw ? res.text() : res.json();
+  const text = await res.text();
+  if (raw) return text;
+  return text ? JSON.parse(text) : null;
 }
 // 没有 Token 时直接读 GitHub Pages 上的静态文件（只读）
 async function pagesJson(file) {
@@ -412,8 +496,10 @@ async function loadAll() {
     }
     toast(`读取 ups.json 失败：${e.message}`, true);
   }
+  secretsMeta = undefined;
   render();
   refreshRun();
+  if (!$('tab-cookie').hidden) loadSecretsMeta();
 }
 
 function applyOps(list, opList) {
@@ -606,8 +692,9 @@ async function triggerRun() {
 async function refreshRun() {
   const wasRunning = latestRun && latestRun.status !== 'completed';
   try {
-    const r = await gh(`/actions/workflows/${WORKFLOW}/runs?per_page=1&branch=${BRANCH}`);
-    latestRun = r.workflow_runs?.[0] || null;
+    const r = await gh(`/actions/workflows/${WORKFLOW}/runs?per_page=10&branch=${BRANCH}`);
+    runs = r.workflow_runs || [];
+    latestRun = runs[0] || null;
   } catch { /* 未登录时可能触发 API 限流，忽略 */ }
   const running = latestRun && latestRun.status !== 'completed';
   if (wasRunning && !running) {
@@ -616,14 +703,27 @@ async function refreshRun() {
     toast(latestRun.conclusion === 'success' ? 'RSS 已更新完成' : 'RSS 更新结束，但有失败，详见运行日志', latestRun.conclusion !== 'success');
   }
   renderRun();
+  renderRuns();
   clearTimeout(pollTimer);
   if (running && token) pollTimer = setTimeout(refreshRun, 10000);
 }
 
 // ---------- 渲染 ----------
+const EVENTS = { schedule: '定时', push: '保存触发', workflow_dispatch: '手动' };
+function duration(r) {
+  const s = Math.round((Date.parse(r.updated_at) - Date.parse(r.run_started_at || r.created_at)) / 1000);
+  if (!(s >= 0)) return '';
+  return s < 60 ? `${s} 秒` : `${Math.floor(s / 60)} 分 ${s % 60} 秒`;
+}
+function runLabel(r) {
+  if (r.status !== 'completed') return { cls: 'run', text: r.status === 'queued' ? '排队中' : '进行中' };
+  return { success: { cls: 'ok', text: '成功' }, failure: { cls: 'err', text: '失败' }, cancelled: { cls: '', text: '已取消' } }[r.conclusion] || { cls: 'err', text: r.conclusion || '未知' };
+}
+
 function renderRun() {
   const dot = $('runDot'), text = $('runText');
-  const events = { schedule: '定时', push: '保存触发', workflow_dispatch: '手动' };
+  const events = EVENTS;
+  $('runsDot').hidden = !(latestRun && latestRun.status === 'completed' && latestRun.conclusion !== 'success');
   if (!latestRun) {
     dot.className = 'dot';
     text.innerHTML = status?.updated_at ? `数据更新于 ${esc(ago(status.updated_at))}` : '暂无运行记录';
@@ -645,12 +745,77 @@ function renderRun() {
 function renderBanners() {
   const out = [];
   if (status?.run?.login_ok === false) {
-    out.push(`<div class="banner warn">B 站登录 Cookie 已失效，抓取在匿名进行，412 风控会明显变多。请在浏览器重新登录 B 站，把 Cookie 里的 SESSDATA / bili_jct / buvid3 更新到 <a href="https://github.com/${OWNER}/${REPO}/settings/secrets/actions" target="_blank" rel="noopener">仓库 Secrets</a>。</div>`);
+    out.push(`<div class="banner warn">B 站登录 Cookie 已失效，抓取在匿名进行，412 风控会明显变多。请在浏览器重新登录 B 站后 <a href="#cookie">在「Cookie」页更新</a>。</div>`);
   }
   if (!token) {
     out.push(`<div class="banner info">只读模式：可以浏览和暂存修改，<a href="#" data-open-token>设置 Token</a> 后才能保存。</div>`);
   }
   $('banners').innerHTML = out.join('');
+}
+
+function loginHtml() {
+  const v = status?.run?.login_ok;
+  if (v === true) return '<span class="st-ok">有效</span>';
+  if (v === false) return '<span class="st-err">已失效</span>';
+  return '<span class="st-idle">未检测</span>';
+}
+
+function renderCookie() {
+  $('cookieDot').hidden = status?.run?.login_ok !== false;
+  const when = status?.run?.finished_at || status?.updated_at;
+  const rows = [`<dt>B 站登录</dt><dd>${loginHtml()}${when ? `<span class="meta">最近一次运行时检测，${esc(ago(when))}</span>` : ''}</dd>`];
+  for (const name of Object.values(COOKIE_SECRETS)) {
+    const s = secretsMeta?.[name];
+    const text = !token ? '<span class="meta" style="margin:0">设置 Token 后可查看</span>'
+      : secretsMeta === undefined ? '<span class="meta" style="margin:0">读取中…</span>'
+      : secretsMeta === null ? '<span class="meta" style="margin:0">需要 Token 有 Secrets 权限才能查看</span>'
+      : s ? `更新于 ${esc(ago(s.updated_at))}` : '<span class="st-err">未设置</span>';
+    rows.push(`<dt>${name}</dt><dd>${text}</dd>`);
+  }
+  $('loginInfo').innerHTML = rows.join('');
+  for (const el of $('cookieForm').querySelectorAll('textarea, input')) el.disabled = !token;
+  $('saveCookieBtn').textContent = token ? '加密并保存' : '先设置 Token';
+}
+
+function renderRuns() {
+  $('allRunsLink').href = `https://github.com/${OWNER}/${REPO}/actions/workflows/${WORKFLOW}`;
+  // 最近一次抓取：来自 status.json
+  const run = status?.run;
+  if (!run) {
+    $('lastRun').innerHTML = '<p class="note">还没有抓取记录（status.json 会在下一次运行后生成）。</p>';
+  } else {
+    const fails = base
+      .filter(u => u.enabled !== false && stOf(u.uid)?.ok === false)
+      .map(u => ({ up: u, st: stOf(u.uid) }))
+      .sort((a, b) => (b.st.fail_streak || 0) - (a.st.fail_streak || 0));
+    $('lastRun').innerHTML = `<dl class="kv">
+      <dt>结果</dt><dd>成功 <b>${run.ok}</b> / 失败 <b>${run.failed}</b><span class="meta">共 ${run.total} 个启用的 UP</span></dd>
+      <dt>B 站登录</dt><dd>${loginHtml()}${run.login_ok === false ? ' <a href="#cookie">去更新</a>' : ''}</dd>
+      <dt>时间</dt><dd>${esc(ago(run.finished_at || status.updated_at))}${run.url ? ` · <a href="${esc(run.url)}" target="_blank" rel="noopener">查看日志</a>` : ''}</dd>
+    </dl>` + (fails.length ? `<div class="fails">${fails.map(({ up, st }) => `<div class="fail">
+        <b>${esc(displayName(up))}</b><span class="meta">${up.uid}</span>
+        <span class="errtext">${esc(st.last_error || '抓取失败')}</span>
+        <span class="meta">连续失败 ${st.fail_streak || 1} 次${st.last_ok_at ? `，上次成功 ${esc(ago(st.last_ok_at))}` : ''}</span>
+      </div>`).join('')}</div>` : '');
+  }
+  // 运行记录：来自 Actions API
+  $('runList').innerHTML = runs.length ? runs.map(r => {
+    const l = runLabel(r);
+    return `<div class="run">
+      <span class="dot ${l.cls}"></span>
+      <a href="${esc(r.html_url)}" target="_blank" rel="noopener">${l.text}</a>
+      <span class="ev">${esc(EVENTS[r.event] || r.event)}</span>
+      <span class="when">${esc(ago(r.run_started_at || r.created_at))}</span>
+      <span class="dur">${r.status === 'completed' ? esc(duration(r)) : ''}</span>
+    </div>`;
+  }).join('') : '<p class="note">暂无运行记录</p>';
+}
+
+function showTab(name) {
+  if (!['subs', 'cookie', 'runs'].includes(name)) name = 'subs';
+  for (const t of document.querySelectorAll('.tab')) t.classList.toggle('on', t.dataset.tab === name);
+  for (const p of document.querySelectorAll('.panel')) p.hidden = p.id !== `tab-${name}`;
+  if (name === 'cookie') loadSecretsMeta();
 }
 
 function renderStats(rows) {
@@ -717,6 +882,8 @@ function render() {
   renderBanners();
   renderStats(rows);
   renderRun();
+  renderCookie();
+  renderRuns();
 
   const q = $('search').value.trim().toLowerCase();
   let shown = rows.filter(r => {
@@ -770,6 +937,111 @@ async function submitToken(e) {
   }
 }
 
+// ---------- 更新 Cookie（写入仓库 Secrets） ----------
+// GitHub 要求 Secret 用仓库公钥做 libsodium sealed box 加密；库只在打开对话框时加载，锁定版本并校验 SRI
+const SODIUM_SCRIPTS = [
+  ['https://cdn.jsdelivr.net/npm/libsodium@0.8.4/dist/modules/libsodium.js', 'sha384-3KUAqev6nUaNHDSTa/UjyEycVN8iMfq/UtzKf3ZDTuGSb+P3y9kMu/WCVqnLAxUB'],
+  ['https://cdn.jsdelivr.net/npm/libsodium-wrappers@0.8.4/dist/modules/libsodium-wrappers.js', 'sha384-uj62oy76l27Bkf3eEP5knMYc094z6HzwAR7Rn8ZZcBBsg5nMibZXSvjRqgZMFg/L'],
+];
+const COOKIE_SECRETS = { SESSDATA: 'SESSDATA', bili_jct: 'BILI_JCT', buvid3: 'BUVID3' };
+let sodiumPromise = null;
+
+function loadScript(src, integrity) {
+  return new Promise((resolve, reject) => {
+    const s = document.createElement('script');
+    s.src = src;
+    s.integrity = integrity;
+    s.crossOrigin = 'anonymous';
+    s.onload = resolve;
+    s.onerror = () => { s.remove(); reject(new Error(`加载失败：${src}`)); };
+    document.head.appendChild(s);
+  });
+}
+function loadSodium() {
+  if (!sodiumPromise) {
+    sodiumPromise = (async () => {
+      for (const [src, integrity] of SODIUM_SCRIPTS) await loadScript(src, integrity);
+      await window.sodium.ready;
+      return window.sodium;
+    })().catch(e => { sodiumPromise = null; throw e; });
+  }
+  return sodiumPromise;
+}
+
+// 从整段 Cookie（请求头、document.cookie 或 curl 命令）里提取三个值
+function parseCookie(text) {
+  const found = {};
+  for (const m of text.matchAll(/(?:^|[\s;'"])(SESSDATA|bili_jct|buvid3)=([^;\s'"]+)/g)) found[m[1]] = m[2];
+  return found;
+}
+function onCookiePaste() {
+  const area = $('cookiePaste');
+  const found = parseCookie(area.value);
+  const names = Object.keys(found);
+  if (!names.length) return;
+  for (const [name, secret] of Object.entries(COOKIE_SECRETS)) if (found[name]) $(`ck${secret}`).value = found[name];
+  area.value = '';
+  const missing = Object.keys(COOKIE_SECRETS).filter(n => !found[n]);
+  $('cookieParsed').hidden = false;
+  $('cookieParsed').textContent = `已识别 ${names.join('、')}` + (missing.length ? `；没找到 ${missing.join('、')}，可手动填写` : '');
+}
+
+function resetCookieForm() {
+  for (const secret of Object.values(COOKIE_SECRETS)) $(`ck${secret}`).value = '';
+  $('cookiePaste').value = '';
+  $('cookieParsed').hidden = true;
+  $('cookieMsg').textContent = '';
+}
+// 进入 Cookie 页时读取 Secrets 的更新时间，并提前加载加密库，保存时不用等
+async function loadSecretsMeta() {
+  if (!token) return;
+  loadSodium().catch(() => {});
+  try {
+    const { secrets } = await gh('/actions/secrets');
+    secretsMeta = Object.fromEntries(secrets.map(s => [s.name, s]));
+  } catch {
+    secretsMeta = null;
+  }
+  renderCookie();
+}
+
+async function submitCookie(e) {
+  e.preventDefault();
+  if (!token) { openTokenDialog('更新 Cookie 需要先设置 Token（需包含 Secrets 读写权限）。'); return; }
+  const msg = $('cookieMsg');
+  const values = Object.values(COOKIE_SECRETS)
+    .map(name => [name, $(`ck${name}`).value.trim()])
+    .filter(([, v]) => v);
+  if (!values.length) { msg.textContent = '请粘贴 Cookie 或至少填写一项'; return; }
+  const bad = values.find(([, v]) => /[\s;=]/.test(v));
+  if (bad) { msg.textContent = `${bad[0]} 的值里不应包含空格、分号或等号，请只复制值本身`; return; }
+
+  const btn = $('saveCookieBtn');
+  btn.disabled = true; btn.textContent = '加密中…'; msg.textContent = '';
+  try {
+    let sodium;
+    try { sodium = await loadSodium(); }
+    catch { throw new Error('加密库加载失败（cdn.jsdelivr.net），请检查网络后重试'); }
+    const { key, key_id } = await gh('/actions/secrets/public-key');
+    const publicKey = sodium.from_base64(key, sodium.base64_variants.ORIGINAL);
+    for (const [name, value] of values) {
+      const sealed = sodium.crypto_box_seal(sodium.from_string(value), publicKey);
+      await gh(`/actions/secrets/${name}`, { method: 'PUT', body: { encrypted_value: sodium.to_base64(sealed, sodium.base64_variants.ORIGINAL), key_id } });
+    }
+    resetCookieForm();
+    toast(`已更新 ${values.map(([n]) => n).join('、')}`);
+    loadSecretsMeta();
+    if ($('ckRun').checked) await triggerRun();
+  } catch (err) {
+    msg.textContent = err.status === 403 || err.status === 404
+      ? 'Token 没有 Secrets 写权限：到 GitHub 编辑这个 Token，把 Repository permissions 里的 Secrets 设为 Read and write'
+      : `保存失败：${err.message}`;
+  } finally {
+    btn.disabled = false;
+    renderCookie();
+  }
+}
+
 // ---------- 初始化 ----------
 $('repoLink').href = `https://github.com/${OWNER}/${REPO}`;
 $('repoLink').textContent = `${OWNER}/${REPO}`;
@@ -788,6 +1060,10 @@ $('discardBtn').onclick = () => { ops = []; render(); };
 $('runBtn').onclick = triggerRun;
 $('tokenBtn').onclick = () => openTokenDialog();
 $('banners').onclick = e => { if (e.target.closest('[data-open-token]')) { e.preventDefault(); openTokenDialog(); } };
+$('tabs').onclick = e => { const t = e.target.closest('[data-tab]'); if (t) location.hash = t.dataset.tab; };
+window.addEventListener('hashchange', () => showTab(location.hash.slice(1)));
+$('cookieForm').onsubmit = submitCookie;
+$('cookiePaste').oninput = onCookiePaste;
 $('tokenForm').onsubmit = submitToken;
 $('cancelTokenBtn').onclick = () => $('tokenDialog').close();
 $('clearTokenBtn').onclick = () => { storeToken(null); $('tokenDialog').close(); toast('Token 已清除'); loadAll(); };
@@ -795,6 +1071,7 @@ window.addEventListener('beforeunload', e => { if (changeSummary().count) { e.pr
 document.addEventListener('visibilitychange', () => { if (!document.hidden && latestRun && latestRun.status !== 'completed') refreshRun(); });
 
 loadToken();
+showTab(location.hash.slice(1));
 loadAll();
 </script>
 </body>
