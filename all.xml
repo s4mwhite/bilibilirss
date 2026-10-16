@@ -2,12 +2,21 @@
 <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>Bilibili 订阅合集</title>
-    <link>https://s4mwhite.github.io/bilibilirss/admin/</link>
+    <link>https://www.bilibili.com/</link>
     <description>33 位 B站 UP 主的最新投稿合集</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 16 Oct 2026 10:57:39 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 13:51:00 +0000</lastBuildDate>
+    <item>
+      <title>【辛普森安】拍拍视频就好了……怎么还真练上了呢……</title>
+      <link>https://www.bilibili.com/video/BV1C9Jt6BE7v</link>
+      <description>&lt;img src="https://i1.hdslb.com/bfs/archive/f473e4a1ebf2c5be046cc3df72c3994f869791fa.jpg" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 哪有什么天赋使然……
+只是一直在推翻重建中成长罢了……&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 00:38</description>
+      <guid isPermaLink="false">https://www.bilibili.com/video/BV1C9Jt6BE7v</guid>
+      <pubDate>Fri, 16 Oct 2026 10:56:43 +0000</pubDate>
+      <dc:creator>辛普森安</dc:creator>
+    </item>
     <item>
       <title>【波士顿圆脸】一个美国人选择在中国沙漠捐五万棵树：圆脸对话赛考斯</title>
       <link>https://www.bilibili.com/video/BV1tMJX6jEa7</link>
@@ -1917,15 +1926,6 @@ https://youtu.be/GlYgs6v2YfU
       <guid isPermaLink="false">https://www.bilibili.com/video/BV1TtaN6GE1a</guid>
       <pubDate>Thu, 24 Sep 2026 12:16:38 +0000</pubDate>
       <dc:creator>YouTube精选字幕组</dc:creator>
-    </item>
-    <item>
-      <title>【无穷小亮的科普日常】【纪录片】生命奇观2 02 黄渤海湿地</title>
-      <link>https://www.bilibili.com/video/BV1SxhW6hEK3</link>
-      <description>&lt;img src="https://i0.hdslb.com/bfs/archive/47f0545de0d44ad13eb69d4f92fdc5956619a64b.png" referrerpolicy="no-referrer" style="max-width:100%" /&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;视频简介:&lt;/b&gt; 水是生命之本，地球水域分为淡水、咸水两大生态系统，两类水域孕育着习性迥异、各有生存法则的水生生物。黄渤海沿岸，是咸淡水持续交融碰撞的特殊区域，环境变幻剧烈且独特。潮起潮落间，滩涂生灵交替承受烈日暴晒与海水淹没，水体盐度随潮汐和天气不断起伏，水温、风浪瞬息万变，造就了极具挑战性的严苛生存环境。
-严苛的环境之中，始终蕴藏着蓬勃生机。多条大河奔腾入海，将陆地丰富的营养物质带入这片浅海，积淀出得天独厚的生态沃土。&lt;br/&gt;&lt;b&gt;视频时长:&lt;/b&gt; 48:40</description>
-      <guid isPermaLink="false">https://www.bilibili.com/video/BV1SxhW6hEK3</guid>
-      <pubDate>Thu, 24 Sep 2026 12:00:02 +0000</pubDate>
-      <dc:creator>无穷小亮的科普日常</dc:creator>
     </item>
   </channel>
 </rss>
