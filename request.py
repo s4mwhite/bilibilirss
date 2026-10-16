@@ -25,9 +25,12 @@ BILI_JCT = os.getenv("BILI_JCT")
 BUVID3 = os.getenv("BUVID3")
 # RSS 的公开地址。迁到 Cloudflare 后由工作流从 Secrets 传入（随机路径，不含用户名）；
 # 没设置时沿用原来的 GitHub Pages 地址
-FEED_BASE_URL = (os.getenv("FEED_BASE_URL") or "https://s4mwhite.github.io/bilibilirss").rstrip("/")
-# 仓库设为私有后，才把订阅地址写进 status.json 给管理后台显示，公开期间不能泄露
+LEGACY_BASE_URL = "https://s4mwhite.github.io/bilibilirss"
+FEED_BASE_URL = (os.getenv("FEED_BASE_URL") or LEGACY_BASE_URL).rstrip("/")
+# 仓库私有时为 true。生成的 OPML、status.json 会被提交进仓库，
+# 公开期间里面只能写旧地址，否则随机路径就泄露了
 PUBLISH_FEED_BASE = os.getenv("PUBLISH_FEED_BASE") == "true"
+CONTENT_BASE_URL = FEED_BASE_URL if PUBLISH_FEED_BASE else LEGACY_BASE_URL
 
 # UP 主清单不再写在代码里：用管理页 (admin/) 或直接编辑 ups.json
 UPS_FILE = "ups.json"
@@ -270,7 +273,7 @@ def generate_all_feed(ups, status):
 
     fg = FeedGenerator()
     fg.load_extension('dc')
-    fg.id(f'{FEED_BASE_URL}/{ALL_FEED_FILE}')
+    fg.id(f'{CONTENT_BASE_URL}/{ALL_FEED_FILE}')
     fg.title('Bilibili 订阅合集')
     fg.link(href='https://www.bilibili.com/', rel='alternate')
     fg.description(f'{len(ups)} 位 B站 UP 主的最新投稿合集')
@@ -305,7 +308,7 @@ def generate_opml(ups, status):
         if not os.path.exists(feed_path(up["uid"])):
             continue
         # 核心优化 3：在链接后附带动态版本号，彻底解决 Folo 记忆旧 404 状态的问题
-        xml_url = f"{FEED_BASE_URL}/{feed_path(up['uid'])}?v={timestamp}"
+        xml_url = f"{CONTENT_BASE_URL}/{feed_path(up['uid'])}?v={timestamp}"
         html_url = f"https://space.bilibili.com/{up['uid']}"
         # 字符转义防止 OPML 格式崩溃
         safe_title = (display_name(up, status).replace('&', '&amp;').replace('<', '&lt;')
