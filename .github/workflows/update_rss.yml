@@ -4,55 +4,78 @@ on:
   # 1. 定时触发：每 4 小时运行一次 (UTC 时间)
   schedule:
     - cron: '0 */4 * * *'
-  
-  # 2. 手动触发：方便你修改代码后立即测试
+
+  # 2. 手动触发：管理页的「立即更新」按钮也是调用这里
   workflow_dispatch:
 
-  # 3. 推送触发：每次你修改 UID 列表推送代码时也会运行
+  # 3. 推送触发：管理页保存 ups.json 或修改脚本后立即运行
   push:
     branches:
       - main
+    paths:
+      - ups.json
+      - request.py
+      - requirements.txt
+      - .github/workflows/update_rss.yml
+
+# 同一分支同时只跑一个，避免两次运行抢着 push
+concurrency:
+  group: update-rss-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.10'
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install bilibili-api-python feedgen httpx
+        pip install -r requirements.txt
 
     - name: Run RSS generator
+      id: generate
       env:
         SESSDATA: ${{ secrets.SESSDATA }}
         BILI_JCT: ${{ secrets.BILI_JCT }}
         BUVID3: ${{ secrets.BUVID3 }}
       run: python request.py
 
+    # 脚本全部失败时会标红，但 status.json 仍要提交，管理页才能显示失败原因
+    # 只在默认分支提交；在其他分支手动运行相当于试跑，不会产生和 main 冲突的 XML
     - name: Commit and Push changes
+      if: ${{ !cancelled() && (steps.generate.outcome == 'success' || steps.generate.outcome == 'failure') && github.ref_name == github.event.repository.default_branch }}
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        
-        # 强制列出当前目录文件，方便我们在日志里排错
-        ls -la
-        
-        # 允许 add 失败而不崩溃
-        git add bili_up_*.xml subscriptions.opml || echo "No files found to add"
-        
-        # 检查是否有内容需要提交
-        if [ -n "$(git status --porcelain)" ]; then
-          git commit -m "Auto update RSS and OPML: $(date)"
-          git push
-        else
+
+        # -A 让被删除的 UP 对应的 XML 也一起提交
+        git add -A -- 'bili_up_*.xml'
+        for f in all.xml subscriptions.opml status.json; do
+          if [ -e "$f" ]; then git add "$f"; fi
+        done
+
+        if git diff --cached --quiet; then
           echo "No changes to commit"
+          exit 0
         fi
+        git commit -m "Auto update RSS and OPML: $(date)"
+
+        # 运行期间可能有人在管理页提交了 ups.json，先 rebase 再推
+        for i in 1 2 3; do
+          git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME" && exit 0
+          sleep 5
+        done
+        exit 1
