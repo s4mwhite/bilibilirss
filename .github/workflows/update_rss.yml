@@ -8,7 +8,7 @@ on:
   # 2. 手动触发：管理页的「立即更新」按钮也是调用这里
   workflow_dispatch:
 
-  # 3. 推送触发：管理页保存 ups.json 或修改脚本后立即运行
+  # 3. 推送触发：管理页保存 ups.json、修改脚本或后台页面后立即运行
   push:
     branches:
       - main
@@ -16,6 +16,8 @@ on:
       - ups.json
       - request.py
       - requirements.txt
+      - admin/index.html
+      - deploy/**
       - .github/workflows/update_rss.yml
 
 # 同一分支同时只跑一个，避免两次运行抢着 push
@@ -30,6 +32,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      # 配好 Cloudflare 的 Secrets 之后才部署（step 的 if 里不能直接读 secrets）
+      HAS_CLOUDFLARE: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
 
     steps:
     - name: Checkout code
@@ -45,18 +50,27 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    # 仓库公开期间不能把 RSS 的随机地址写进 status.json
+    - name: Check repository visibility
+      id: visibility
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: echo "private=$(gh api "repos/$GITHUB_REPOSITORY" --jq .private)" >> "$GITHUB_OUTPUT"
+
     - name: Run RSS generator
       id: generate
       env:
         SESSDATA: ${{ secrets.SESSDATA }}
         BILI_JCT: ${{ secrets.BILI_JCT }}
         BUVID3: ${{ secrets.BUVID3 }}
+        FEED_BASE_URL: ${{ secrets.FEED_BASE_URL }}
+        PUBLISH_FEED_BASE: ${{ steps.visibility.outputs.private }}
       run: python request.py
 
     # 脚本全部失败时会标红，但 status.json 仍要提交，管理页才能显示失败原因
-    # 只在默认分支提交；在其他分支手动运行相当于试跑，不会产生和 main 冲突的 XML
+    # 只在 main 提交；在其他分支手动运行相当于试跑，不会产生和 main 冲突的 XML
     - name: Commit and Push changes
-      if: ${{ !cancelled() && (steps.generate.outcome == 'success' || steps.generate.outcome == 'failure') && github.ref_name == github.event.repository.default_branch }}
+      if: ${{ !cancelled() && (steps.generate.outcome == 'success' || steps.generate.outcome == 'failure') && github.ref == 'refs/heads/main' }}
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -79,3 +93,20 @@ jobs:
           sleep 5
         done
         exit 1
+
+    - name: Set up Node
+      if: ${{ !cancelled() && (steps.generate.outcome == 'success' || steps.generate.outcome == 'failure') && github.ref == 'refs/heads/main' && env.HAS_CLOUDFLARE == 'true' }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+
+    # RSS 和管理后台部署到 Cloudflare Pages，见 deploy/cloudflare.sh
+    - name: Deploy to Cloudflare Pages
+      if: ${{ !cancelled() && (steps.generate.outcome == 'success' || steps.generate.outcome == 'failure') && github.ref == 'refs/heads/main' && env.HAS_CLOUDFLARE == 'true' }}
+      env:
+        CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        CF_FEEDS_PROJECT: ${{ secrets.CF_FEEDS_PROJECT }}
+        CF_ADMIN_PROJECT: ${{ secrets.CF_ADMIN_PROJECT }}
+        FEED_BASE_URL: ${{ secrets.FEED_BASE_URL }}
+      run: bash deploy/cloudflare.sh
