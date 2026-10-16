@@ -16,20 +16,33 @@
 
 地址：<https://s4mwhite.github.io/bilibilirss/admin/>
 
-- 添加：输入 UID 或空间链接（`space.bilibili.com/xxx`），支持一次粘贴多个
-- 暂停 / 启用、删除、备注；修改先暂存，点「保存并更新」后作为一次提交写入 `ups.json`
-- 保存后会自动触发 Actions 重新生成 RSS（约 3–5 分钟），也可以点「立即更新」
-- 显示每个 UP 的抓取状态、最新投稿，以及 B 站登录 Cookie 是否已失效
-- 「更新 Cookie」：粘贴整段 Cookie 自动识别，在浏览器里加密后写入仓库 Secrets
+分三个标签页：
+
+- **订阅**：输入 UID 或空间链接添加（支持一次粘贴多个）；暂停 / 启用、删除、备注。修改先暂存，点「保存并更新」后作为一次提交写入 `ups.json`，并自动触发 Actions 重新生成 RSS
+- **Cookie**：查看 B 站登录是否有效；粘贴整段 Cookie 自动识别，在浏览器里加密后写入仓库 Secrets
+- **运行记录**：最近 10 次运行的结果和耗时，最近一次抓取失败的 UP 及原因
 
 不设置 Token 时是只读模式。保存修改需要一个 Fine-grained Token：
 
-1. 打开 <https://github.com/settings/personal-access-tokens/new>
+1. 打开 <https://github.com/settings/personal-access-tokens/new>，建议设置过期时间
 2. Repository access 选 **Only select repositories** → `bilibilirss`
 3. Repository permissions：**Contents** 和 **Actions** 都选 Read and write
 4. （可选）**Secrets** 选 Read and write，用于在管理页更新 Cookie。该权限只能覆盖 Secrets，读不出原值
 
-Token 只保存在浏览器里，只发送给 `api.github.com`。注意 localStorage 按域名隔离，`s4mwhite.github.io` 下的其他 Pages 项目也能读到它；介意的话在设置时不勾选「记住」，关闭页面后即失效。
+首次设置时还要设一个解锁密码，之后每次打开页面输入密码解锁。
+
+### 安全
+
+管理页是公开的静态页面，任何人都能打开，但没有 Token 只能看、不能改；页面上能看到的内容（UP 清单、抓取状态）本来就是公开的——仓库公开，RSS 也必须公开才能被 Folo 订阅。Cookie 存在 Secrets 里，从不发给页面。
+
+真正需要保护的是 Token，所以：
+
+- **Token 用密码加密保存**：PBKDF2-SHA256（60 万次迭代）派生密钥 + AES-GCM 加密，浏览器里只存密文，解锁后的明文只在内存里。密码无法找回，忘了就点「忘记密码 / 更换 Token」重新设置
+- **自动锁定**：连续 30 分钟没有操作自动锁定，也可以随时点「锁定」
+- **限制数据去向**：页面的内容安全策略（CSP）只允许连接自身和 `api.github.com`，脚本只允许从 jsDelivr 加载（libsodium，锁定版本并校验 SRI），即使有恶意脚本混进来也没法把 Token 发到别处
+- **禁止嵌入**：页面拒绝在 iframe 中运行，防止被其他网站伪装诱导点击
+
+残余风险：`s4mwhite.github.io` 下的其他 Pages 项目和本页同源。如果它们被植入恶意代码，理论上可以在你解锁期间读到内存里的 Token。降低风险的做法：用强密码、给 Token 设过期时间；设备丢失或怀疑泄露时，到 GitHub 设置里撤销这个 Token。
 
 ## 文件说明
 
